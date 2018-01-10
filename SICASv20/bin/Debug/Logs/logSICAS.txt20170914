@@ -1,0 +1,14 @@
+2017-09-14 09:56:26,211 [8] INFO  - Inicio de aplicación en modo Debug
+2017-09-14 09:59:53,721 [8] ERROR - No data.
+2017-09-14 10:00:42,694 [8] ERROR - No data.
+2017-09-14 10:11:42,302 [8] ERROR - No data.
+2017-09-14 10:12:22,672 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-14 10:12:25,749 [9] ERROR - FTP Server 192.168.0.251
+2017-09-14 10:20:26,771 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-14 10:22:07,372 [9] ERROR - FTP Server 192.168.0.251
+2017-09-14 12:04:35,855 [10] INFO  - Inicio de aplicación en modo Release
+2017-09-14 12:04:37,957 [10] ERROR - FTP Server 192.168.0.251
+2017-09-14 13:56:48,395 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-14 13:59:18,015 [9] ERROR - FTP Server 192.168.0.251
+2017-09-14 17:26:52,963 [8] INFO  - Inicio de aplicación en modo Release
+2017-09-14 17:27:02,181 [8] ERROR - FTP Server 192.168.0.251

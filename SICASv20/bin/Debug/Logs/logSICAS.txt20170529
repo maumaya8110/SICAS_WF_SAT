@@ -1,0 +1,8 @@
+2017-05-29 15:18:42,472 [10] INFO  - Inicio de aplicación en modo Debug
+2017-05-29 15:19:06,478 [10] ERROR - Login failed for user 'SICASusr'.
+2017-05-29 15:21:44,536 [9] INFO  - Inicio de aplicación en modo Debug
+2017-05-29 15:21:49,046 [9] ERROR - Cannot open database "SICASTest" requested by the login. The login failed.
+Login failed for user 'SICASusr'.
+2017-05-29 15:22:28,282 [9] INFO  - Inicio de aplicación en modo Debug
+2017-05-29 15:22:32,687 [9] ERROR - Cannot open database "SICASTest" requested by the login. The login failed.
+Login failed for user 'SICASusr'.

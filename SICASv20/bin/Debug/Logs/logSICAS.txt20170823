@@ -1,0 +1,88 @@
+2017-08-23 09:18:26,896 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 09:20:40,712 [8] INFO  - Usuario actualizado!
+2017-08-23 09:39:48,919 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 11:35:10,001 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 11:36:12,817 [10] ERROR - El usuario luis.garza_apto ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario luis.garza_apto la termine realizando el corte correspondiente.
+2017-08-23 11:36:12,831 [10] ERROR - El usuario luis.garza_apto ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario luis.garza_apto la termine realizando el corte correspondiente.
+2017-08-23 11:45:20,281 [10] ERROR - La unidad 1703 no tiene contrato activo
+System.Exception: La unidad 1703 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:45:20,323 [10] ERROR - La unidad 1703 no tiene contrato activo
+2017-08-23 11:45:59,749 [10] ERROR - La unidad 1811 no tiene contrato activo
+System.Exception: La unidad 1811 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:45:59,750 [10] ERROR - La unidad 1811 no tiene contrato activo
+2017-08-23 11:46:05,955 [10] ERROR - La unidad 1806 no tiene contrato activo
+System.Exception: La unidad 1806 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:46:05,957 [10] ERROR - La unidad 1806 no tiene contrato activo
+2017-08-23 11:47:17,012 [10] ERROR - La unidad 1702 no tiene contrato activo
+System.Exception: La unidad 1702 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:47:17,013 [10] ERROR - La unidad 1702 no tiene contrato activo
+2017-08-23 11:49:09,747 [10] ERROR - La unidad 1634 no tiene contrato activo
+System.Exception: La unidad 1634 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:49:09,748 [10] ERROR - La unidad 1634 no tiene contrato activo
+2017-08-23 11:50:11,722 [10] ERROR - La unidad 1634 no tiene contrato activo
+System.Exception: La unidad 1634 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:50:11,724 [10] ERROR - La unidad 1634 no tiene contrato activo
+2017-08-23 11:51:09,948 [10] ERROR - La unidad 1634 no tiene contrato activo
+System.Exception: La unidad 1634 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:51:09,952 [10] ERROR - La unidad 1634 no tiene contrato activo
+2017-08-23 11:51:37,529 [10] ERROR - La unidad 1634 no tiene contrato activo
+System.Exception: La unidad 1634 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-23 11:51:37,531 [10] ERROR - La unidad 1634 no tiene contrato activo
+2017-08-23 11:52:28,403 [10] INFO  - Usuario actualizado!
+2017-08-23 11:53:15,154 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 11:53:50,306 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SICASv20.forms.VentaServicios.<Zona_IDTextBox_KeyUp>b__2() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 841
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-08-23 11:53:50,329 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-08-23 11:53:53,332 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SICASv20.forms.VentaServicios.<Zona_IDTextBox_KeyUp>b__2() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 841
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-08-23 11:53:53,333 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-08-23 12:02:54,224 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SICASv20.forms.VentaServicios.<Zona_IDTextBox_KeyUp>b__2() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 841
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-08-23 12:02:54,228 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-08-23 12:15:57,319 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 16:19:28,235 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 17:22:47,713 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 17:34:31,495 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 17:41:23,105 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 17:47:46,051 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:07:09,471 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:09:53,390 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:13:45,913 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:14:39,610 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:16:40,544 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:17:51,340 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:23:30,835 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-23 18:26:18,399 [10] INFO  - Inicio de aplicación en modo Debug

@@ -1,0 +1,92 @@
+2017-08-11 11:08:20,257 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-11 11:27:14,108 [8] ERROR - La unidad 1441 no tiene contrato activo
+System.Exception: La unidad 1441 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:27:14,181 [8] ERROR - La unidad 1441 no tiene contrato activo
+2017-08-11 11:27:18,397 [8] ERROR - La unidad 4114 no tiene contrato activo
+System.Exception: La unidad 4114 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:27:18,403 [8] ERROR - La unidad 4114 no tiene contrato activo
+2017-08-11 11:27:22,440 [8] ERROR - La unidad 1641 no tiene contrato activo
+System.Exception: La unidad 1641 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:27:22,441 [8] ERROR - La unidad 1641 no tiene contrato activo
+2017-08-11 11:28:02,251 [8] ERROR - La unidad 2118 no tiene contrato activo
+System.Exception: La unidad 2118 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:28:02,253 [8] ERROR - La unidad 2118 no tiene contrato activo
+2017-08-11 11:28:22,023 [8] ERROR - La unidad 2118 no tiene contrato activo
+System.Exception: La unidad 2118 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:28:22,024 [8] ERROR - La unidad 2118 no tiene contrato activo
+2017-08-11 11:28:29,301 [8] ERROR - La unidad 1620 no tiene contrato activo
+System.Exception: La unidad 1620 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:28:29,303 [8] ERROR - La unidad 1620 no tiene contrato activo
+2017-08-11 11:28:40,039 [8] ERROR - La unidad 1646 no tiene contrato activo
+System.Exception: La unidad 1646 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:28:40,041 [8] ERROR - La unidad 1646 no tiene contrato activo
+2017-08-11 11:32:18,723 [9] INFO  - Inicio de aplicación en modo Release
+2017-08-11 11:32:19,317 [9] ERROR - FTP Server 192.168.0.251
+2017-08-11 11:32:48,112 [9] ERROR - La unidad 1841 no tiene contrato activo
+System.Exception: La unidad 1841 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:32:48,125 [9] ERROR - La unidad 1841 no tiene contrato activo
+2017-08-11 11:32:55,185 [9] ERROR - La unidad 1628 no tiene contrato activo
+System.Exception: La unidad 1628 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:32:55,186 [9] ERROR - La unidad 1628 no tiene contrato activo
+2017-08-11 11:32:56,359 [9] ERROR - La unidad 1628 no tiene contrato activo
+System.Exception: La unidad 1628 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:32:56,360 [9] ERROR - La unidad 1628 no tiene contrato activo
+2017-08-11 11:32:57,245 [9] ERROR - La unidad 1628 no tiene contrato activo
+System.Exception: La unidad 1628 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 138
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 11:32:57,246 [9] ERROR - La unidad 1628 no tiene contrato activo
+2017-08-11 11:57:01,184 [10] INFO  - Inicio de aplicación en modo Release
+2017-08-11 11:57:01,286 [10] ERROR - FTP Server 192.168.0.251
+2017-08-11 12:02:02,687 [10] INFO  - Inicio de aplicación en modo Release
+2017-08-11 12:02:03,644 [10] ERROR - FTP Server 192.168.0.251
+2017-08-11 12:04:26,288 [10] INFO  - Inicio de aplicación en modo Release
+2017-08-11 12:04:27,146 [10] ERROR - FTP Server 192.168.0.251
+2017-08-11 12:04:48,389 [10] ERROR - La unidad 1641 no tiene contrato activo
+System.Exception: La unidad 1641 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 12:04:48,402 [10] ERROR - La unidad 1641 no tiene contrato activo
+2017-08-11 12:04:52,997 [10] ERROR - La unidad 4128 no tiene contrato activo
+System.Exception: La unidad 4128 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 12:04:52,998 [10] ERROR - La unidad 4128 no tiene contrato activo
+2017-08-11 12:06:11,929 [10] ERROR - La unidad 1810 no tiene contrato activo
+System.Exception: La unidad 1810 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 12:06:11,931 [10] ERROR - La unidad 1810 no tiene contrato activo
+2017-08-11 12:06:46,412 [10] ERROR - La unidad 1703 no tiene contrato activo
+System.Exception: La unidad 1703 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 12:06:46,413 [10] ERROR - La unidad 1703 no tiene contrato activo
+2017-08-11 12:06:53,890 [10] ERROR - La unidad 1714 no tiene contrato activo
+System.Exception: La unidad 1714 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-11 12:06:53,892 [10] ERROR - La unidad 1714 no tiene contrato activo
+2017-08-11 17:13:35,017 [10] INFO  - Usuario actualizado!
+2017-08-11 17:14:35,170 [10] INFO  - Usuario actualizado!
+2017-08-11 17:15:35,436 [10] INFO  - Usuario actualizado!

@@ -1,0 +1,108 @@
+2017-10-24 10:46:14,377 [8] INFO  - Inicio de aplicación en modo Release
+2017-10-24 10:46:17,082 [8] ERROR - FTP Server 192.168.0.251
+2017-10-24 12:01:04,730 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 12:01:05,025 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 12:26:16,021 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 12:26:16,279 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:02:02,732 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:02:02,856 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:05:46,403 [10] ERROR - Debe seleccionar un plan de renta
+2017-10-24 15:05:46,554 [10] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosConductorUC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosConductorUC.cs:línea 209
+   en SICASv20.forms.Contratos_DatosConductorUC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosConductorUC.cs:línea 234
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 15:05:46,580 [10] ERROR - Debe seleccionar un plan de renta
+2017-10-24 15:06:22,214 [10] ERROR - Debe seleccionar un plan de renta
+2017-10-24 15:06:22,223 [10] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosConductorUC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosConductorUC.cs:línea 209
+   en SICASv20.forms.Contratos_DatosConductorUC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosConductorUC.cs:línea 234
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 15:06:22,224 [10] ERROR - Debe seleccionar un plan de renta
+2017-10-24 15:15:48,256 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:15:48,508 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:23:56,327 [9] ERROR - InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+System.ArgumentOutOfRangeException: InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+   en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 253
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 269
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 15:23:56,342 [9] ERROR - InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+2017-10-24 15:24:15,056 [9] ERROR - InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+System.ArgumentOutOfRangeException: InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+   en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 253
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 269
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 15:24:15,058 [9] ERROR - InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+2017-10-24 15:28:58,541 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:29:03,146 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:34:44,781 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:34:49,367 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:38:03,922 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:38:04,195 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:40:11,861 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:40:12,150 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:46:08,493 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 15:46:14,131 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 15:47:02,856 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2017-10-24 16:12:57,906 [8] INFO  - Inicio de aplicación en modo Release
+2017-10-24 16:12:59,457 [8] ERROR - FTP Server 192.168.0.251
+2017-10-24 16:43:23,857 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-24 16:43:24,118 [10] ERROR - FTP Server 192.168.0.251
+2017-10-24 17:35:45,047 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 17:35:45,174 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 17:49:37,602 [8] INFO  - Inicio de aplicación en modo Release
+2017-10-24 17:49:38,628 [8] ERROR - FTP Server 192.168.0.251
+2017-10-24 17:51:20,402 [8] ERROR - InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+System.ArgumentOutOfRangeException: InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+   en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 267
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 17:51:20,415 [8] ERROR - InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+2017-10-24 17:51:49,055 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-24 17:51:49,065 [8] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 256
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 17:51:49,066 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-24 17:55:53,273 [8] ERROR - InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+System.ArgumentOutOfRangeException: InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+   en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 267
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 17:55:53,275 [8] ERROR - InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex
+2017-10-24 18:08:25,775 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 18:08:31,590 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 18:12:39,479 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-24 18:12:39,658 [9] ERROR - FTP Server 192.168.0.251
+2017-10-24 18:31:28,632 [9] ERROR - Debe seleccionar un plan de renta
+2017-10-24 18:31:28,647 [9] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 256
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-24 18:31:28,657 [9] ERROR - Debe seleccionar un plan de renta
+2017-10-24 18:32:04,558 [9] ERROR - No se pudo calcular la fecha final
+2017-10-24 18:32:10,912 [9] ERROR - No se pudo calcular la fecha final
+2017-10-24 18:35:15,863 [9] ERROR - La fecha final debe ser mayor a la fecha inicial

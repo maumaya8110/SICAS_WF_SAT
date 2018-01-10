@@ -1,0 +1,8 @@
+2017-08-09 12:09:39,368 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-09 12:48:57,338 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-09 12:59:58,630 [9] ERROR - La unidad 1841 no tiene contrato activo
+System.Exception: La unidad 1841 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad()
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm)
+2017-08-09 12:59:58,741 [9] ERROR - La unidad 1841 no tiene contrato activo
+2017-08-09 14:51:00,509 [10] INFO  - Inicio de aplicación en modo Debug

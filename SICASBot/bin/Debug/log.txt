@@ -1,0 +1,911 @@
+2011-06-29 12:19:35	Referencia a objeto no establecida como instancia de un objeto.
+2011-06-29 12:19:35	   en SICASBot.Sync.Syncronization.SynSantaCatarina.SyncCuentaConductores() en D:\CODE\SICASBot\classes\Sync.cs:línea 9536
+   en SICASBot.Sync.Syncronization.SynSantaCatarina.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 8702
+2011-06-29 16:47:34	Fin: Tiempo: 0:0:39.764
+2011-06-29 16:47:34	Tiempo total: 0 dias, 0 horas, 0 minutos y 39 segundos.
+2011-06-29 16:48:46	Fin: Tiempo: 0:0:17.128
+2011-06-29 16:48:46	Tiempo total: 0 dias, 0 horas, 0 minutos y 17 segundos.
+2011-06-29 19:10:15	Fin: Tiempo: 0:0:34.460
+2011-06-29 19:10:15	Tiempo total: 0 dias, 0 horas, 0 minutos y 34 segundos.
+2011-06-30 18:11:22	Fin: Tiempo: 0:13:52.947
+2011-06-30 18:11:22	Tiempo total: 0 dias, 0 horas, 13 minutos y 53 segundos.
+2011-06-30 18:15:55	Fin: Tiempo: 0:0:11.871
+2011-06-30 18:15:55	Tiempo total: 0 dias, 0 horas, 0 minutos y 11 segundos.
+2011-06-30 18:25:06	Fin: Tiempo: 0:0:18.782
+2011-06-30 18:25:06	Tiempo total: 0 dias, 0 horas, 0 minutos y 18 segundos.
+2011-07-01 11:19:39	Tiempo total: 0 dias, 0 horas, 43 minutos y 51 segundos.
+2011-07-01 11:57:43	Tiempo total: 0 dias, 0 horas, 26 minutos y 49 segundos.
+2011-07-01 13:00:42	Tiempo total: 0 dias, 0 horas, 0 minutos y 30 segundos.
+2011-07-01 13:07:17	Tiempo total: 0 dias, 0 horas, 0 minutos y 3 segundos.
+2011-07-01 17:11:04	Tiempo total: 0 dias, 0 horas, 3 minutos y 31 segundos.
+2011-07-01 17:12:15	Tiempo total: 0 dias, 0 horas, 0 minutos y 18 segundos.
+2011-07-01 17:13:20	Tiempo total: 0 dias, 0 horas, 0 minutos y 36 segundos.
+2011-07-01 17:14:41	Tiempo total: 0 dias, 0 horas, 1 minutos y 2 segundos.
+2011-07-01 17:16:46	Tiempo total: 0 dias, 0 horas, 0 minutos y 20 segundos.
+2011-07-01 17:22:01	Tiempo total: 0 dias, 0 horas, 0 minutos y 24 segundos.
+2011-07-01 17:30:50	Tiempo total: 0 dias, 0 horas, 0 minutos y 23 segundos.
+2011-07-11 12:42:25	Fin: Tiempo: 0:25:22.547
+2011-07-11 12:42:25	Tiempo total: 0 dias, 0 horas, 25 minutos y 22 segundos.
+2011-07-11 12:46:16	Fin: Tiempo: 0:0:25.599
+2011-07-11 12:46:16	Tiempo total: 0 dias, 0 horas, 0 minutos y 25 segundos.
+2011-07-11 12:51:08	Fin: Tiempo: 0:3:50.69
+2011-07-11 12:51:08	Tiempo total: 0 dias, 0 horas, 3 minutos y 50 segundos.
+2011-07-12 17:22:51	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Conductores_Usuarios". The conflict occurred in database "SICASSync", table "dbo.Usuarios", column 'Usuario_ID'.
+The statement has been terminated.
+2011-07-12 17:22:51	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 453
+   en SICASBot.Central.Entities.Conductores.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 3151
+   en SICASBot.Sync.Syncronization.SyncLA.SyncConductores() en D:\CODE\SICASBot\classes\Sync.cs:línea 1858
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1341
+2011-07-12 17:40:30	Line 1: Incorrect syntax near 'WHERE'.
+2011-07-12 17:40:30	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASBot.LA.DB.GetCount(String tablename, Hashtable w_params) en D:\CODE\SICASBot\classes\LA.cs:línea 470
+   en SICASBot.Sync.Syncronization.SyncLA.SyncDetalleConductores() en D:\CODE\SICASBot\classes\Sync.cs:línea 1883
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1342
+2011-07-12 18:59:35	Fin: Tiempo: 1:10:34.986
+2011-07-12 18:59:35	Tiempo total: 0 dias, 1 horas, 10 minutos y 34 segundos.
+2011-07-13 10:42:19	Fin: Tiempo: 0:6:45.805
+2011-07-13 10:42:19	Tiempo total: 0 dias, 0 horas, 6 minutos y 45 segundos.
+2011-07-13 10:50:49	Fin: Tiempo: 0:3:26.539
+2011-07-13 10:50:49	Tiempo total: 0 dias, 0 horas, 3 minutos y 26 segundos.
+2011-07-14 14:01:34	No se puede convertir un objeto DBNull en otros tipos.
+2011-07-14 14:01:34	   en System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   en System.Convert.ToDateTime(Object value)
+   en SICASBot.LA.Entities.Vista_Contratos.Get() en D:\CODE\SICASBot\classes\LA.cs:línea 27824
+   en SICASBot.Sync.Syncronization.SyncLA.SyncUpdateContratos() en D:\CODE\SICASBot\classes\Sync.cs:línea 1922
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1345
+2011-07-14 14:05:13	Invalid column name 'Estacion'.
+2011-07-14 14:05:13	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASBot.Central.DB.Select(String tablename, Hashtable w_params) en D:\CODE\SICASBot\classes\Central.cs:línea 516
+   en SICASBot.Central.DB.Read(String tableName, KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\Central.cs:línea 68
+   en SICASBot.Central.Entities.Contratos.Read(KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\Central.cs:línea 3554
+   en SICASBot.Sync.Syncronization.SyncLA.SyncUpdateContratos() en D:\CODE\SICASBot\classes\Sync.cs:línea 1925
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1345
+2011-07-14 14:31:26	Fin: Tiempo: 0:23:43.284
+2011-07-14 14:31:26	Tiempo total: 0 dias, 0 horas, 23 minutos y 43 segundos.
+2011-07-20 17:40:31	La conversión especificada no es válida.
+2011-07-20 17:40:31	   en SICASBot.Central.DB.QueryScalar[T](String sqlQry, KeyValuePair`2[] params) en D:\CODE\SICASBot\classes\Central.cs:línea 134
+   en SICASBot.Central.DB.Ident_Current(String tableName) en D:\CODE\SICASBot\classes\Central.cs:línea 96
+   en SICASBot.Central.Entities.Conductores.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 3183
+   en SICASBot.Sync.Syncronization.SyncLA.SyncConductores() en D:\CODE\SICASBot\classes\Sync.cs:línea 1862
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1342
+2011-07-20 17:49:41	No existe PlanillasFiscales con los criterios de búsqueda especificados.
+2011-07-20 17:49:41	   en SICASBot.Central.Entities.PlanillasFiscales.Read(Int32 estacion_id, String serie, Int32 folio) en D:\CODE\SICASBot\classes\Central.cs:línea 9846
+   en SICASBot.Sync.Syncronization.SyncLA.SyncTickets() en D:\CODE\SICASBot\classes\Sync.cs:línea 3555
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1348
+2011-07-20 17:53:12	No existe PlanillasFiscales con los criterios de búsqueda especificados.
+2011-07-20 17:53:12	   en SICASBot.Central.Entities.PlanillasFiscales.Read(Int32 estacion_id, String serie, Int32 folio) en D:\CODE\SICASBot\classes\Central.cs:línea 9846
+   en SICASBot.Sync.Syncronization.SyncLA.SyncTickets() en D:\CODE\SICASBot\classes\Sync.cs:línea 3555
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1348
+2011-07-20 17:55:28	Referencia a objeto no establecida como instancia de un objeto.
+2011-07-20 17:55:28	   en SICASBot.Sync.Syncronization.SyncLA.SyncTickets() en D:\CODE\SICASBot\classes\Sync.cs:línea 3557
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1348
+2011-07-20 17:58:47	Referencia a objeto no establecida como instancia de un objeto.
+2011-07-20 17:58:47	   en SICASBot.Sync.Syncronization.SyncLA.SyncTickets() en D:\CODE\SICASBot\classes\Sync.cs:línea 3557
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1349
+2011-07-23 13:51:14	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PlanesDeRenta_Usuarios". The conflict occurred in database "SICASSync", table "dbo.Usuarios", column 'Usuario_ID'.
+The statement has been terminated.
+2011-07-23 13:51:14	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 9868
+   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1515
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1354
+2011-07-29 18:25:41	String or binary data would be truncated.
+The statement has been terminated.
+2011-07-29 18:25:41	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.ContratosLiquidados.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 3820
+   en SICASBot.Sync.Syncronization.SyncLA.SyncContratosLiquidados() en D:\CODE\SICASBot\classes\Sync.cs:línea 2178
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1360
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-07-30 10:29:46	Fin: Tiempo: 0:5:46.351
+2011-07-30 10:29:46	Tiempo total: 0 dias, 0 horas, 5 minutos y 46 segundos.
+2011-08-03 11:30:31	Referencia a objeto no establecida como instancia de un objeto.
+2011-08-03 11:30:31	   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1533
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1357
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-08-03 11:32:12	Referencia a objeto no establecida como instancia de un objeto.
+2011-08-03 11:32:12	   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1533
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1357
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-08-03 11:39:41	Cannot insert duplicate key row in object 'dbo.PlanesDeRenta' with unique index 'IDX_PlanesDeRenta_Referencia'.
+The statement has been terminated.
+2011-08-03 11:39:41	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1561
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1357
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-08-03 11:44:58	Cannot insert duplicate key row in object 'dbo.PlanesDeRenta' with unique index 'IDX_PlanesDeRenta_Referencia'.
+The statement has been terminated.
+2011-08-03 11:44:58	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1561
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1357
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-08-03 11:57:46	Cannot insert duplicate key row in object 'dbo.PlanesDeRenta' with unique index 'IDX_PlanesDeRenta_Referencia'.
+The statement has been terminated.
+2011-08-03 11:57:46	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncLA.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\Sync.cs:línea 1561
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1357
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\Sync.cs:línea 1388
+2011-08-03 12:03:53	Fin: Tiempo: 0:3:42.674
+2011-08-03 12:03:53	Tiempo total: 0 dias, 0 horas, 3 minutos y 42 segundos.
+2011-08-05 16:49:24	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PlanesDeRenta_Usuarios". The conflict occurred in database "SICASSync", table "dbo.Usuarios", column 'Usuario_ID'.
+The statement has been terminated.
+2011-08-05 16:49:24	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncAztlan.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 195
+   en SICASBot.Sync.Syncronization.SyncAztlan._DoSyncMetro() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 32
+   en SICASBot.Sync.Syncronization.SyncAztlan.DoSyncMetro() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 63
+2011-08-05 16:51:51	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PlanesDeRenta_Usuarios". The conflict occurred in database "SICASSync", table "dbo.Usuarios", column 'Usuario_ID'.
+The statement has been terminated.
+2011-08-05 16:51:51	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncAztlan.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 195
+   en SICASBot.Sync.Syncronization.SyncAztlan._DoSyncMetro() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 32
+   en SICASBot.Sync.Syncronization.SyncAztlan.DoSyncMetro() en D:\CODE\SICASBot\classes\SyncAztlan.cs:línea 63
+2011-08-05 18:20:00	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PlanesDeRenta_Usuarios". The conflict occurred in database "SICASSync", table "dbo.Usuarios", column 'Usuario_ID'.
+The statement has been terminated.
+2011-08-05 18:20:00	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 484
+   en SICASBot.Central.Entities.PlanesDeRenta.Create() en D:\CODE\SICASBot\classes\entities\Central.cs:línea 10099
+   en SICASBot.Sync.Syncronization.SyncPabloLivas.SyncPlanesDeRenta() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 304
+   en SICASBot.Sync.Syncronization.SyncPabloLivas._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 32
+   en SICASBot.Sync.Syncronization.SyncPabloLivas.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 63
+2011-08-06 09:40:04	Fin: Tiempo: 0:3:25.686
+2011-08-06 09:40:04	Tiempo total: 0 dias, 0 horas, 3 minutos y 25 segundos.
+2011-08-06 09:40:48	Esta es una prueba
+2011-08-06 09:40:48	   en SICASBot.Sync.Syncronization.SynSantaCatarina.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncSanta.cs:línea 60
+2011-08-10 13:11:25	Tiempo total: 0 dias, 0 horas, 35 minutos y 24 segundos.
+2011-08-10 13:16:16	Must declare the variable '@Folio'.
+2011-08-10 13:16:16	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASBot.LA.DB.Query(String query) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 273
+   en SICASBot.LA.DB.QueryList[T](String sqlqry, String column) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 58
+   en SICASBot.Sync.Syncronization.SyncLA.SyncActualizarInventario() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 2035
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 107
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 179
+2011-08-22 17:19:25	Cannot insert duplicate key row in object 'dbo.ModelosUnidades' with unique index 'IDX_ModelosUnidades_Referencia'.
+The statement has been terminated.
+2011-08-22 17:19:25	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 477
+   en SICASBot.Central.Entities.ModelosUnidades.Create() en D:\CODE\SICASBot\classes\entities\Central.cs:línea 8019
+   en SICASBot.Sync.Syncronization.SyncApto.SyncModelosUnidades() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 713
+   en SICASBot.Sync.Syncronization.SyncApto._DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 25
+   en SICASBot.Sync.Syncronization.SyncApto.DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 51
+2011-08-22 17:34:03	Cannot insert duplicate key row in object 'dbo.ModelosUnidades' with unique index 'IDX_ModelosUnidades_Referencia'.
+The statement has been terminated.
+2011-08-22 17:34:03	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 477
+   en SICASBot.Central.Entities.ModelosUnidades.Create() en D:\CODE\SICASBot\classes\entities\Central.cs:línea 8019
+   en SICASBot.Sync.Syncronization.SyncApto.SyncModelosUnidades() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 713
+   en SICASBot.Sync.Syncronization.SyncApto._DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 25
+   en SICASBot.Sync.Syncronization.SyncApto.DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 51
+2011-09-29 12:00:26	Fin: Tiempo: 0:0:57.922
+2011-09-29 12:00:26	Tiempo total: 0 dias, 0 horas, 0 minutos y 57 segundos.
+2011-10-03 10:02:43	Referencia a objeto no establecida como instancia de un objeto.
+2011-10-03 10:02:43	   en SICASBot.Sync.Syncronization.SyncPabloLivas.SyncUpdateSesiones() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 218
+   en SICASBot.Sync.Syncronization.SyncPabloLivas._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 26
+   en SICASBot.Sync.Syncronization.SyncPabloLivas.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 70
+2011-10-03 10:02:55	Referencia a objeto no establecida como instancia de un objeto.
+2011-10-03 10:02:55	   en SICASBot.Sync.Syncronization.SyncPabloLivas.SyncUpdateSesiones() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 218
+   en SICASBot.Sync.Syncronization.SyncPabloLivas._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 26
+   en SICASBot.Sync.Syncronization.SyncPabloLivas.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncPabloLivas.cs:línea 70
+2011-10-04 17:57:50	Fin: Tiempo: 0:2:11.945
+2011-10-04 17:57:50	Tiempo total: 0 dias, 0 horas, 2 minutos y 12 segundos.
+2011-10-04 18:24:53	Fin: Tiempo: 0:0:1.201
+2011-10-04 18:24:53	Tiempo total: 0 dias, 0 horas, 0 minutos y 1 segundos.
+2011-10-04 18:25:41	Fin: Tiempo: 0:0:1.248
+2011-10-04 18:25:41	Tiempo total: 0 dias, 0 horas, 0 minutos y 1 segundos.
+2011-10-05 09:49:26	Data Source=(local)\SQLEXPRESS;Initial Catalog=SICASTest;Persist Security Info=True;User ID=SICASusr;Password=nhtccuag
+2011-10-05 09:51:37	Data Source=(local)\SQLEXPRESS;Initial Catalog=SICASTest;Persist Security Info=True;User ID=SICASusr;Password=nhtccuag
+2011-10-05 09:51:41	Cuenta depositos en garantia 1 actualizado
+2011-10-05 09:51:41	Cuenta depositos en garantia 2 actualizado
+2011-10-05 09:51:42	Cuenta depositos en garantia 3 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 4 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 5 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 6 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 7 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 8 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 9 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 10 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 11 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 12 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 13 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 14 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 15 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 16 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 17 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 18 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 19 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 20 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 21 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 22 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 23 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 24 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 25 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 26 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 27 actualizado
+2011-10-05 09:51:43	Cuenta depositos en garantia 28 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 29 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 30 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 31 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 32 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 33 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 34 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 35 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 36 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 37 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 38 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 39 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 40 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 41 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 42 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 43 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 44 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 45 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 46 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 47 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 48 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 49 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 50 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 51 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 52 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 53 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 54 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 55 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 56 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 57 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 58 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 59 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 60 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 61 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 62 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 63 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 64 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 65 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 66 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 67 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 68 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 69 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 70 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 71 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 72 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 73 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 74 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 75 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 76 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 77 actualizado
+2011-10-05 09:51:44	Cuenta depositos en garantia 78 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 79 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 80 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 81 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 82 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 83 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 84 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 85 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 86 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 87 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 88 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 89 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 90 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 91 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 92 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 93 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 94 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 95 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 96 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 97 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 98 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 99 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 100 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 101 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 102 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 103 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 104 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 105 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 106 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 107 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 108 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 109 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 110 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 111 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 112 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 113 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 114 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 115 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 116 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 117 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 118 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 119 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 120 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 121 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 122 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 123 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 124 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 125 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 126 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 127 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 128 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 129 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 130 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 131 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 132 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 133 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 134 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 135 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 136 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 137 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 138 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 139 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 140 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 141 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 142 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 143 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 144 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 145 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 146 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 147 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 148 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 149 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 150 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 151 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 152 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 153 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 154 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 155 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 156 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 157 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 158 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 159 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 160 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 161 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 162 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 163 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 164 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 165 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 166 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 167 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 168 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 169 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 170 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 171 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 172 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 173 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 174 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 175 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 176 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 177 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 178 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 179 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 180 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 181 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 182 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 183 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 184 actualizado
+2011-10-05 09:51:45	Cuenta depositos en garantia 185 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 186 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 187 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 188 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 189 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 190 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 191 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 192 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 193 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 194 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 195 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 196 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 197 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 198 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 199 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 200 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 201 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 202 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 203 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 204 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 205 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 206 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 207 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 208 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 209 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 210 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 211 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 212 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 213 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 214 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 215 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 216 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 217 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 218 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 219 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 220 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 221 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 222 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 223 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 224 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 225 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 226 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 227 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 228 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 229 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 230 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 231 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 232 actualizado
+2011-10-05 09:51:46	Cuenta depositos en garantia 233 actualizado
+2011-10-05 10:06:50	Cuenta depositos en garantia 1 ya existe
+2011-10-05 10:06:50	Cuenta depositos en garantia 2 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 3 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 4 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 5 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 6 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 7 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 8 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 9 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 10 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 11 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 12 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 13 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 14 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 15 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 16 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 17 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 18 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 19 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 20 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 21 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 22 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 23 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 24 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 25 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 26 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 27 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 28 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 29 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 30 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 31 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 32 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 33 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 34 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 35 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 36 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 37 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 38 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 39 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 40 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 41 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 42 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 43 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 44 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 45 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 46 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 47 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 48 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 49 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 50 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 51 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 52 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 53 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 54 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 55 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 56 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 57 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 58 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 59 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 60 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 61 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 62 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 63 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 64 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 65 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 66 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 67 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 68 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 69 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 70 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 71 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 72 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 73 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 74 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 75 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 76 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 77 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 78 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 79 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 80 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 81 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 82 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 83 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 84 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 85 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 86 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 87 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 88 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 89 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 90 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 91 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 92 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 93 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 94 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 95 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 96 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 97 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 98 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 99 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 100 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 101 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 102 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 103 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 104 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 105 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 106 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 107 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 108 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 109 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 110 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 111 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 112 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 113 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 114 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 115 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 116 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 117 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 118 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 119 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 120 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 121 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 122 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 123 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 124 ya existe
+2011-10-05 10:06:51	Cuenta depositos en garantia 125 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 126 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 127 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 128 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 129 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 130 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 131 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 132 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 133 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 134 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 135 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 136 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 137 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 138 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 139 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 140 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 141 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 142 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 143 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 144 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 145 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 146 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 147 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 148 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 149 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 150 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 151 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 152 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 153 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 154 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 155 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 156 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 157 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 158 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 159 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 160 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 161 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 162 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 163 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 164 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 165 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 166 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 167 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 168 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 169 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 170 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 171 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 172 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 173 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 174 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 175 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 176 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 177 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 178 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 179 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 180 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 181 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 182 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 183 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 184 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 185 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 186 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 187 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 188 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 189 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 190 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 191 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 192 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 193 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 194 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 195 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 196 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 197 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 198 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 199 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 200 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 201 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 202 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 203 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 204 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 205 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 206 ya existe
+2011-10-05 10:06:52	Cuenta depositos en garantia 207 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 208 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 209 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 210 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 211 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 212 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 213 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 214 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 215 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 216 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 217 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 218 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 219 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 220 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 221 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 222 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 223 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 224 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 225 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 226 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 227 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 228 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 229 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 230 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 231 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 232 ya existe
+2011-10-05 10:06:53	Cuenta depositos en garantia 233 ya existe
+2011-10-05 12:58:13	Referencia a objeto no establecida como instancia de un objeto.
+2011-10-05 12:58:13	   en SICASBot.Sync.Syncronization.SynSantaCatarina.SyncContratosLiquidados() en D:\CODE\SICASBot\classes\sync\SyncSanta.cs:línea 412
+   en SICASBot.Sync.Syncronization.SynSantaCatarina._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncSanta.cs:línea 35
+   en SICASBot.Sync.Syncronization.SynSantaCatarina.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncSanta.cs:línea 64
+2011-10-05 16:08:26	Fin: Tiempo: 0:1:41.415
+2011-10-05 16:08:26	Tiempo total: 0 dias, 0 horas, 1 minutos y 41 segundos.
+2011-10-05 16:36:02	Referencia a objeto no establecida como instancia de un objeto.
+2011-10-05 16:36:02	   en SICASBot.Sync.Syncronization.SyncLA.SyncContratosLiquidados() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 925
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 37
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 67
+2011-10-12 11:45:09	Referencia a objeto no establecida como instancia de un objeto.
+2011-10-12 11:45:09	   en SICASBot.Sync.Syncronization.SyncApto.SyncBoletos() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 1108
+   en SICASBot.Sync.Syncronization.SyncApto.SyncServicios() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 1242
+   en SICASBot.Sync.Syncronization.SyncApto._DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 34
+   en SICASBot.Sync.Syncronization.SyncApto.DoSync() en D:\CODE\SICASBot\classes\sync\SyncApto.cs:línea 51
+2011-10-26 11:56:34	Tiempo total: 0 dias, 0 horas, 9 minutos y 41 segundos.
+2011-10-29 11:22:36	Invalid column name 'Referenaica_ID'.
+2011-10-29 11:22:36	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASBot.Central.DB.Select(String tablename, Hashtable w_params) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 550
+   en SICASBot.Central.DB.Read(String tableName, KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 78
+   en SICASBot.Central.Entities.Unidades.Read(KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 14186
+   en SICASBot.Sync.Syncronization.SyncAztlan.SyncUnidadesInit() en D:\CODE\SICASBot\classes\sync\SyncAztlan.cs:línea 2411
+   en SICASBot.Sync.Syncronization.SyncAztlan._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncAztlan.cs:línea 29
+   en SICASBot.Sync.Syncronization.SyncAztlan.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\SyncAztlan.cs:línea 65
+2011-10-29 12:51:04	Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
+2011-10-29 12:51:04	   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   en System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   en System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASBot.LA.DB.Select(String tablename, Hashtable w_params) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 497
+   en SICASBot.LA.DB.Read(String tableName, KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 121
+   en SICASBot.LA.Entities.Planes.Read(KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 16941
+   en SICASBot.LA.Entities.Contratos.LoadRelations() en D:\CODE\SICASBot\classes\entities\LA.cs:línea 6115
+   en SICASBot.LA.Entities.Contratos..ctor(Int32 folio, Int32 estacion, Int32 conductor, Int32 unidad, Int32 plancobro, Int32 tipo, Int32 status, DateTime fechainicial, Nullable`1 fechafinal, DateTime fechaalta, String usuarioalta) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 5916
+   en SICASBot.LA.Entities.Contratos.Read() en D:\CODE\SICASBot\classes\entities\LA.cs:línea 6019
+   en SICASBot.Sync.Syncronization.SyncLA.SyncUpdateContratos() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 782
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncMetro() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 36
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncMetro() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 67
+2011-11-24 19:19:05	Cuenta Depositos en Garantia, Conductor 670 no existe. Estacion 1
+2011-11-24 21:02:41	Cuenta Depositos en Garantia, Conductor 670 no existe. Estacion 1
+2011-11-24 22:10:41	Tiempo total: 0 dias, 0 horas, 0 minutos y 35 segundos.
+2011-11-29 12:16:37	Cuenta Depositos en Garantia, Conductor 670 no existe. Estacion 1
+2011-12-03 10:52:47	The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrdenesServiciosRefacciones_Refacciones". The conflict occurred in database "SICASSync", table "dbo.Refacciones", column 'Refaccion_ID'.
+The statement has been terminated.
+2011-12-03 10:52:47	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASBot.Central.DB.InsertRow(String strTabla, Hashtable params) en D:\CODE\SICASBot\classes\entities\Central.cs:línea 494
+   en SICASBot.Central.Entities.OrdenesServiciosRefacciones.Create() en D:\CODE\SICASBot\classes\entities\Central.cs:línea 9604
+   en SICASBot.Sync.Syncronization.SyncLA.SyncOrdenesServiciosRefacciones(Int32 OrdenServicio) en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 1978
+   en SICASBot.Sync.Syncronization.SyncLA.SyncOrdenesServiciosInit() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 1934
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 151
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 190
+2011-12-03 12:46:59	Incorrect syntax near 'WHERE'.
+2011-12-03 12:46:59	   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASBot.LA.DB.QueryCommand(String m_command, Hashtable m_params) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 315
+   en SICASBot.LA.DB.Read(String tableName, Int32 top, String filter, String sort, KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 111
+   en SICASBot.LA.Entities.Refacciones.Read(Refacciones& refacciones, Int32 top, String filter, String sort, KeyValuePair`2[] args) en D:\CODE\SICASBot\classes\entities\LA.cs:línea 19827
+   en SICASBot.Sync.Syncronization.SyncLA.SyncRefacciones() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 2486
+   en SICASBot.Sync.Syncronization.SyncLA._DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 109
+   en SICASBot.Sync.Syncronization.SyncLA.DoSyncTaller() en D:\CODE\SICASBot\classes\sync\Sync.cs:línea 193
+2012-01-31 13:05:10	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 172
+   --- End of inner exception stack trace ---
+2012-03-23 08:30:36	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 172
+   --- End of inner exception stack trace ---
+2012-03-23 08:31:49	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 172
+   --- End of inner exception stack trace ---

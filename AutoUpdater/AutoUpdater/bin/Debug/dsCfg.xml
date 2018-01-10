@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<ConfigDS xmlns="http://tempuri.org/ConfigDS.xsd">
+  <LocalConfig>
+    <AppId>SICAS</AppId>
+    <AppName>SICAS</AppName>
+    <MainFile>SICAS.exe</MainFile>
+    <CurrentVersion>2.0.0.0</CurrentVersion>
+    <Description>SICAS Versión 2.0</Description>
+    <ImagePath>images\SICASSplash,jpg</ImagePath>
+  </LocalConfig>
+  <FTPSettings>
+    <Order>1</Order>
+    <Server>SICAS</Server>
+    <User>SICASftp</User>
+    <Pwd>ibdibnnesems</Pwd>
+    <Path>/AppRepository</Path>
+  </FTPSettings>
+  <WebServiceSettings>
+    <Order>1</Order>
+    <Url>http://SICAS/ws.asmx</Url>
+    <User>SICASws</User>
+    <Pwd>nhtccuag</Pwd>
+  </WebServiceSettings>
+  <EmailSettings>
+    <Order>1</Order>
+    <Server>mail.casco.com.mx</Server>
+    <User>sicas@casco.com.mx</User>
+    <Pwd>casco1</Pwd>
+    <Port>2525</Port>
+  </EmailSettings>
+</ConfigDS>

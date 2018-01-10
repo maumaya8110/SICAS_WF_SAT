@@ -1,0 +1,28 @@
+2017-10-25 08:17:44,909 [9] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+2017-10-25 08:18:11,063 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-25 08:18:11,330 [10] ERROR - FTP Server 192.168.0.251
+2017-10-25 08:58:12,251 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-25 08:58:12,376 [10] ERROR - FTP Server 192.168.0.251
+2017-10-25 13:22:16,659 [8] INFO  - Inicio de aplicación en modo Release
+2017-10-25 13:22:23,257 [8] ERROR - FTP Server 192.168.0.251
+2017-10-25 13:25:45,450 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-25 13:25:45,641 [8] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 256
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-25 13:25:45,708 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-25 15:35:22,050 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-25 15:35:22,110 [8] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 256
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 283
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-10-25 15:35:22,113 [8] ERROR - Debe seleccionar un plan de renta
+2017-10-25 16:08:20,234 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-25 16:08:26,699 [10] ERROR - FTP Server 192.168.0.251
+2017-10-25 16:15:00,762 [9] INFO  - Inicio de aplicación en modo Debug
+2017-10-25 16:17:16,853 [9] INFO  - Contrato creado con éxito!
+2017-10-25 16:24:11,606 [9] INFO  - Inicio de aplicación en modo Debug

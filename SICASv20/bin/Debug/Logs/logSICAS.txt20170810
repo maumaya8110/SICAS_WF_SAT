@@ -1,0 +1,50 @@
+2017-08-10 11:37:14,716 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 11:39:17,069 [9] ERROR - El usuario debe tener configurado una y solo una estación
+2017-08-10 11:39:23,098 [9] INFO  - Usuario actualizado!
+2017-08-10 11:40:05,360 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 11:40:58,792 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 11:42:37,727 [9] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+2017-08-10 11:42:41,639 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 11:45:20,531 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 11:47:01,054 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 11:53:53,760 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 11:55:57,187 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 12:00:01,066 [9] ERROR - Unidad 3002 no esta asignada
+2017-08-10 12:01:57,206 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 12:02:51,811 [10] ERROR - Error en el nivel del transporte al recibir los resultados del servidor. (provider: Proveedor de TCP, error: 0 - Se agotó el tiempo de espera del semáforo.)
+2017-08-10 12:04:32,627 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 12:05:25,466 [10] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.)
+2017-08-10 12:07:22,770 [10] ERROR - Unidad 3002 no esta asignada
+2017-08-10 12:10:34,819 [10] ERROR - No data.
+2017-08-10 12:26:56,177 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 12:29:04,654 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1474
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-08-10 12:29:05,361 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-08-10 12:30:30,917 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1474
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-08-10 12:30:30,920 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-08-10 12:30:42,802 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 12:33:16,464 [10] ERROR - El usuario isolis2104 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario isolis2104 la termine realizando el corte correspondiente.
+2017-08-10 12:33:16,494 [10] ERROR - El usuario isolis2104 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario isolis2104 la termine realizando el corte correspondiente.
+2017-08-10 12:46:08,160 [10] INFO  - Busca ticket #1307203 en Base de Datos.
+2017-08-10 12:46:08,168 [10] INFO  - Imprimiendo ticket #1307203 - copia 1
+2017-08-10 12:46:09,236 [10] INFO  - Se imprimió ticket #1307203 - copia 1
+2017-08-10 12:46:09,340 [10] INFO  - Busca ticket #1307203 en Base de Datos.
+2017-08-10 12:46:09,345 [10] INFO  - Imprimiendo ticket #1307203 - copia 2
+2017-08-10 12:46:09,662 [10] INFO  - Se imprimió ticket #1307203 - copia 2
+2017-08-10 14:23:11,345 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 14:23:23,095 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 14:23:56,120 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 14:26:15,674 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-10 15:21:53,310 [10] INFO  - Inicio de aplicación en modo Release
+2017-08-10 15:21:54,165 [10] ERROR - FTP Server 192.168.0.251

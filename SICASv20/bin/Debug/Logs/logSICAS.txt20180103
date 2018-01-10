@@ -1,0 +1,43 @@
+2018-01-03 12:51:24,072 [10] INFO  - Inicio de aplicación en modo Debug
+2018-01-03 12:51:40,976 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 12:51:42,740 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 12:51:54,376 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 12:51:59,094 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 12:53:05,924 [9] INFO  - Inicio de aplicación en modo Debug
+2018-01-03 12:53:17,059 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 12:53:55,280 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 13:29:09,414 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 13:55:43,377 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 13:56:18,568 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 13:56:28,891 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 13:56:39,220 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:03:55,774 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:05:21,149 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:12:14,839 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:12:17,359 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:14:27,268 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:14:30,696 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:43:05,046 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:43:07,461 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:48:36,433 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:48:38,905 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:49:01,849 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:49:03,910 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:51:43,250 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:51:45,896 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 14:51:53,789 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-03 14:52:27,568 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-03 15:24:26,946 [10] INFO  - Inicio de aplicación en modo Debug
+2018-01-03 15:27:04,532 [9] INFO  - Inicio de aplicación en modo Debug
+2018-01-03 15:28:58,119 [9] INFO  - Usuario actualizado!
+2018-01-03 15:29:13,041 [10] INFO  - Inicio de aplicación en modo Debug
+2018-01-03 15:29:46,867 [10] ERROR - El ticket 1351959 no pertenece a esta sesión 37109
+2018-01-03 15:29:46,942 [10] ERROR - El ticket 1351959 no pertenece a esta sesión 37109
+System.Exception: El ticket 1351959 no pertenece a esta sesión 37109
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-03 15:29:46,967 [10] ERROR - El ticket 1351959 no pertenece a esta sesión 37109
+2018-01-03 15:32:07,512 [10] INFO  - Ticket Reimpreso!

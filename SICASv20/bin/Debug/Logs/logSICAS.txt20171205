@@ -1,0 +1,21 @@
+2017-12-05 11:26:51,280 [9] INFO  - Inicio de aplicación en modo Release
+2017-12-05 11:26:52,712 [9] ERROR - FTP Server 192.168.0.251
+2017-12-05 12:01:26,247 [9] INFO  - Inicio de aplicación en modo Release
+2017-12-05 12:01:26,722 [9] ERROR - FTP Server 192.168.0.251
+2017-12-05 12:01:35,357 [9] ERROR - Usuario o contraseña erroneas!
+2017-12-05 12:02:32,234 [9] ERROR - La columna 'EngancheSolicitado_EG' no pertenece a la tabla Table.
+System.ArgumentException: La columna 'EngancheSolicitado_EG' no pertenece a la tabla Table.
+   en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en SICASv20.Entities.Vista_MonitorRentas.Get(Nullable`1 empresa_id, Nullable`1 estacion_id, String usuario_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 18150
+   en SICASv20.forms.MonitorDeRentas.LoadVista_MonitorRentas() en C:\Work\SICAS_WF\SICASv20\forms\conductores\herramientas\MonitorDeRentas.cs:línea 64
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-12-05 12:02:32,343 [9] ERROR - La columna 'EngancheSolicitado_EG' no pertenece a la tabla Table.
+2017-12-05 12:38:29,222 [9] INFO  - Inicio de aplicación en modo Release
+2017-12-05 12:38:30,360 [9] ERROR - FTP Server 192.168.0.251
+2017-12-05 12:40:25,550 [10] INFO  - Inicio de aplicación en modo Release
+2017-12-05 12:40:30,231 [10] ERROR - FTP Server 192.168.0.251
+2017-12-05 12:43:15,792 [10] INFO  - Inicio de aplicación en modo Release
+2017-12-05 12:43:19,215 [10] ERROR - FTP Server 192.168.0.251
+2017-12-05 12:46:29,417 [9] INFO  - Inicio de aplicación en modo Release
+2017-12-05 12:46:32,560 [9] ERROR - FTP Server 192.168.0.251

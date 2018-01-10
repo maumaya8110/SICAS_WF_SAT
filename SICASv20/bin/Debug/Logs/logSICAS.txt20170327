@@ -1,0 +1,48 @@
+2017-03-27 10:17:53,423 [8] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 10:19:46,985 [8] ERROR - El usuario debe tener configurado una y solo una estación
+2017-03-27 10:20:04,031 [8] INFO  - Usuario actualizado!
+2017-03-27 10:29:05,044 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 10:29:10,956 [9] ERROR - El usuario caja.colon2 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario caja.colon2 la termine realizando el corte correspondiente.
+2017-03-27 10:29:11,004 [9] ERROR - El usuario caja.colon2 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario caja.colon2 la termine realizando el corte correspondiente.
+2017-03-27 10:35:36,864 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 13:36:14,097 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 14:22:11,580 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 14:27:02,452 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 14:51:02,529 [8] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 14:54:59,215 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 14:57:47,734 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 15:18:45,000 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 15:22:33,299 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 15:22:48,011 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.classes.Entities.caja.DeclaracionValores.Imprimir(DeclaracionValores dv, Int32 idx) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\Entities\caja\CorteCaja.cs:línea 475
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 32
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 428
+2017-03-27 15:22:48,025 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2017-03-27 15:25:08,650 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 15:57:38,221 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 16:27:41,189 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 16:36:58,473 [9] ERROR - Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+System.Data.SqlClient.SqlException: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   en System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   en System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   en System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   en System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en SICASv20.DB.QueryDS(String query, Hashtable m_params) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\DB.cs:línea 676
+   en SICASv20.classes.Interfaces.DeclaracionValores.GetDeclaracionBilletes(Int32 sesion_id, Int32 empresa_id) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 84
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ObtieneDeclaracionesCorteCaja(Int32 sesion) en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 60
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 28
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 428
+2017-03-27 16:36:58,499 [9] ERROR - Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+2017-03-27 17:03:29,483 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 17:18:37,340 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-27 17:25:20,481 [10] INFO  - Inicio de aplicación en modo Debug

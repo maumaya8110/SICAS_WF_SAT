@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<ConfigDS xmlns="http://tempuri.org/ConfigDS.xsd">
+  <LocalConfig>
+    <App_ID>1</App_ID>
+    <AppName>SICAS</AppName>
+    <MainFile>SICAS.cmd</MainFile>
+    <CurrentVersion>2.0.0.2</CurrentVersion>
+    <Description>SICAS Version 2.0</Description>
+    <ImagePath>images\SICASsplash.jpg</ImagePath>
+    <AppPath>2.0.0.2</AppPath>
+  </LocalConfig>
+  <FTPSettings>
+    <Order>1</Order>
+    <Server>sicas.casco.com.mx</Server>
+    <User>SICASftp</User>
+    <Pwd>ibdibnnesems</Pwd>
+    <Path>/AppRepository</Path>
+  </FTPSettings>
+  <WebServiceSettings>
+    <Order>1</Order>
+    <Url>http://sicas.casco.com.mx/DISTRO/ws/AutoUPws.asmx</Url>
+    <User>luis.espino</User>
+    <Pwd>sandman</Pwd>
+  </WebServiceSettings>
+  <EmailSettings>
+    <Order>1</Order>
+    <Server>mail.casco.com.mx</Server>
+    <User>sicas@casco.com.mx</User>
+    <Pwd>casco</Pwd>
+    <Port>2525</Port>
+  </EmailSettings>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.0</Version>
+    <AppPath>2.0.0.0</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>Coment Comnet</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.0</Version>
+    <AppPath>2.0.0.0</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments />
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.2</Version>
+    <AppPath>2.0.0.2</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>No comment</Comments>
+  </VersionControl>
+  <HttpSettings>
+    <Order>1</Order>
+    <Uri>http://SICAS:88/</Uri>
+    <User>SICAS</User>
+    <Pwd>nhtccuag</Pwd>
+  </HttpSettings>
+</ConfigDS>

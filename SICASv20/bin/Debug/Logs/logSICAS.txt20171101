@@ -1,0 +1,41 @@
+2017-11-01 09:04:56,487 [8] INFO  - Inicio de aplicación en modo Release
+2017-11-01 09:05:06,169 [8] ERROR - FTP Server 192.168.0.251
+2017-11-01 09:05:18,212 [8] ERROR - Usuario o contraseña erroneas!
+2017-11-01 09:06:00,379 [8] INFO  -   
+2017-11-01 09:08:45,888 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-01 09:08:46,336 [10] ERROR - FTP Server 192.168.0.251
+2017-11-01 09:09:56,420 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-11-01 09:10:23,329 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-11-01 09:10:27,665 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-11-01 09:10:36,093 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-11-01 09:13:54,176 [9] INFO  - Inicio de aplicación en modo Release
+2017-11-01 09:13:54,637 [9] ERROR - FTP Server 192.168.0.251
+2017-11-01 09:14:23,657 [9] ERROR - Un formulario que no es de nivel superior no se puede mostrar como un cuadro de diálogo modal. Quite el formulario de los formularios primarios que lo contengan antes de llamar a showDialog.
+2017-11-01 10:03:40,542 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-01 10:03:41,194 [10] ERROR - FTP Server 192.168.0.251
+2017-11-01 10:07:29,205 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-01 10:07:29,431 [10] ERROR - FTP Server 192.168.0.251
+2017-11-01 10:12:57,685 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 10:13:49,169 [8] INFO  -   
+2017-11-01 10:15:41,248 [8] INFO  - Usuario actualizado!
+2017-11-01 10:16:17,783 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 10:17:00,633 [10] INFO  -   
+2017-11-01 11:28:22,407 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 11:30:33,023 [9] INFO  -   
+2017-11-01 11:40:17,770 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 11:41:18,170 [8] INFO  -   
+2017-11-01 11:42:09,422 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 11:42:41,458 [9] INFO  -   
+2017-11-01 11:44:09,096 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 11:46:09,447 [9] INFO  -   
+2017-11-01 13:21:08,018 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 13:21:48,548 [8] INFO  -   
+2017-11-01 13:26:04,290 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 13:28:32,271 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 18:01:09,035 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 18:07:59,562 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 18:08:55,947 [9] INFO  -   
+2017-11-01 18:09:18,880 [9] INFO  -   
+2017-11-01 18:09:27,512 [9] INFO  -   
+2017-11-01 18:14:13,058 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-01 18:14:59,352 [9] INFO  -   

@@ -1,0 +1,172 @@
+2017-11-30 12:35:28,927 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-30 12:45:34,915 [9] INFO  - Usuario actualizado!
+2017-11-30 12:46:07,900 [9] ERROR - El usuario debe tener configurado una y solo una estación
+2017-11-30 12:46:13,498 [9] INFO  - Usuario actualizado!
+2017-11-30 12:47:22,818 [9] ERROR - Invalid column name 'Empresa_ID'.
+2017-11-30 12:47:37,276 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.PermisosCajasUsuarios.PermisosCajasUsuarios_Model.AgregarCaja() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\PermisosCajasUsuarios.cs:línea 80
+   en SICASv20.forms.PermisosCajasUsuarios.<AgregarButton_Click>b__1() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\PermisosCajasUsuarios.cs:línea 136
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-11-30 12:47:37,285 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2017-11-30 12:47:43,865 [9] ERROR - Invalid column name 'Empresa_ID'.
+2017-11-30 12:48:23,544 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-30 12:48:42,816 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:48:42,863 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:48:48,003 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:48:48,010 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:48:48,877 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:48:48,885 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:50:00,546 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-30 12:50:10,757 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 12:50:10,770 [10] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 15:22:42,218 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-30 15:25:20,302 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-30 15:27:22,102 [10] INFO  - Usuario actualizado!
+2017-11-30 15:27:40,346 [10] ERROR - El usuario debe tener configurado una y solo una estación
+2017-11-30 15:27:54,506 [10] INFO  - Usuario actualizado!
+2017-11-30 15:35:19,443 [9] INFO  - Inicio de aplicación en modo Release
+2017-11-30 15:55:50,218 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 15:55:50,266 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 15:56:59,245 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 15:56:59,299 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-30 15:58:02,323 [9] ERROR - Unidad 1111 no esta asignada
+2017-11-30 16:00:59,781 [9] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-30 16:02:44,024 [9] INFO  - Inicio de aplicación en modo Release
+2017-11-30 16:07:20,359 [9] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-30 16:08:51,676 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-30 16:12:20,964 [10] INFO  - Kilometraje actualizado
+2017-11-30 16:12:43,265 [10] INFO  - Busca ticket #1341760 en Base de Datos.
+2017-11-30 16:12:43,273 [10] INFO  - Imprimiendo ticket #1341760 - copia 1
+2017-11-30 16:12:49,821 [10] INFO  - Se imprimió ticket #1341760 - copia 1
+2017-11-30 16:12:53,544 [10] INFO  - Busca ticket #1341760 en Base de Datos.
+2017-11-30 16:12:53,547 [10] INFO  - Imprimiendo ticket #1341760 - copia 2
+2017-11-30 16:12:58,033 [10] INFO  - Se imprimió ticket #1341760 - copia 2
+2017-11-30 16:13:09,798 [10] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-30 16:16:31,562 [9] INFO  - Inicio de aplicación en modo Release
+2017-11-30 16:17:15,171 [9] INFO  - 1400 29/09/08
+
+2017-11-30 16:17:38,878 [9] INFO  - Kilometraje actualizado
+2017-11-30 16:17:59,411 [9] INFO  - Busca ticket #1341761 en Base de Datos.
+2017-11-30 16:17:59,419 [9] INFO  - Imprimiendo ticket #1341761 - copia 1
+2017-11-30 16:18:04,004 [9] INFO  - Se imprimió ticket #1341761 - copia 1
+2017-11-30 16:18:06,278 [9] INFO  - Busca ticket #1341761 en Base de Datos.
+2017-11-30 16:18:06,283 [9] INFO  - Imprimiendo ticket #1341761 - copia 2
+2017-11-30 16:18:10,229 [9] INFO  - Se imprimió ticket #1341761 - copia 2
+2017-11-30 16:52:23,899 [10] INFO  - Inicio de aplicación en modo Release
+2017-11-30 16:53:10,654 [10] INFO  - 1400 29/09/08
+
+2017-11-30 16:53:30,403 [10] INFO  - Busca ticket #1341762 en Base de Datos.
+2017-11-30 16:53:30,412 [10] INFO  - Imprimiendo ticket #1341762 - copia 1
+2017-11-30 16:53:35,128 [10] INFO  - Se imprimió ticket #1341762 - copia 1
+2017-11-30 16:53:35,152 [10] INFO  - Busca ticket #1341762 en Base de Datos.
+2017-11-30 16:53:35,157 [10] INFO  - Imprimiendo ticket #1341762 - copia 2
+2017-11-30 16:53:38,993 [10] INFO  - Se imprimió ticket #1341762 - copia 2
+2017-11-30 16:55:33,668 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+System.Data.SqlClient.SqlException: El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.classes.Interfaces.DeclaracionValores.GuardaDeclaracion(DeclaracionValores ddv) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 213
+   en SICASv20.forms.caja.reportes.ArqueoDeCajaMetropolitano.<>c__DisplayClass1.<GuardaCorte>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ArqueoDeCajaMetropolitano.cs:línea 34
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-30 16:55:33,683 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+2017-11-30 16:55:53,078 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+System.Data.SqlClient.SqlException: El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.classes.Interfaces.DeclaracionValores.GuardaDeclaracion(DeclaracionValores ddv) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 213
+   en SICASv20.forms.caja.reportes.ArqueoDeCajaMetropolitano.<>c__DisplayClass1.<GuardaCorte>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ArqueoDeCajaMetropolitano.cs:línea 34
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-30 16:55:53,080 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+2017-11-30 16:56:24,277 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+System.Data.SqlClient.SqlException: El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.classes.Interfaces.DeclaracionValores.GuardaDeclaracion(DeclaracionValores ddv) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 213
+   en SICASv20.forms.caja.reportes.ArqueoDeCajaMetropolitano.<>c__DisplayClass1.<GuardaCorte>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ArqueoDeCajaMetropolitano.cs:línea 34
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-30 16:56:24,279 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+2017-11-30 16:57:19,049 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+System.Data.SqlClient.SqlException: El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.classes.Interfaces.DeclaracionValores.GuardaDeclaracion(DeclaracionValores ddv) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 213
+   en SICASv20.forms.caja.reportes.ArqueoDeCajaMetropolitano.<>c__DisplayClass1.<GuardaCorte>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ArqueoDeCajaMetropolitano.cs:línea 34
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-30 16:57:19,052 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+2017-11-30 16:57:43,618 [10] INFO  - 1400 29/09/08
+
+2017-11-30 16:57:48,361 [10] INFO  - Kilometraje actualizado
+2017-11-30 16:57:59,745 [10] INFO  - Busca ticket #1341763 en Base de Datos.
+2017-11-30 16:57:59,751 [10] INFO  - Imprimiendo ticket #1341763 - copia 1
+2017-11-30 16:58:05,063 [10] INFO  - Se imprimió ticket #1341763 - copia 1
+2017-11-30 16:58:05,177 [10] INFO  - Busca ticket #1341763 en Base de Datos.
+2017-11-30 16:58:05,188 [10] INFO  - Imprimiendo ticket #1341763 - copia 2
+2017-11-30 16:58:09,136 [10] INFO  - Se imprimió ticket #1341763 - copia 2
+2017-11-30 16:59:04,441 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+System.Data.SqlClient.SqlException: El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.classes.Interfaces.DeclaracionValores.GuardaDeclaracion(DeclaracionValores ddv) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 213
+   en SICASv20.forms.caja.reportes.ArqueoDeCajaMetropolitano.<>c__DisplayClass1.<GuardaCorte>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ArqueoDeCajaMetropolitano.cs:línea 34
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-30 16:59:04,444 [10] ERROR - El procedimiento o la función 'usp_CortesCaja_InsertaDeclaracion' esperaba el parámetro '@Observaciones', que no se ha especificado.
+2017-11-30 17:00:26,716 [10] ERROR - El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index

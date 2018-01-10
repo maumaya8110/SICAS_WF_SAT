@@ -1,0 +1,9 @@
+2017-10-31 18:02:07,228 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-31 18:05:19,181 [10] INFO  - Inicio de aplicación en modo Release
+2017-10-31 18:05:24,552 [10] ERROR - FTP Server 192.168.0.251
+2017-10-31 18:08:41,303 [10] ERROR - Unidad 4121 no esta asignada
+2017-10-31 18:08:45,698 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-10-31 18:08:50,888 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+2017-10-31 18:09:05,701 [10] ERROR - Unidad 4121 no esta asignada
+2017-10-31 18:11:50,328 [9] INFO  - Inicio de aplicación en modo Release
+2017-10-31 18:11:55,639 [9] ERROR - FTP Server 192.168.0.251

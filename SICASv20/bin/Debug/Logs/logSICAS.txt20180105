@@ -1,0 +1,136 @@
+2018-01-05 09:51:28,908 [8] INFO  - Inicio de aplicación en modo Release
+2018-01-05 09:51:29,804 [8] ERROR - FTP Server 192.168.0.251
+2018-01-05 09:51:51,682 [8] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 09:51:52,699 [8] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 09:59:02,177 [8] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 09:59:02,714 [8] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 09:59:14,912 [8] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 09:59:16,344 [8] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:00:37,054 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:00:37,195 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:02:58,672 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:02:59,316 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:06:26,121 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:06:30,892 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:15:18,793 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:15:18,914 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:15:26,960 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:27,890 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:28,022 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:28,848 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:29,522 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:30,431 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:31,015 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:31,456 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:15:31,626 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:19:26,154 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:19:26,254 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:19:47,551 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:19:49,907 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:20:49,118 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:20:50,888 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:21:04,044 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:21:07,008 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:25:43,005 [10] INFO  - Usuario actualizado!
+2018-01-05 10:25:49,239 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.BitacoraUnidades.BindData() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 64
+   en SICASv20.forms.BitacoraUnidades.<BitacoraUnidades_Load>b__5() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 187
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-01-05 10:25:49,254 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+2018-01-05 10:26:07,589 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:26:10,662 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:26:16,704 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:26:19,129 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:26:46,472 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:26:49,040 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:30:20,457 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:30:20,573 [9] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:30:56,503 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:31:01,689 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:33:01,776 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:33:03,800 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:40:43,850 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:40:43,965 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:40:52,397 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-05 10:41:19,282 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:41:22,467 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:41:28,791 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:41:30,997 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:41:37,275 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:41:39,460 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:52:14,259 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:52:16,607 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:52:44,675 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:52:47,700 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:54:28,828 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:54:30,814 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:56:18,539 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 10:56:18,646 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 10:56:43,542 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:56:45,988 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:58:55,036 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:58:57,023 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 10:59:04,430 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 10:59:06,339 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:04:29,350 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:04:29,450 [9] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:05:22,753 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:05:22,869 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:06:05,487 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:06:07,619 [9] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:06:34,324 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:06:36,572 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:06:51,744 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:06:54,267 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:09:47,305 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:09:47,405 [9] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:17:26,116 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:17:26,232 [9] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:17:50,934 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:17:56,834 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:18:23,362 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:18:23,462 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:23:47,006 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 11:23:47,126 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 11:24:05,763 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:24:08,145 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:29:08,021 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:29:10,236 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:32:30,401 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:32:36,221 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:37:28,888 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:37:31,326 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:38:55,279 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:38:59,221 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:43:44,086 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:43:46,173 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 11:44:14,108 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 11:44:16,731 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 12:07:56,492 [10] ERROR - No se puede reconocer la cadena como un tipo booleano válido.
+2018-01-05 12:08:01,006 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 12:09:43,852 [10] ERROR - No se puede reconocer la cadena como un tipo booleano válido.
+2018-01-05 12:09:46,337 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 12:10:33,878 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-05 12:10:34,023 [10] ERROR - FTP Server 192.168.0.251
+2018-01-05 12:24:30,902 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 12:24:33,016 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 12:24:42,824 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-05 12:24:47,173 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 12:26:55,347 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 12:28:26,432 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:03:41,525 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:03:44,372 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:05:32,228 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:05:34,259 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:08:50,814 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:08:53,048 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:11:15,341 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:11:17,972 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:15:39,543 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:15:41,831 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 14:34:36,689 [10] ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+2018-01-05 14:34:39,161 [10] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-05 15:08:29,970 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-05 15:08:30,357 [9] ERROR - FTP Server 192.168.0.251

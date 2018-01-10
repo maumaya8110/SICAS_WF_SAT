@@ -1,0 +1,27 @@
+2017-03-09 10:14:05,805 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-09 10:15:47,801 [10] INFO  - Usuario actualizado!
+2017-03-09 10:15:56,811 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-09 10:16:25,569 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+2017-03-09 10:16:25,647 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+System.Exception: El ticket 1260591 no pertenece a esta sesión 0
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 497
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 428
+2017-03-09 10:16:25,744 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+2017-03-09 10:16:28,206 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+2017-03-09 10:16:28,226 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+System.Exception: El ticket 1260591 no pertenece a esta sesión 0
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 497
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 428
+2017-03-09 10:16:28,232 [10] ERROR - El ticket 1260591 no pertenece a esta sesión 0
+2017-03-09 10:17:23,604 [9] INFO  - Inicio de aplicación en modo Debug
+2017-03-09 10:17:39,468 [9] INFO  - Ticket Reimpreso!
+2017-03-09 11:46:05,480 [10] INFO  - Inicio de aplicación en modo Debug
+2017-03-09 11:47:00,648 [10] INFO  - Registro actualizado
+2017-03-09 11:47:21,654 [10] INFO  - Usuario actualizado!
+2017-03-09 11:48:49,547 [10] INFO  - Inicio de aplicación en modo Debug

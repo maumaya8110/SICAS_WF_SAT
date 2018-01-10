@@ -1,0 +1,99 @@
+<?xml version="1.0" standalone="yes"?>
+<ConfigDS xmlns="http://tempuri.org/ConfigDS.xsd">
+  <LocalConfig>
+    <App_ID>1</App_ID>
+    <AppName>SICAS</AppName>
+    <MainFile>SICAS.exe</MainFile>
+    <CurrentVersion>2.0.9.7</CurrentVersion>
+    <Description>SICAS Version 2.0</Description>
+    <ImagePath>images\SICASsplash.jpg</ImagePath>
+    <AppPath>2.0.9.7</AppPath>
+  </LocalConfig>
+  <FTPSettings>
+    <Order>1</Order>
+    <Server>sicas.casco.com.mx</Server>
+    <User>SICASftp</User>
+    <Pwd>ibdibnnesems</Pwd>
+    <Path>/AppRepository</Path>
+  </FTPSettings>
+  <WebServiceSettings>
+    <Order>1</Order>
+    <Url>http://sicas.casco.com.mx/DISTRO/ws/AutoUPws.asmx</Url>
+    <User>luis.espino</User>
+    <Pwd>sandman</Pwd>
+  </WebServiceSettings>
+  <WebServiceSettings>
+    <Order>2</Order>
+    <Url>http://201.159.98.195/DISTRO/ws/AutoUPws.asmx</Url>
+    <User>luis.espino</User>
+    <Pwd>sandman</Pwd>
+  </WebServiceSettings>
+  <WebServiceSettings>
+    <Order>3</Order>
+    <Url>http://201.159.98.194/DISTRO/ws/AutoUPws.asmx</Url>
+    <User>luis.espino</User>
+    <Pwd>sandman</Pwd>
+  </WebServiceSettings>
+  <EmailSettings>
+    <Order>1</Order>
+    <Server>mail.casco.com.mx</Server>
+    <User>sicas@casco.com.mx</User>
+    <Pwd>casco</Pwd>
+    <Port>2525</Port>
+  </EmailSettings>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.0</Version>
+    <AppPath>2.0.0.0</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>Coment Comnet</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.0</Version>
+    <AppPath>2.0.0.0</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments />
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.2</Version>
+    <AppPath>2.0.0.2</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>No comment</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.3</Version>
+    <AppPath>2.0.0.3</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>No comments</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.4</Version>
+    <AppPath>2.0.0.4</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>No comments</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.0.4</Version>
+    <AppPath>2.0.0.4</AppPath>
+    <MainFile>SICAS.cmd</MainFile>
+    <Comments>No comments</Comments>
+  </VersionControl>
+  <VersionControl>
+    <App_ID>1</App_ID>
+    <Version>2.0.9.0</Version>
+    <AppPath>2.0.9.0</AppPath>
+    <MainFile>SICAS.exe</MainFile>
+    <Comments>2.0.9.0</Comments>
+  </VersionControl>
+  <HttpSettings>
+    <Order>1</Order>
+    <Uri>http://sicas.casco.com.mx</Uri>
+    <User>SICAS</User>
+    <Pwd>oiuddvbh</Pwd>
+  </HttpSettings>
+</ConfigDS>

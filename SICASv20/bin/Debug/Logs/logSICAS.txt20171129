@@ -1,0 +1,82 @@
+2017-11-29 16:12:05,586 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-29 16:13:09,751 [8] ERROR - El usuario debe tener configurado una y solo una estación
+2017-11-29 16:13:14,335 [8] INFO  - Usuario actualizado!
+2017-11-29 16:15:12,301 [8] INFO  - Usuario actualizado!
+2017-11-29 16:20:17,315 [8] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-29 16:20:19,183 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.ReporteCorteCajaCobro.<CorteButton_Click>b__2() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ReporteCorteCajaCobro.cs:línea 267
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-11-29 16:20:19,206 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:20:40,137 [8] ERROR - Unidad 2141 no esta asignada
+2017-11-29 16:20:49,771 [8] ERROR - Unidad 1441 no esta asignada
+2017-11-29 16:21:19,949 [8] INFO  - Kilometraje actualizado
+2017-11-29 16:21:34,551 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:21:34,554 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:23:25,202 [8] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-29 16:23:26,758 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.ReporteCorteCajaCobro.<CorteButton_Click>b__2() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ReporteCorteCajaCobro.cs:línea 267
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-11-29 16:23:26,762 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:24:49,875 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:24:49,878 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:24:57,425 [8] INFO  - Kilometraje actualizado
+2017-11-29 16:25:06,369 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:25:06,372 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:25:18,099 [8] INFO  - PRESENTARSE EN TRANSPIRTES CALCAS 
+URGE REVISION GPS
+2017-11-29 16:25:39,405 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:25:39,407 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:25:49,157 [8] INFO  - Kilometraje actualizado
+2017-11-29 16:25:54,712 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:25:54,717 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:26:34,693 [8] ERROR - Unidad 1474 no esta asignada
+2017-11-29 16:27:43,639 [8] INFO  -  
+2017-11-29 16:28:10,660 [8] INFO  - Kilometraje actualizado
+2017-11-29 16:28:16,967 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en C:\Work\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1488
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-11-29 16:28:16,971 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:29:11,152 [8] INFO  - ¿Realmente desea efectuar el corte de caja?
+2017-11-29 16:29:12,797 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.ReporteCorteCajaCobro.<CorteButton_Click>b__2() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ReporteCorteCajaCobro.cs:línea 267
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-11-29 16:29:12,799 [8] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-11-29 16:43:46,346 [9] INFO  - Inicio de aplicación en modo Debug
+2017-11-29 16:43:56,118 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.
+2017-11-29 16:43:56,155 [9] ERROR - El usuario gestor.ecovial ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario gestor.ecovial la termine realizando el corte correspondiente.

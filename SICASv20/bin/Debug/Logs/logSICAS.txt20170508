@@ -1,0 +1,52 @@
+2017-05-08 13:11:21,778 [9] INFO  - Inicio de aplicación en modo Debug
+2017-05-08 13:12:12,674 [9] INFO  - Vales Creados
+2017-05-08 13:12:22,392 [9] ERROR - No se realizó una llamada a StartDocPrinter
+System.ComponentModel.Win32Exception: No se realizó una llamada a StartDocPrinter
+   en System.Drawing.Printing.StandardPrintController.OnEndPrint(PrintDocument document, PrintEventArgs e)
+   en System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint(PrintDocument document, PrintEventArgs e)
+   en System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   en System.Drawing.Printing.PrintDocument.Print()
+   en SICASv20.PrintReportHelper.Print() en C:\CodigoFuente\SICAS_WF\SICASv20\classes\PrintReportHelper.cs:línea 99
+   en SICASv20.forms.AltaValesPrepagados.ImprimirVales() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 221
+   en SICASv20.forms.AltaValesPrepagados.<ImprimirButton_Click>b__1() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 354
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-05-08 13:12:22,501 [9] ERROR - No se realizó una llamada a StartDocPrinter
+2017-05-08 13:23:31,496 [8] INFO  - Inicio de aplicación en modo Debug
+2017-05-08 13:23:53,706 [8] INFO  - Vales Creados
+2017-05-08 13:23:59,076 [8] ERROR - No se realizó una llamada a StartDocPrinter
+System.ComponentModel.Win32Exception: No se realizó una llamada a StartDocPrinter
+   en System.Drawing.Printing.StandardPrintController.OnEndPrint(PrintDocument document, PrintEventArgs e)
+   en System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint(PrintDocument document, PrintEventArgs e)
+   en System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   en System.Drawing.Printing.PrintDocument.Print()
+   en SICASv20.PrintReportHelper.Print() en C:\CodigoFuente\SICAS_WF\SICASv20\classes\PrintReportHelper.cs:línea 99
+   en SICASv20.forms.AltaValesPrepagados.ImprimirVales() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 221
+   en SICASv20.forms.AltaValesPrepagados.<ImprimirButton_Click>b__1() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 354
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-05-08 13:23:59,092 [8] ERROR - No se realizó una llamada a StartDocPrinter
+2017-05-08 13:24:35,986 [8] ERROR - An error occurred during local report processing.
+Microsoft.Reporting.WinForms.LocalProcessingException: An error occurred during local report processing. ---> System.IO.IOException: El proceso no puede obtener acceso al archivo 'C:\CodigoFuente\SICAS_WF\SICASv20\bin\DebugTemplate_ValesPrepagados_0.EMF' porque está siendo utilizado en otro proceso.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   en System.IO.FileStream..ctor(String path, FileMode mode)
+   en SICASv20.PrintReportHelper.CreateStream(String name, String fileNameExtension, Encoding encoding, String mimeType, Boolean willSeek) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\PrintReportHelper.cs:línea 46
+   en Microsoft.Reporting.WinForms.LocalReport.<>c__DisplayClass1.<Render>b__0(String name, String extension, Encoding encoding, String mimeType, Boolean willSeek, StreamOper operation)
+   en Microsoft.Reporting.ProcessingStreamHandler.StreamCallback(String name, String extension, Encoding encoding, String mimeType, Boolean useChunking, StreamOper operation)
+   en Microsoft.ReportingServices.Rendering.ImageRenderer.ImageRenderer.Render(Report report, NameValueCollection deviceInfo, Hashtable renderProperties, CreateAndRegisterStream createAndRegisterStream)
+   en Microsoft.ReportingServices.Rendering.ImageRenderer.RendererBase.Render(Report report, NameValueCollection reportServerParameters, NameValueCollection deviceInfo, NameValueCollection clientCapabilities, Hashtable& renderProperties, CreateAndRegisterStream createAndRegisterStream)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Microsoft.Reporting.WinForms.LocalReport.InternalRender(String format, Boolean allowInternalRenderers, String deviceInfo, PageCountMode pageCountMode, CreateAndRegisterStream createStreamCallback, Warning[]& warnings)
+   en Microsoft.Reporting.WinForms.LocalReport.Render(String format, String deviceInfo, PageCountMode pageCountMode, CreateStreamCallback createStream, Warning[]& warnings)
+   en Microsoft.Reporting.WinForms.LocalReport.Render(String format, String deviceInfo, CreateStreamCallback createStream, Warning[]& warnings)
+   en SICASv20.PrintReportHelper.Export(LocalReport report) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\PrintReportHelper.cs:línea 58
+   en SICASv20.forms.AltaValesPrepagados.ImprimirVales() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 219
+   en SICASv20.forms.AltaValesPrepagados.<ImprimirButton_Click>b__1() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\callcenter\valesprepagados\AltaValesPrepagados.cs:línea 354
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-05-08 13:24:36,033 [8] ERROR - An error occurred during local report processing.
+2017-05-08 13:24:46,396 [9] INFO  - Inicio de aplicación en modo Debug
+2017-05-08 13:25:34,417 [9] INFO  - Vales Creados
+2017-05-08 13:25:40,193 [9] INFO  - Vales Impresos
+2017-05-08 13:27:13,318 [10] INFO  - Inicio de aplicación en modo Debug
+2017-05-08 13:27:31,804 [10] INFO  - Vales Creados
+2017-05-08 13:27:37,766 [10] INFO  - Vales Impresos

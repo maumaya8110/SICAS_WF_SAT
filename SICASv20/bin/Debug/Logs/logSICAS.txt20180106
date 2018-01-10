@@ -1,0 +1,6 @@
+2018-01-06 12:26:26,585 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-06 12:26:28,614 [9] ERROR - FTP Server 192.168.0.251
+2018-01-06 12:32:38,903 [9] ERROR - La columna 'EstatusNomina_ID' no pertenece a la tabla Table.
+2018-01-06 12:32:44,164 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-01-06 12:32:52,945 [9] ERROR - La columna 'EstatusNomina_ID' no pertenece a la tabla Table.
+2018-01-06 12:32:55,228 [9] ERROR - Se produjo una excepción en el destino de la invocación.

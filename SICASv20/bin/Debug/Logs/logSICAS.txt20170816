@@ -1,0 +1,30 @@
+2017-08-16 16:04:11,198 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 16:17:49,313 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 16:43:20,811 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 16:49:52,152 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 17:03:01,643 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 17:05:17,544 [8] ERROR - La unidad 2121 no tiene contrato activo
+System.Exception: La unidad 2121 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-16 17:05:17,577 [8] ERROR - La unidad 2121 no tiene contrato activo
+2017-08-16 17:08:05,026 [8] INFO  - Usuario actualizado!
+2017-08-16 17:11:30,905 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-16 17:14:05,896 [10] ERROR - La unidad 1381 no tiene contrato activo
+System.Exception: La unidad 1381 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-16 17:14:05,926 [10] ERROR - La unidad 1381 no tiene contrato activo
+2017-08-16 17:15:20,215 [10] ERROR - La unidad 2662 no tiene contrato activo
+System.Exception: La unidad 2662 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-08-16 17:15:20,217 [10] ERROR - La unidad 2662 no tiene contrato activo
+2017-08-16 17:27:50,397 [10] ERROR - La cadena de entrada no tiene el formato correcto.
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en SICASv20.forms.VentaServicios.<Zona_IDTextBox_KeyUp>b__2() en D:\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 841
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-08-16 17:27:50,401 [10] ERROR - La cadena de entrada no tiene el formato correcto.

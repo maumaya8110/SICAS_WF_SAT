@@ -1,0 +1,22 @@
+2017-12-11 11:49:02,504 [1] INFO  - Inicio de aplicación en modo Release
+2017-12-11 11:50:04,836 [1] INFO  - Inicio de aplicación en modo Release
+2017-12-11 15:01:05,321 [7] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 15:01:29,064 [7] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+2017-12-11 15:01:51,834 [7] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+2017-12-11 15:02:42,398 [10] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 15:03:33,101 [10] INFO  - Contraseña actualizada!
+2017-12-11 15:10:14,039 [9] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 15:15:29,730 [10] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 15:22:57,946 [9] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 15:23:47,766 [9] ERROR - Usuario o contraseña erroneas!
+2017-12-11 15:46:58,090 [9] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 16:02:57,232 [9] ERROR - No hay una sesión activa. No se pueden realizar cobros
+2017-12-11 16:03:00,573 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2017-12-11 16:03:03,962 [9] ERROR - No hay una sesión activa. No se puede realizar arqueo de Caja
+2017-12-11 16:03:05,782 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2017-12-11 16:03:09,031 [9] ERROR - No hay una sesión activa. No se puede realizar arqueo de Caja
+2017-12-11 16:03:10,198 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2017-12-11 16:03:16,691 [9] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 16:11:20,555 [9] INFO  - Inicio de aplicación en modo Debug
+2017-12-11 16:11:37,729 [9] ERROR - Usuario o contraseña erroneas!
+2017-12-11 17:13:02,091 [10] INFO  - Inicio de aplicación en modo Debug

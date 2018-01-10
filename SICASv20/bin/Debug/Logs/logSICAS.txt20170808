@@ -1,0 +1,18 @@
+2017-08-08 16:48:27,816 [8] INFO  - Inicio de aplicación en modo Debug
+2017-08-08 17:30:53,292 [10] INFO  - Inicio de aplicación en modo Debug
+2017-08-08 17:59:50,502 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-08 18:29:41,277 [9] INFO  - Inicio de aplicación en modo Debug
+2017-08-08 18:31:58,162 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1474
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-08-08 18:31:58,179 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+2017-08-08 18:33:18,669 [9] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 621
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass7.<PagaconTextBox_KeyUp>b__3() en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\forms\caja\CajaDeCobro.cs:línea 1474
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en \\192.168.0.74\Cantech\!\Resp_CodigoFuente\170714\Galdino\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 452
+2017-08-08 18:33:18,672 [9] ERROR - El objeto que acepta valores Null debe tener un valor.

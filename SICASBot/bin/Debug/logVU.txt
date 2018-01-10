@@ -1,0 +1,199 @@
+2013-09-02 19:11:32	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-02 19:12:24	A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2013-09-02 19:23:53	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-04 08:47:36	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-04 08:51:02	Terminacion de sincronizacion de boletos Ventanilla Unica
+2013-09-04 09:07:05	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-04 09:08:49	Terminacion de sincronizacion de boletos Ventanilla Unica
+2013-09-19 17:15:48	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-19 17:18:25	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-19 17:20:56	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-19 17:29:40	Inicio de sincronizacion de boletos Ventanilla Unica
+2013-09-19 17:32:05	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-15 09:07:03	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-15 09:40:19	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-15 09:42:00	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-15 09:44:10	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-16 16:47:20	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-16 16:48:12	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-16 18:22:25	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-16 18:22:53	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-17 07:55:11	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-17 07:55:44	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-17 07:55:44	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-17 10:53:06	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-17 10:53:38	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-17 11:00:04	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-17 11:00:35	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-17 11:00:47	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-17 11:01:21	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-22 08:40:09	Inicio de sincronizacion de boletos Ventanilla Unica
+2015-06-22 08:41:06	Terminacion de sincronizacion de boletos Ventanilla Unica
+2015-06-24 08:30:13	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-24 08:41:31	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 08:10:33	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 08:25:19	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 08:26:21	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 08:28:59	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 11:51:06	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 13:21:20	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-25 13:29:04	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-06-28 17:08:34	Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: TCP Provider, error: 0 - Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.)
+2015-06-28 17:08:35	Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: TCP Provider, error: 0 - Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.)
+2015-06-28 17:19:23	Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.)
+2015-06-28 17:19:24	Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.)
+2015-06-30 08:47:12	Invalid column name 'Referencia_PayBack'.
+2015-06-30 08:47:12	La columna 'Referencia_PayBack' no pertenece a la tabla SICASDATA.
+2015-06-30 08:47:36	Invalid column name 'Referencia_PayBack'.
+2015-06-30 08:47:37	La columna 'Referencia_PayBack' no pertenece a la tabla SICASDATA.
+2015-07-01 07:47:46	Invalid column name 'Referencia_PayBack'.
+2015-07-01 07:47:46	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-01 07:50:01	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-01 07:50:51	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-01 08:00:12	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-01 08:03:19	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-01 10:25:33	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-02 11:37:25	Invalid column name 'Referencia_PayBack'.
+2015-07-02 11:37:26	No existe Servicios con los criterios de búsqueda especificados.
+2015-07-03 08:15:06	Invalid column name 'Referencia_PayBack'.
+2015-07-03 08:15:06	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 08:15:28	Invalid column name 'Referencia_PayBack'.
+2015-07-03 08:15:29	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 08:16:03	Invalid column name 'Referencia_PayBack'.
+2015-07-03 08:16:03	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 08:18:12	Invalid column name 'Referencia_PayBack'.
+2015-07-03 08:18:21	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 08:51:09	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 08:58:03	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-03 09:23:45	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-07 08:11:10	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-07 10:30:21	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-07 10:48:44	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-09 08:38:56	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-09 08:40:39	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-09 08:59:32	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-09 08:59:49	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-09 10:02:51	El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:00:59.8125043. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.
+2015-07-09 10:03:51	El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:00:59.9843626. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.
+2015-07-09 11:48:19	El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:00:59.7968627. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.
+2015-07-09 11:49:19	El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:00:59.9843867. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.
+2015-07-10 08:34:41	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-13 10:10:06	Cannot open database "SICASTest" requested by the login. The login failed.
+Login failed for user 'SICASusr'.
+2015-07-13 10:10:06	Cannot open database "SICASTest" requested by the login. The login failed.
+Login failed for user 'SICASusr'.
+2015-07-15 14:25:00	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-07-15 14:25:34	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2015-08-26 18:04:09	La columna 'CLIENTE_MASTERKEY' no pertenece a la tabla VUNICADATA.
+2015-08-26 18:04:11	No existe Servicios con los criterios de búsqueda especificados.
+2017-03-09 09:17:31	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2017-03-09 10:12:53	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---
+2017-03-09 10:13:54	System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.Exception: No hay datos que devolver
+   at VUNICA.AccesoSQL.DatosDeSP() in C:\Inetpub\wwwroot\VUNICA\App_Code\AccesoSQL.vb:line 61
+   at VunicaWS.CancelacionesDiariasPorEmpresa(String p_Usr, String p_Pwd) in C:\Inetpub\wwwroot\VUNICA\App_Code\VunicaWS.vb:line 70
+   --- End of inner exception stack trace ---

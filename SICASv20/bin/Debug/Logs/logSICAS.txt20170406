@@ -1,0 +1,24 @@
+2017-04-06 14:06:24,024 [10] INFO  - Inicio de aplicación en modo Debug
+2017-04-06 14:07:13,996 [10] ERROR - Could not find stored procedure 'dbo.usp_ContratosLiquidados_Consulta'.
+System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.usp_ContratosLiquidados_Consulta'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en SICASv20.DB.QueryDS(String query, Hashtable m_params) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\DB.cs:línea 676
+   en SICASv20.Entities.Vista_ContratosLiquidados.Get(Nullable`1 empresa_id, Nullable`1 estacion_id, Nullable`1 fechainicial, Nullable`1 fechafinal) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 12242
+   en SICASv20.forms.ContratosLiquidados.ContratoLiquidados_Model.Consultar() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\empresas\contratos\renta\ContratosLiquidados.cs:línea 91
+   en SICASv20.forms.ContratosLiquidados.<ConsultarButton_Click>b__0() en C:\CodigoFuente\SICAS_WF\SICASv20\forms\empresas\contratos\renta\ContratosLiquidados.cs:línea 123
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\CodigoFuente\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 428
+2017-04-06 14:07:14,090 [10] ERROR - Could not find stored procedure 'dbo.usp_ContratosLiquidados_Consulta'.

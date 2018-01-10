@@ -1,0 +1,25 @@
+2017-09-05 15:05:44,056 [8] INFO  - Inicio de aplicación en modo Debug
+2017-09-05 15:06:33,387 [8] INFO  - Usuario actualizado!
+2017-09-05 15:07:34,450 [8] INFO  - Usuario actualizado!
+2017-09-05 15:11:55,077 [9] INFO  - Inicio de aplicación en modo Debug
+2017-09-05 15:14:07,419 [9] ERROR - Debe introducir un precio valido
+System.Exception: Debe introducir un precio valido
+   en SICASv20.forms.empresas.equiposgas.AgregaEquipo.CalculaDiasAPagar() en D:\SICAS_WF\SICASv20\forms\empresas\equiposgas\AgregaEquipo.cs:línea 148
+   en SICASv20.forms.empresas.equiposgas.AgregaEquipo.<txtDiasAPagar_TextChanged>b__2() en D:\SICAS_WF\SICASv20\forms\empresas\equiposgas\AgregaEquipo.cs:línea 162
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 373
+2017-09-05 15:14:07,452 [9] ERROR - Debe introducir un precio valido
+2017-09-05 15:14:10,088 [9] ERROR - Debe introducir un precio valido
+System.Exception: Debe introducir un precio valido
+   en SICASv20.forms.empresas.equiposgas.AgregaEquipo.CalculaDiasAPagar() en D:\SICAS_WF\SICASv20\forms\empresas\equiposgas\AgregaEquipo.cs:línea 148
+   en SICASv20.forms.empresas.equiposgas.AgregaEquipo.<txtDiasAPagar_TextChanged>b__2() en D:\SICAS_WF\SICASv20\forms\empresas\equiposgas\AgregaEquipo.cs:línea 162
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 373
+2017-09-05 15:14:10,090 [9] ERROR - Debe introducir un precio valido
+2017-09-05 15:18:53,592 [9] INFO  - Movimiento registrado
+2017-09-05 15:27:01,312 [9] ERROR - El contrato de la unidad no está activo
+2017-09-05 15:27:08,004 [9] ERROR - Debe capturar un cargo mayor que 0.
+2017-09-05 15:27:26,271 [9] INFO  - Movimiento registrado
+2017-09-05 15:27:40,971 [9] INFO  - Movimiento registrado
+2017-09-05 15:33:43,503 [9] ERROR - Vale Empresarial no existe
+2017-09-05 15:35:13,567 [9] ERROR - Debe teclar datos numéricos
+2017-09-05 15:35:19,300 [9] ERROR - Vale no existe
+2017-09-05 15:54:07,987 [9] INFO  - Movimiento registrado

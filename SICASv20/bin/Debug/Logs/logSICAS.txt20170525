@@ -1,0 +1,8 @@
+2017-05-25 11:42:08,427 [10] INFO  - Inicio de aplicación en modo Debug
+2017-05-25 11:42:48,297 [10] INFO  - Usuario actualizado!
+2017-05-25 11:43:13,264 [10] INFO  - Inicio de aplicación en modo Debug
+2017-05-25 11:43:18,569 [10] ERROR - El usuario javier.reyes ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario javier.reyes la termine realizando el corte correspondiente.
+2017-05-25 11:43:18,654 [10] ERROR - El usuario javier.reyes ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario javier.reyes la termine realizando el corte correspondiente.
+2017-05-25 11:44:16,332 [10] INFO  - ¿Realmente desea cerrar la sesión?

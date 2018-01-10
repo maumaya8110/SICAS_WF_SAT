@@ -1,0 +1,5 @@
+2017-09-22 18:10:25,027 [9] INFO  - Inicio de aplicación en modo Debug
+2017-09-22 18:11:55,539 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-22 18:11:59,869 [9] ERROR - FTP Server 192.168.0.251
+2017-09-22 18:18:14,056 [8] INFO  - Inicio de aplicación en modo Release
+2017-09-22 18:18:14,191 [8] ERROR - FTP Server 192.168.0.251

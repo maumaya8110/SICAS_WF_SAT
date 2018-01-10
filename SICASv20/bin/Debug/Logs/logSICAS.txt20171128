@@ -1,0 +1,21 @@
+2017-11-28 17:52:14,769 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-28 17:52:51,724 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+2017-11-28 17:52:51,765 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+System.Exception: El ticket 1336701 no pertenece a esta sesión 0
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-11-28 17:52:51,808 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+2017-11-28 17:52:59,829 [10] INFO  - Ha entrado al modo de pruebas
+2017-11-28 17:53:11,140 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+2017-11-28 17:53:11,148 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+System.Exception: El ticket 1336701 no pertenece a esta sesión 0
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2017-11-28 17:53:11,150 [10] ERROR - El ticket 1336701 no pertenece a esta sesión 0
+2017-11-28 17:56:14,399 [10] INFO  - Ticket Reimpreso!

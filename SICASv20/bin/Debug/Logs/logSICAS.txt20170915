@@ -1,0 +1,25 @@
+2017-09-15 09:39:16,507 [10] INFO  - Inicio de aplicación en modo Release
+2017-09-15 09:39:20,700 [10] ERROR - FTP Server 192.168.0.251
+2017-09-15 10:00:52,659 [10] INFO  - Inicio de aplicación en modo Release
+2017-09-15 10:00:55,456 [10] ERROR - FTP Server 192.168.0.251
+2017-09-15 11:09:45,390 [9] INFO  - Inicio de aplicación en modo Debug
+2017-09-15 11:11:01,578 [9] INFO  - Usuario actualizado!
+2017-09-15 11:11:31,090 [9] INFO  - Inicio de aplicación en modo Debug
+2017-09-15 11:12:36,637 [9] ERROR - El usuario caja.colon2 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario caja.colon2 la termine realizando el corte correspondiente.
+2017-09-15 11:12:36,653 [9] ERROR - El usuario caja.colon2 ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario caja.colon2 la termine realizando el corte correspondiente.
+2017-09-15 11:16:11,540 [9] INFO  - Busca ticket #1318164 en Base de Datos.
+2017-09-15 11:16:11,545 [9] INFO  - Imprimiendo ticket #1318164 - copia 1
+2017-09-15 11:16:13,070 [9] INFO  - Se imprimió ticket #1318164 - copia 1
+2017-09-15 11:16:13,161 [9] INFO  - Busca ticket #1318164 en Base de Datos.
+2017-09-15 11:16:13,164 [9] INFO  - Imprimiendo ticket #1318164 - copia 2
+2017-09-15 11:16:13,545 [9] INFO  - Se imprimió ticket #1318164 - copia 2
+2017-09-15 16:40:32,745 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-15 16:40:32,912 [9] ERROR - FTP Server 192.168.0.251
+2017-09-15 17:33:51,917 [10] INFO  - Inicio de aplicación en modo Release
+2017-09-15 17:33:54,921 [10] ERROR - FTP Server 192.168.0.251
+2017-09-15 17:38:55,919 [9] INFO  - Inicio de aplicación en modo Release
+2017-09-15 17:38:56,077 [9] ERROR - FTP Server 192.168.0.251
+2017-09-15 17:46:13,366 [8] INFO  - Inicio de aplicación en modo Release
+2017-09-15 17:46:13,567 [8] ERROR - FTP Server 192.168.0.251

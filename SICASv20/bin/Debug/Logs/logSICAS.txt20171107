@@ -1,0 +1,21 @@
+2017-11-07 08:44:31,855 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-07 08:45:21,132 [8] INFO  -   
+2017-11-07 08:51:23,543 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-07 08:56:19,505 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-07 09:31:35,362 [10] ERROR - Debe seleccionar un plan de renta
+2017-11-07 09:31:35,503 [10] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 259
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en D:\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 286
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en D:\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2017-11-07 09:31:35,541 [10] ERROR - Debe seleccionar un plan de renta
+2017-11-07 15:32:10,255 [8] INFO  - Inicio de aplicación en modo Debug
+2017-11-07 15:35:03,688 [8] INFO  -   
+2017-11-07 15:35:37,904 [8] INFO  - Busca ticket #1334474 en Base de Datos.
+2017-11-07 15:35:37,914 [8] INFO  - Imprimiendo ticket #1334474 - copia 2
+2017-11-07 15:35:39,318 [8] INFO  - Se imprimió ticket #1334474 - copia 2
+2017-11-07 15:39:08,110 [10] INFO  - Inicio de aplicación en modo Debug
+2017-11-07 15:42:49,456 [10] INFO  -   
+2017-11-07 15:46:16,935 [10] INFO  -   
+2017-11-07 17:19:00,659 [10] INFO  - Inicio de aplicación en modo Debug
