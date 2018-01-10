@@ -1,0 +1,59 @@
+<style type="text/css">
+
+#reporte {
+	font-family: Tahoma;
+	font-size: 9pt;
+}	
+
+table {
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+td {
+	padding: .5em;
+	text-align: right;
+}
+
+td:first-child {
+	padding: .5em;
+	text-align: left;
+}
+
+th {
+	padding: .5em;
+	text-align: center;
+	color: white;
+	background-color: #3366FF;	
+}
+</style>
+
+<div id="reporte">
+
+	<h5>SISTEMA INTEGRAL DE CONTROL DE AUTOTRANSPORTES Y SERVICIOS</h5>
+
+	<h2>Reporte Comparativo Mensual de Kilometrajes y Mantenimientos</h2>
+	<hr>
+
+	<div id="reportinfo">
+		Para: <strong>Todas las unidades</strong>
+		<br />
+		Fecha Inicial: <strong>@FechaInicial</strong> 
+        <br />
+		Fecha Final: <strong>@FechaFinal</strong> 
+	</div>
+
+	<div id="estatus" class="section">
+		<h3>Reporte de Kilometrajes, Mantenimientos y Recaudaciones</h3>	
+		@TablaKMMttos
+	</div>
+	<br />
+
+	<hr>
+	<p>Fin del reporte.
+	<br />
+		Reporte generado autom&aacute;ticamente por SICAS.
+		Por favor, no responda este mensaje.
+	</p>
+
+</div>

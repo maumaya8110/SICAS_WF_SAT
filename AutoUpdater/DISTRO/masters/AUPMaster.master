@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AUPMaster.master.cs" Inherits="masters_AUPMaster" %>
+
+<%@ Register src="../controls/AUMenu.ascx" tagname="AUMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Aplicación de auto-distribución</title>    
+</head>
+<body>
+    <div id="header">
+        <h1>
+            <span style="color:Navy">Prosyss </span> 
+            
+            <span style="color:#668CFF;">©AutoUpdater</span>
+        </h1>
+    </div>
+    <div id="bar">
+    </div>
+    <div id="menu">
+        
+        <uc1:AUMenu ID="AUMenu1" runat="server" />
+        
+    </div>
+    <div id="content">        
+        <form id="ContentForm" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">       
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        <hr />
+        <p>Todos los derechos reservados, ©Prosyss de México, 2011.</p>
+    </div>    
+</body>
+</html>

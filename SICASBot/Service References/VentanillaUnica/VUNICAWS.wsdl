@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.eboletos.com.mx/Administrador/WebServices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.eboletos.com.mx/Administrador/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.eboletos.com.mx/Administrador/WebServices">
+      <s:element name="VentaDiariaPorEmpresaMKTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VentaDiariaPorEmpresaMKTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VentaDiariaPorEmpresaMKTestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VentaDiariaPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VentaDiariaPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VentaDiariaPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelacionesDiariasPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelacionesDiariasPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelacionesDiariasPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnidadesPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnidadesPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnidadesPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConductoresPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConductoresPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConductoresPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZonasPorEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_Usr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZonasPorEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZonasPorEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VentaDiariaPorEmpresaMKTestSoapIn">
+    <wsdl:part name="parameters" element="tns:VentaDiariaPorEmpresaMKTest" />
+  </wsdl:message>
+  <wsdl:message name="VentaDiariaPorEmpresaMKTestSoapOut">
+    <wsdl:part name="parameters" element="tns:VentaDiariaPorEmpresaMKTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="VentaDiariaPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:VentaDiariaPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="VentaDiariaPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:VentaDiariaPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelacionesDiariasPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelacionesDiariasPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="CancelacionesDiariasPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelacionesDiariasPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnidadesPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:UnidadesPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="UnidadesPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:UnidadesPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConductoresPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConductoresPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="ConductoresPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConductoresPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZonasPorEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:ZonasPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="ZonasPorEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:ZonasPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VunicaWSSoap">
+    <wsdl:operation name="VentaDiariaPorEmpresaMKTest">
+      <wsdl:input message="tns:VentaDiariaPorEmpresaMKTestSoapIn" />
+      <wsdl:output message="tns:VentaDiariaPorEmpresaMKTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaDiariaPorEmpresa">
+      <wsdl:input message="tns:VentaDiariaPorEmpresaSoapIn" />
+      <wsdl:output message="tns:VentaDiariaPorEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelacionesDiariasPorEmpresa">
+      <wsdl:input message="tns:CancelacionesDiariasPorEmpresaSoapIn" />
+      <wsdl:output message="tns:CancelacionesDiariasPorEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnidadesPorEmpresa">
+      <wsdl:input message="tns:UnidadesPorEmpresaSoapIn" />
+      <wsdl:output message="tns:UnidadesPorEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConductoresPorEmpresa">
+      <wsdl:input message="tns:ConductoresPorEmpresaSoapIn" />
+      <wsdl:output message="tns:ConductoresPorEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZonasPorEmpresa">
+      <wsdl:input message="tns:ZonasPorEmpresaSoapIn" />
+      <wsdl:output message="tns:ZonasPorEmpresaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VunicaWSSoap" type="tns:VunicaWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VentaDiariaPorEmpresaMKTest">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/VentaDiariaPorEmpresaMKTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaDiariaPorEmpresa">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/VentaDiariaPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelacionesDiariasPorEmpresa">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/CancelacionesDiariasPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnidadesPorEmpresa">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/UnidadesPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConductoresPorEmpresa">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/ConductoresPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZonasPorEmpresa">
+      <soap:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/ZonasPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VunicaWSSoap12" type="tns:VunicaWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VentaDiariaPorEmpresaMKTest">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/VentaDiariaPorEmpresaMKTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaDiariaPorEmpresa">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/VentaDiariaPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelacionesDiariasPorEmpresa">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/CancelacionesDiariasPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnidadesPorEmpresa">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/UnidadesPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConductoresPorEmpresa">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/ConductoresPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZonasPorEmpresa">
+      <soap12:operation soapAction="http://www.eboletos.com.mx/Administrador/WebServices/ZonasPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VunicaWS">
+    <wsdl:port name="VunicaWSSoap" binding="tns:VunicaWSSoap">
+      <soap:address location="http://www.eboletos.com.mx/VUNICA/Administrador/WebServices/VUNICAWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VunicaWSSoap12" binding="tns:VunicaWSSoap12">
+      <soap12:address location="http://www.eboletos.com.mx/VUNICA/Administrador/WebServices/VUNICAWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

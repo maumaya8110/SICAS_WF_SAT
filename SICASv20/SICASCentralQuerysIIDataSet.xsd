@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SICASCentralQuerysIIDataSet" targetNamespace="http://tempuri.org/SICASCentralQuerysIIDataSet.xsd" xmlns:mstns="http://tempuri.org/SICASCentralQuerysIIDataSet.xsd" xmlns="http://tempuri.org/SICASCentralQuerysIIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="Functions" GeneratorFunctionsComponentClassName="Functions" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="Functions" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SICASCentralConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SICASCentralConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SICASv20.Properties.Settings.GlobalReference.Default.SICASCentralConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Get_SelectMenuesTableAdapter" GeneratorDataComponentClassName="Get_SelectMenuesTableAdapter" Name="Get_SelectMenues" UserDataComponentName="Get_SelectMenuesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="SICASCentral.dbo.Menues" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	M.Menu_ID, (MO.Nombre + ' | ' + M.Nombre) Nombre
+FROM	Menues M
+INNER JOIN	Modulos MO
+ON		M.Modulo_ID = MO.Modulo_ID
+ORDER BY	MO.Nombre, M.Nombre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Menu_ID" DataSetColumn="Menu_ID" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Reporte_CobranzaAtencionYControlTableAdapter" GeneratorDataComponentClassName="Reporte_CobranzaAtencionYControlTableAdapter" Name="Reporte_CobranzaAtencionYControl" UserDataComponentName="Reporte_CobranzaAtencionYControlTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	C.Contrato_ID,	C.Conductor_ID,
+		U.NumeroEconomico Unidad,
+		(COND.Apellidos + ' ' + COND.Nombre) Conductor,
+		--	Rentas
+		(SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaConductores
+		WHERE	Conductor_ID = COND.Conductor_ID
+		AND		Cuenta_ID = 1)	Rentas,
+		--	Otros Cargos
+		(SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaConductores
+		WHERE	Conductor_ID = COND.Conductor_ID
+		AND		Cuenta_ID = 2)	OtrosCargos,
+		--	Cargos Estacion
+		(SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaConductores
+		WHERE	Conductor_ID = COND.Conductor_ID
+		AND		Cuenta_ID = 10)	CargosEstacion,
+		--	SCP
+		(SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaConductores
+		WHERE	Conductor_ID = COND.Conductor_ID
+		AND		Cuenta_ID = 8)	SCP,
+		U.Kilometraje,
+		COND.SaldoATratar,
+		COND.Cronocasco,
+		COND.TerminalDatos,
+		COND.BloquearConductor,
+		COND.MensajeACaja,
+		(COP.Apellidos + ' ' + COP.Nombre) Copia,
+		EC.Nombre Estatus
+FROM	Contratos C
+INNER JOIN	Conductores COND
+ON		C.Conductor_ID = COND.Conductor_ID
+INNER JOIN	Unidades U
+ON		C.Unidad_ID = U.Unidad_ID
+INNER JOIN	Conductores COP
+ON		C.ConductorCopia_ID = COP.Conductor_ID
+INNER JOIN	EstatusConductores	EC
+ON		COND.EstatusConductor_ID = EC.EstatusConductor_ID
+WHERE	C.Conductor_ID IN
+(
+	SELECT	Conductor_ID
+	FROM	CuentaConductores
+	GROUP BY	Conductor_ID
+	HAVING	SUM(Abono - Cargo) &lt; 0
+)
+AND		(@NumeroEconomico IS NULL OR U.NumeroEconomico = @NumeroEconomico)
+AND		(@Nombre IS NULL OR (COND.Apellidos + ' ' + COND.Nombre) LIKE @Nombre + '%')
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="NumeroEconomico" ColumnName="NumeroEconomico" DataSourceName="SICASCentral.dbo.Unidades" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@NumeroEconomico" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Unidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Nombre" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="String" Direction="Input" ParameterName="@Nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Contrato_ID" DataSetColumn="Contrato_ID" />
+              <Mapping SourceColumn="Unidad" DataSetColumn="Unidad" />
+              <Mapping SourceColumn="Conductor" DataSetColumn="Conductor" />
+              <Mapping SourceColumn="Rentas" DataSetColumn="Rentas" />
+              <Mapping SourceColumn="OtrosCargos" DataSetColumn="OtrosCargos" />
+              <Mapping SourceColumn="CargosEstacion" DataSetColumn="CargosEstacion" />
+              <Mapping SourceColumn="SCP" DataSetColumn="SCP" />
+              <Mapping SourceColumn="Kilometraje" DataSetColumn="Kilometraje" />
+              <Mapping SourceColumn="SaldoATratar" DataSetColumn="SaldoATratar" />
+              <Mapping SourceColumn="Cronocasco" DataSetColumn="Cronocasco" />
+              <Mapping SourceColumn="TerminalDatos" DataSetColumn="TerminalDatos" />
+              <Mapping SourceColumn="BloquearConductor" DataSetColumn="BloquearConductor" />
+              <Mapping SourceColumn="MensajeACaja" DataSetColumn="MensajeACaja" />
+              <Mapping SourceColumn="Copia" DataSetColumn="Copia" />
+              <Mapping SourceColumn="Estatus" DataSetColumn="Estatus" />
+              <Mapping SourceColumn="Conductor_ID" DataSetColumn="Conductor_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Get_SaldosRecaudacionCajasTableAdapter" GeneratorDataComponentClassName="Get_SaldosRecaudacionCajasTableAdapter" Name="Get_SaldosRecaudacionCajas" UserDataComponentName="Get_SaldosRecaudacionCajasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="SICASCentral.dbo.CuentaCajas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	Empresa_ID,	Cuenta_ID, SUM(Abono - Cargo) Saldo 
+FROM	CuentaCajas
+WHERE	Sesion_ID = @Sesion_ID
+GROUP BY	Empresa_ID, Cuenta_ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Sesion_ID" ColumnName="Sesion_ID" DataSourceName="SICASCentral.dbo.CuentaCajas" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Sesion_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Sesion_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Empresa_ID" DataSetColumn="Empresa_ID" />
+              <Mapping SourceColumn="Cuenta_ID" DataSetColumn="Cuenta_ID" />
+              <Mapping SourceColumn="Saldo" DataSetColumn="Saldo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Get_SaldosFlujoCajasTableAdapter" GeneratorDataComponentClassName="Get_SaldosFlujoCajasTableAdapter" Name="Get_SaldosFlujoCajas" UserDataComponentName="Get_SaldosFlujoCajasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="SICASCentral.dbo.CuentaFlujoCajas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	Moneda_ID, ISNULL(SUM(Abono - Cargo),0) Saldo
+FROM	CuentaFlujoCajas
+WHERE	Sesion_ID = @Sesion_ID
+GROUP BY	Moneda_ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Sesion_ID" ColumnName="Sesion_ID" DataSourceName="SICASCentral.dbo.CuentaFlujoCajas" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Sesion_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Sesion_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Moneda_ID" DataSetColumn="Moneda_ID" />
+              <Mapping SourceColumn="Saldo" DataSetColumn="Saldo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vista_ArrendamientosTableAdapter" GeneratorDataComponentClassName="Vista_ArrendamientosTableAdapter" Name="Vista_Arrendamientos" UserDataComponentName="Vista_ArrendamientosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	A.Arrendamiento_ID, A.Descripcion, A.Referencia, A.CatalogoReferencia,
+		E.Nombre Arrendador, EE.Nombre Arrendatario, A.MontoAFinanciar, 
+		A.ValorFactura, A.Plazos, A.Mensualidad, A.Residual,
+		A.Tasa, A.AmortizacionResidual, EF.Nombre EstatusFinanciero,
+		A.MontoPagado, A.Saldo, A.PlazosRestantes, A.FechaInicial, A.FechaFinal,
+		A.UltimaFecha, A.ProximaFecha, A.Activo, A.Comentarios
+FROM	Arrendamientos A
+INNER JOIN	EstatusFinancieros EF
+ON		A.EstatusFinanciero_ID = EF.EstatusFinanciero_ID
+INNER JOIN	Empresas E
+ON		A.Arrendador_ID = E.Empresa_ID
+INNER JOIN	Empresas EE
+ON		A.Arrendatario_ID = EE.Empresa_ID
+WHERE	(@Arrendamiento_ID IS NULL OR A.Arrendamiento_ID = @Arrendamiento_ID)
+AND		(@Descripcion IS NULL OR A.Descripcion = @Descripcion)
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Arrendamiento_ID" ColumnName="Arrendamiento_ID" DataSourceName="SICASCentral.dbo.Arrendamientos" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Arrendamiento_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Arrendamiento_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Descripcion" ColumnName="Descripcion" DataSourceName="SICASCentral.dbo.Arrendamientos" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Descripcion" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="Descripcion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Arrendamiento_ID" DataSetColumn="Arrendamiento_ID" />
+              <Mapping SourceColumn="Descripcion" DataSetColumn="Descripcion" />
+              <Mapping SourceColumn="Referencia" DataSetColumn="Referencia" />
+              <Mapping SourceColumn="CatalogoReferencia" DataSetColumn="CatalogoReferencia" />
+              <Mapping SourceColumn="Arrendador" DataSetColumn="Arrendador" />
+              <Mapping SourceColumn="Arrendatario" DataSetColumn="Arrendatario" />
+              <Mapping SourceColumn="MontoAFinanciar" DataSetColumn="MontoAFinanciar" />
+              <Mapping SourceColumn="ValorFactura" DataSetColumn="ValorFactura" />
+              <Mapping SourceColumn="Plazos" DataSetColumn="Plazos" />
+              <Mapping SourceColumn="Mensualidad" DataSetColumn="Mensualidad" />
+              <Mapping SourceColumn="Residual" DataSetColumn="Residual" />
+              <Mapping SourceColumn="Tasa" DataSetColumn="Tasa" />
+              <Mapping SourceColumn="AmortizacionResidual" DataSetColumn="AmortizacionResidual" />
+              <Mapping SourceColumn="EstatusFinanciero" DataSetColumn="EstatusFinanciero" />
+              <Mapping SourceColumn="MontoPagado" DataSetColumn="MontoPagado" />
+              <Mapping SourceColumn="Saldo" DataSetColumn="Saldo" />
+              <Mapping SourceColumn="PlazosRestantes" DataSetColumn="PlazosRestantes" />
+              <Mapping SourceColumn="FechaInicial" DataSetColumn="FechaInicial" />
+              <Mapping SourceColumn="FechaFinal" DataSetColumn="FechaFinal" />
+              <Mapping SourceColumn="UltimaFecha" DataSetColumn="UltimaFecha" />
+              <Mapping SourceColumn="ProximaFecha" DataSetColumn="ProximaFecha" />
+              <Mapping SourceColumn="Activo" DataSetColumn="Activo" />
+              <Mapping SourceColumn="Comentarios" DataSetColumn="Comentarios" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="SICASCentral.dbo.usp_ActualizarPermisoUsuario" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ActualizarPermisoUsuario" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarPermisoUsuario" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ActualizarPermisoUsuario">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.usp_ActualizarPermisoUsuario</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Usuario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="30" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Opcion_ID" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@EsPermitido" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarSaldoCuentaConductor" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarSaldoCuentaConductor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ActualizarSaldoCuentaConductor">
+            <UpdateCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>UPDATE	CuentaConductores
+SET		Saldo = (SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaConductores CC
+		WHERE	CC.Conductor_ID = CuentaConductores.Conductor_ID
+		AND		CC.Cuenta_ID = CuentaConductores.Cuenta_ID
+		AND		CC.Empresa_ID = CuentaConductores.Empresa_ID
+		AND		CC.CuentaConductor_ID &lt;= CuentaConductores.CuentaConductor_ID)
+WHERE	CuentaConductor_ID = @CuentaConductor_ID</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="CuentaConductor_ID" ColumnName="CuentaConductor_ID" DataSourceName="SICASCentral.dbo.CuentaConductores" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CuentaConductor_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CuentaConductor_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                </Parameters>
+              </DbCommand>
+            </UpdateCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarSaldoCuentaCajas" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarSaldoCuentaCajas" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ActualizarSaldoCuentaCajas">
+            <UpdateCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>UPDATE	CuentaCajas
+SET		Saldo = (SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaCajas CC
+		WHERE	CC.Sesion_ID = CuentaCajas.Sesion_ID
+		AND		CC.Empresa_ID = CuentaCajas.Empresa_ID
+		AND		CC.Cuenta_ID = CuentaCajas.Cuenta_ID
+		AND		CC.CuentaCaja_ID &lt;= CuentaCajas.CuentaCaja_ID)
+WHERE	CuentaCaja_ID = @CuentaCaja_ID</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="CuentaCaja_ID" ColumnName="CuentaCaja_ID" DataSourceName="SICASCentral.dbo.CuentaCajas" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CuentaCaja_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CuentaCaja_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                </Parameters>
+              </DbCommand>
+            </UpdateCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarSaldoCuentaUnidades" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarSaldoCuentaUnidades" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ActualizarSaldoCuentaUnidades">
+            <UpdateCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>UPDATE	CuentaUnidades
+SET		Saldo = (SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaUnidades CU
+		WHERE	CU.Unidad_ID = CuentaUnidades.Unidad_ID
+		AND		CU.Cuenta_ID = CuentaUnidades.Cuenta_ID
+		AND		CU.Empresa_ID = CuentaUnidades.Empresa_ID
+		AND		CU.CuentaUnidad_ID &lt;= CuentaUnidades.CuentaUnidad_ID)
+WHERE	CuentaUnidad_ID = @CuentaUnidad_ID</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="CuentaUnidad_ID" ColumnName="CuentaUnidad_ID" DataSourceName="SICASCentral.dbo.CuentaUnidades" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CuentaUnidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CuentaUnidad_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                </Parameters>
+              </DbCommand>
+            </UpdateCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarSaldoCuentaEmpresas" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarSaldoCuentaEmpresas" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ActualizarSaldoCuentaEmpresas">
+            <UpdateCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>UPDATE	CuentaEmpresas
+SET		Saldo = (SELECT ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaEmpresas CE
+		WHERE	CE.Empresa_ID = CuentaEmpresas.Empresa_ID
+		AND		CE.Cuenta_ID = CuentaEmpresas.Cuenta_ID
+		AND		CE.CuentaEmpresa_ID &lt;= CuentaEmpresas.CuentaEmpresa_ID)
+WHERE	CuentaEmpresa_ID = @CuentaEmpresa_ID</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="CuentaEmpresa_ID" ColumnName="CuentaEmpresa_ID" DataSourceName="SICASCentral.dbo.CuentaEmpresas" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CuentaEmpresa_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CuentaEmpresa_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                </Parameters>
+              </DbCommand>
+            </UpdateCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarSaldoCuentaFlujoCajas" MethodsParameterType="CLR" Modifier="Public" Name="ActualizarSaldoCuentaFlujoCajas" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="ActualizarSaldoCuentaFlujoCajas">
+            <UpdateCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>UPDATE	CuentaFlujoCajas
+SET		Saldo = (SELECT	ISNULL(SUM(Abono - Cargo),0)
+		FROM	CuentaFlujoCajas CF
+		WHERE	CF.Sesion_ID = CuentaFlujoCajas.Sesion_ID
+		AND		CF.Moneda_ID = CuentaFlujoCajas.Moneda_ID
+		AND		CF.CuentaFlujoCaja_ID &lt;= CuentaFlujoCajas.CuentaFlujoCaja_ID)
+WHERE	CuentaFlujoCaja_ID = @CuentaFlujoCaja_ID</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="CuentaFlujoCaja_ID" ColumnName="CuentaFlujoCaja_ID" DataSourceName="SICASCentral.dbo.CuentaFlujoCajas" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CuentaFlujoCaja_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CuentaFlujoCaja_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                </Parameters>
+              </DbCommand>
+            </UpdateCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SICASCentralConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertUsuario" MethodsParameterType="CLR" Modifier="Public" Name="InsertUsuario" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="InsertUsuario">
+            <InsertCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>INSERT INTO Usuarios
+(Usuario_ID, Nombre, Apellidos, Email, Activo, pwd, Empresa_ID, Estacion_ID)
+VALUES        
+(@Usuario_ID,@Nombre,@Apellidos,@Email,@Activo, PWDENCRYPT(@pwd),@Empresa_ID,@Estacion_ID); </CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="false" AutogeneratedName="Usuario_ID" ColumnName="Usuario_ID" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="varchar(30)" DbType="AnsiString" Direction="Input" ParameterName="@Usuario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="30" SourceColumn="Usuario_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="false" AutogeneratedName="Nombre" ColumnName="Nombre" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="varchar(60)" DbType="AnsiString" Direction="Input" ParameterName="@Nombre" Precision="0" ProviderType="VarChar" Scale="0" Size="60" SourceColumn="Nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="false" AutogeneratedName="Apellidos" ColumnName="Apellidos" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="varchar(60)" DbType="AnsiString" Direction="Input" ParameterName="@Apellidos" Precision="0" ProviderType="VarChar" Scale="0" Size="60" SourceColumn="Apellidos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="false" AutogeneratedName="Email" ColumnName="Email" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="varchar(100)" DbType="AnsiString" Direction="Input" ParameterName="@Email" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumn="Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="false" AutogeneratedName="Activo" ColumnName="Activo" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@Activo" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="Activo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="false" AutogeneratedName="pwd" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@pwd" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="Empresa_ID" ColumnName="Empresa_ID" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Empresa_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Empresa_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="Estacion_ID" ColumnName="Estacion_ID" DataSourceName="SICASCentral.dbo.Usuarios" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Estacion_ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Estacion_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </InsertCommand>
+          </DbSource>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SICASCentralQuerysIIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SICASCentralQuerysIIDataSet" msprop:Generator_UserDSName="SICASCentralQuerysIIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Get_SelectMenues" msprop:Generator_TableClassName="Get_SelectMenuesDataTable" msprop:Generator_TableVarName="tableGet_SelectMenues" msprop:Generator_TablePropName="Get_SelectMenues" msprop:Generator_RowDeletingName="Get_SelectMenuesRowDeleting" msprop:Generator_UserTableName="Get_SelectMenues" msprop:Generator_RowChangingName="Get_SelectMenuesRowChanging" msprop:Generator_RowEvHandlerName="Get_SelectMenuesRowChangeEventHandler" msprop:Generator_RowDeletedName="Get_SelectMenuesRowDeleted" msprop:Generator_RowEvArgName="Get_SelectMenuesRowChangeEvent" msprop:Generator_RowChangedName="Get_SelectMenuesRowChanged" msprop:Generator_RowClassName="Get_SelectMenuesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Menu_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMenu_ID" msprop:Generator_ColumnPropNameInRow="Menu_ID" msprop:Generator_ColumnPropNameInTable="Menu_IDColumn" msprop:Generator_UserColumnName="Menu_ID" type="xs:int" />
+              <xs:element name="Nombre" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="83" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reporte_CobranzaAtencionYControl" msprop:Generator_TableClassName="Reporte_CobranzaAtencionYControlDataTable" msprop:Generator_TableVarName="tableReporte_CobranzaAtencionYControl" msprop:Generator_TablePropName="Reporte_CobranzaAtencionYControl" msprop:Generator_RowDeletingName="Reporte_CobranzaAtencionYControlRowDeleting" msprop:Generator_UserTableName="Reporte_CobranzaAtencionYControl" msprop:Generator_RowChangingName="Reporte_CobranzaAtencionYControlRowChanging" msprop:Generator_RowEvHandlerName="Reporte_CobranzaAtencionYControlRowChangeEventHandler" msprop:Generator_RowDeletedName="Reporte_CobranzaAtencionYControlRowDeleted" msprop:Generator_RowEvArgName="Reporte_CobranzaAtencionYControlRowChangeEvent" msprop:Generator_RowChangedName="Reporte_CobranzaAtencionYControlRowChanged" msprop:Generator_RowClassName="Reporte_CobranzaAtencionYControlRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contrato_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnContrato_ID" msprop:Generator_ColumnPropNameInRow="Contrato_ID" msprop:Generator_ColumnPropNameInTable="Contrato_IDColumn" msprop:Generator_UserColumnName="Contrato_ID" type="xs:int" />
+              <xs:element name="Unidad" msprop:Generator_ColumnVarNameInTable="columnUnidad" msprop:Generator_ColumnPropNameInRow="Unidad" msprop:Generator_ColumnPropNameInTable="UnidadColumn" msprop:Generator_UserColumnName="Unidad" type="xs:int" />
+              <xs:element name="Conductor" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConductor" msprop:Generator_ColumnPropNameInRow="Conductor" msprop:Generator_ColumnPropNameInTable="ConductorColumn" msprop:Generator_UserColumnName="Conductor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rentas" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRentas" msprop:Generator_ColumnPropNameInRow="Rentas" msprop:Generator_ColumnPropNameInTable="RentasColumn" msprop:Generator_UserColumnName="Rentas" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OtrosCargos" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOtrosCargos" msprop:Generator_ColumnPropNameInRow="OtrosCargos" msprop:Generator_ColumnPropNameInTable="OtrosCargosColumn" msprop:Generator_UserColumnName="OtrosCargos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CargosEstacion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCargosEstacion" msprop:Generator_ColumnPropNameInRow="CargosEstacion" msprop:Generator_ColumnPropNameInTable="CargosEstacionColumn" msprop:Generator_UserColumnName="CargosEstacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SCP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSCP" msprop:Generator_ColumnPropNameInRow="SCP" msprop:Generator_ColumnPropNameInTable="SCPColumn" msprop:Generator_UserColumnName="SCP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Kilometraje" msprop:Generator_ColumnVarNameInTable="columnKilometraje" msprop:Generator_ColumnPropNameInRow="Kilometraje" msprop:Generator_ColumnPropNameInTable="KilometrajeColumn" msprop:Generator_UserColumnName="Kilometraje" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoATratar" msprop:Generator_ColumnVarNameInTable="columnSaldoATratar" msprop:Generator_ColumnPropNameInRow="SaldoATratar" msprop:Generator_ColumnPropNameInTable="SaldoATratarColumn" msprop:Generator_UserColumnName="SaldoATratar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cronocasco" msprop:Generator_ColumnVarNameInTable="columnCronocasco" msprop:Generator_ColumnPropNameInRow="Cronocasco" msprop:Generator_ColumnPropNameInTable="CronocascoColumn" msprop:Generator_UserColumnName="Cronocasco" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TerminalDatos" msprop:Generator_ColumnVarNameInTable="columnTerminalDatos" msprop:Generator_ColumnPropNameInRow="TerminalDatos" msprop:Generator_ColumnPropNameInTable="TerminalDatosColumn" msprop:Generator_UserColumnName="TerminalDatos" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BloquearConductor" msprop:Generator_ColumnVarNameInTable="columnBloquearConductor" msprop:Generator_ColumnPropNameInRow="BloquearConductor" msprop:Generator_ColumnPropNameInTable="BloquearConductorColumn" msprop:Generator_UserColumnName="BloquearConductor" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MensajeACaja" msprop:Generator_ColumnVarNameInTable="columnMensajeACaja" msprop:Generator_ColumnPropNameInRow="MensajeACaja" msprop:Generator_ColumnPropNameInTable="MensajeACajaColumn" msprop:Generator_UserColumnName="MensajeACaja" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Copia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCopia" msprop:Generator_ColumnPropNameInRow="Copia" msprop:Generator_ColumnPropNameInTable="CopiaColumn" msprop:Generator_UserColumnName="Copia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estatus" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Conductor_ID" msprop:Generator_ColumnVarNameInTable="columnConductor_ID" msprop:Generator_ColumnPropNameInRow="Conductor_ID" msprop:Generator_ColumnPropNameInTable="Conductor_IDColumn" msprop:Generator_UserColumnName="Conductor_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Get_SaldosRecaudacionCajas" msprop:Generator_TableClassName="Get_SaldosRecaudacionCajasDataTable" msprop:Generator_TableVarName="tableGet_SaldosRecaudacionCajas" msprop:Generator_TablePropName="Get_SaldosRecaudacionCajas" msprop:Generator_RowDeletingName="Get_SaldosRecaudacionCajasRowDeleting" msprop:Generator_UserTableName="Get_SaldosRecaudacionCajas" msprop:Generator_RowChangingName="Get_SaldosRecaudacionCajasRowChanging" msprop:Generator_RowEvHandlerName="Get_SaldosRecaudacionCajasRowChangeEventHandler" msprop:Generator_RowDeletedName="Get_SaldosRecaudacionCajasRowDeleted" msprop:Generator_RowEvArgName="Get_SaldosRecaudacionCajasRowChangeEvent" msprop:Generator_RowChangedName="Get_SaldosRecaudacionCajasRowChanged" msprop:Generator_RowClassName="Get_SaldosRecaudacionCajasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empresa_ID" msprop:Generator_ColumnVarNameInTable="columnEmpresa_ID" msprop:Generator_ColumnPropNameInRow="Empresa_ID" msprop:Generator_ColumnPropNameInTable="Empresa_IDColumn" msprop:Generator_UserColumnName="Empresa_ID" type="xs:int" />
+              <xs:element name="Cuenta_ID" msprop:Generator_ColumnVarNameInTable="columnCuenta_ID" msprop:Generator_ColumnPropNameInRow="Cuenta_ID" msprop:Generator_ColumnPropNameInTable="Cuenta_IDColumn" msprop:Generator_UserColumnName="Cuenta_ID" type="xs:int" />
+              <xs:element name="Saldo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Get_SaldosFlujoCajas" msprop:Generator_TableClassName="Get_SaldosFlujoCajasDataTable" msprop:Generator_TableVarName="tableGet_SaldosFlujoCajas" msprop:Generator_TablePropName="Get_SaldosFlujoCajas" msprop:Generator_RowDeletingName="Get_SaldosFlujoCajasRowDeleting" msprop:Generator_UserTableName="Get_SaldosFlujoCajas" msprop:Generator_RowChangingName="Get_SaldosFlujoCajasRowChanging" msprop:Generator_RowEvHandlerName="Get_SaldosFlujoCajasRowChangeEventHandler" msprop:Generator_RowDeletedName="Get_SaldosFlujoCajasRowDeleted" msprop:Generator_RowEvArgName="Get_SaldosFlujoCajasRowChangeEvent" msprop:Generator_RowChangedName="Get_SaldosFlujoCajasRowChanged" msprop:Generator_RowClassName="Get_SaldosFlujoCajasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Moneda_ID" msprop:Generator_ColumnVarNameInTable="columnMoneda_ID" msprop:Generator_ColumnPropNameInRow="Moneda_ID" msprop:Generator_ColumnPropNameInTable="Moneda_IDColumn" msprop:Generator_UserColumnName="Moneda_ID" type="xs:int" />
+              <xs:element name="Saldo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vista_Arrendamientos" msprop:Generator_TableClassName="Vista_ArrendamientosDataTable" msprop:Generator_TableVarName="tableVista_Arrendamientos" msprop:Generator_TablePropName="Vista_Arrendamientos" msprop:Generator_RowDeletingName="Vista_ArrendamientosRowDeleting" msprop:Generator_UserTableName="Vista_Arrendamientos" msprop:Generator_RowChangingName="Vista_ArrendamientosRowChanging" msprop:Generator_RowEvHandlerName="Vista_ArrendamientosRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_ArrendamientosRowDeleted" msprop:Generator_RowEvArgName="Vista_ArrendamientosRowChangeEvent" msprop:Generator_RowChangedName="Vista_ArrendamientosRowChanged" msprop:Generator_RowClassName="Vista_ArrendamientosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Arrendamiento_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnArrendamiento_ID" msprop:Generator_ColumnPropNameInRow="Arrendamiento_ID" msprop:Generator_ColumnPropNameInTable="Arrendamiento_IDColumn" msprop:Generator_UserColumnName="Arrendamiento_ID" type="xs:int" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Referencia" msprop:Generator_ColumnVarNameInTable="columnReferencia" msprop:Generator_ColumnPropNameInRow="Referencia" msprop:Generator_ColumnPropNameInTable="ReferenciaColumn" msprop:Generator_UserColumnName="Referencia" type="xs:int" minOccurs="0" />
+              <xs:element name="CatalogoReferencia" msprop:Generator_ColumnVarNameInTable="columnCatalogoReferencia" msprop:Generator_ColumnPropNameInRow="CatalogoReferencia" msprop:Generator_ColumnPropNameInTable="CatalogoReferenciaColumn" msprop:Generator_UserColumnName="CatalogoReferencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Arrendador" msprop:Generator_ColumnVarNameInTable="columnArrendador" msprop:Generator_ColumnPropNameInRow="Arrendador" msprop:Generator_ColumnPropNameInTable="ArrendadorColumn" msprop:Generator_UserColumnName="Arrendador" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Arrendatario" msprop:Generator_ColumnVarNameInTable="columnArrendatario" msprop:Generator_ColumnPropNameInRow="Arrendatario" msprop:Generator_ColumnPropNameInTable="ArrendatarioColumn" msprop:Generator_UserColumnName="Arrendatario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MontoAFinanciar" msprop:Generator_ColumnVarNameInTable="columnMontoAFinanciar" msprop:Generator_ColumnPropNameInRow="MontoAFinanciar" msprop:Generator_ColumnPropNameInTable="MontoAFinanciarColumn" msprop:Generator_UserColumnName="MontoAFinanciar" type="xs:decimal" />
+              <xs:element name="ValorFactura" msprop:Generator_ColumnVarNameInTable="columnValorFactura" msprop:Generator_ColumnPropNameInRow="ValorFactura" msprop:Generator_ColumnPropNameInTable="ValorFacturaColumn" msprop:Generator_UserColumnName="ValorFactura" type="xs:decimal" />
+              <xs:element name="Plazos" msprop:Generator_ColumnVarNameInTable="columnPlazos" msprop:Generator_ColumnPropNameInRow="Plazos" msprop:Generator_ColumnPropNameInTable="PlazosColumn" msprop:Generator_UserColumnName="Plazos" type="xs:int" />
+              <xs:element name="Mensualidad" msprop:Generator_ColumnVarNameInTable="columnMensualidad" msprop:Generator_ColumnPropNameInRow="Mensualidad" msprop:Generator_ColumnPropNameInTable="MensualidadColumn" msprop:Generator_UserColumnName="Mensualidad" type="xs:decimal" />
+              <xs:element name="Residual" msprop:Generator_ColumnVarNameInTable="columnResidual" msprop:Generator_ColumnPropNameInRow="Residual" msprop:Generator_ColumnPropNameInTable="ResidualColumn" msprop:Generator_UserColumnName="Residual" type="xs:decimal" />
+              <xs:element name="Tasa" msprop:Generator_ColumnVarNameInTable="columnTasa" msprop:Generator_ColumnPropNameInRow="Tasa" msprop:Generator_ColumnPropNameInTable="TasaColumn" msprop:Generator_UserColumnName="Tasa" type="xs:decimal" />
+              <xs:element name="AmortizacionResidual" msprop:Generator_ColumnVarNameInTable="columnAmortizacionResidual" msprop:Generator_ColumnPropNameInRow="AmortizacionResidual" msprop:Generator_ColumnPropNameInTable="AmortizacionResidualColumn" msprop:Generator_UserColumnName="AmortizacionResidual" type="xs:decimal" />
+              <xs:element name="EstatusFinanciero" msprop:Generator_ColumnVarNameInTable="columnEstatusFinanciero" msprop:Generator_ColumnPropNameInRow="EstatusFinanciero" msprop:Generator_ColumnPropNameInTable="EstatusFinancieroColumn" msprop:Generator_UserColumnName="EstatusFinanciero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MontoPagado" msprop:Generator_ColumnVarNameInTable="columnMontoPagado" msprop:Generator_ColumnPropNameInRow="MontoPagado" msprop:Generator_ColumnPropNameInTable="MontoPagadoColumn" msprop:Generator_UserColumnName="MontoPagado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Saldo" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PlazosRestantes" msprop:Generator_ColumnVarNameInTable="columnPlazosRestantes" msprop:Generator_ColumnPropNameInRow="PlazosRestantes" msprop:Generator_ColumnPropNameInTable="PlazosRestantesColumn" msprop:Generator_UserColumnName="PlazosRestantes" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaInicial" msprop:Generator_ColumnVarNameInTable="columnFechaInicial" msprop:Generator_ColumnPropNameInRow="FechaInicial" msprop:Generator_ColumnPropNameInTable="FechaInicialColumn" msprop:Generator_UserColumnName="FechaInicial" type="xs:dateTime" />
+              <xs:element name="FechaFinal" msprop:Generator_ColumnVarNameInTable="columnFechaFinal" msprop:Generator_ColumnPropNameInRow="FechaFinal" msprop:Generator_ColumnPropNameInTable="FechaFinalColumn" msprop:Generator_UserColumnName="FechaFinal" type="xs:dateTime" />
+              <xs:element name="UltimaFecha" msprop:Generator_ColumnVarNameInTable="columnUltimaFecha" msprop:Generator_ColumnPropNameInRow="UltimaFecha" msprop:Generator_ColumnPropNameInTable="UltimaFechaColumn" msprop:Generator_UserColumnName="UltimaFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProximaFecha" msprop:Generator_ColumnVarNameInTable="columnProximaFecha" msprop:Generator_ColumnPropNameInRow="ProximaFecha" msprop:Generator_ColumnPropNameInTable="ProximaFechaColumn" msprop:Generator_UserColumnName="ProximaFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" msprop:Generator_UserColumnName="Activo" type="xs:boolean" />
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Get_SelectMenues" />
+      <xs:field xpath="mstns:Menu_ID" />
+    </xs:unique>
+    <xs:unique name="Reporte_CobranzaAtencionYControl_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Reporte_CobranzaAtencionYControl" />
+      <xs:field xpath="mstns:Contrato_ID" />
+    </xs:unique>
+    <xs:unique name="Vista_Arrendamientos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Vista_Arrendamientos" />
+      <xs:field xpath="mstns:Arrendamiento_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
