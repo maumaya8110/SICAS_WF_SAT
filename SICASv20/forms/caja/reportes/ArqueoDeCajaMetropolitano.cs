@@ -67,6 +67,12 @@ namespace SICASv20.forms.caja.reportes
 
 		private void GeneraDeclaraciones()
 		{
+
+            //Sesion.Sesion_ID = 37492;
+            //Sesion.Estacion_ID = 13;
+            //Sesion.Empresa_ID = 5;
+
+
 			if (cortecaja.Declaraciones.Count == 0)
 			{
 				classes.Entities.caja.DeclaracionValores dv = new classes.Entities.caja.DeclaracionValores();
@@ -111,17 +117,17 @@ namespace SICASv20.forms.caja.reportes
                     cortecaja.Declaraciones.Add(dv);
                 //}
 
-                if (Sesion.Estacion_ID == 13 || Sesion.Estacion_ID == 25)
-                {
-                    dv = new classes.Entities.caja.DeclaracionValores();
-                    dv.Empresa_Id = 4;
-                    dv.Empresa = "CSC";
-                    dv.Nombre = "DeclaracionCSC";
-                    dv.ValesEmpresariales = SICASv20.classes.Interfaces.DeclaracionValores.GetValesEmpresariales(Sesion.Sesion_ID, dv.Empresa_Id);
-                    dv.ValesPrePagados = SICASv20.classes.Interfaces.DeclaracionValores.GetValesPrepagados(Sesion.Sesion_ID, dv.Empresa_Id);
-                    dv.EfectivoSesion = SICASv20.classes.Interfaces.DeclaracionValores.GetEfectivoPorSesion(Sesion.Sesion_ID, dv.Empresa_Id);
-                    cortecaja.Declaraciones.Add(dv);
-                }
+                    //if (Sesion.Estacion_ID == 13 || Sesion.Estacion_ID == 25)
+                    //{
+                        dv = new classes.Entities.caja.DeclaracionValores();
+                        dv.Empresa_Id = 4;
+                        dv.Empresa = "CSC";
+                        dv.Nombre = "DeclaracionCSC";
+                        dv.ValesEmpresariales = SICASv20.classes.Interfaces.DeclaracionValores.GetValesEmpresariales(Sesion.Sesion_ID, dv.Empresa_Id);
+                        dv.ValesPrePagados = SICASv20.classes.Interfaces.DeclaracionValores.GetValesPrepagados(Sesion.Sesion_ID, dv.Empresa_Id);
+                        dv.EfectivoSesion = SICASv20.classes.Interfaces.DeclaracionValores.GetEfectivoPorSesion(Sesion.Sesion_ID, dv.Empresa_Id);
+                        cortecaja.Declaraciones.Add(dv);
+                    //}
 
 				dv = new classes.Entities.caja.DeclaracionValores();
 				dv.Empresa_Id = 10000;

@@ -1,0 +1,13 @@
+2018-01-26 09:47:47,506 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-26 09:47:48,686 [10] ERROR - FTP Server 192.168.0.251
+2018-01-26 09:49:02,119 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-26 09:49:02,381 [9] ERROR - FTP Server 192.168.0.251
+2018-01-26 10:28:54,879 [9] INFO  - Inicio de aplicación en modo Debug
+2018-01-26 10:41:10,637 [10] INFO  - Inicio de aplicación en modo Debug
+2018-01-26 10:42:02,372 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.classes.Interfaces.DeclaracionValores.Imprimir(DeclaracionValores dv, Int32 idx) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 308
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 32
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-26 10:42:02,391 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-01-26 10:44:22,515 [9] INFO  - Inicio de aplicación en modo Debug

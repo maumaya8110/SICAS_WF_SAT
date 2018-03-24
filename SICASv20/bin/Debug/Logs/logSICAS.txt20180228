@@ -1,0 +1,13 @@
+2018-02-28 10:26:11,898 [8] INFO  - Inicio de aplicación en modo Release
+2018-02-28 10:45:26,731 [8] ERROR - Es necesario introducir un monto.
+System.Exception: Es necesario introducir un monto.
+   en SICASv20.forms.aeropuerto.nomina.AgregaIncidenciaConductor.ValidaDatos() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\AgregaIncidenciaConductor.cs:línea 155
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-02-28 10:45:26,784 [8] ERROR - Es necesario introducir un monto.
+2018-02-28 10:45:28,443 [8] ERROR - Es necesario indicar el motivo de la incidencia
+System.Exception: Es necesario indicar el motivo de la incidencia
+   en SICASv20.classes.Aeropuerto.IncidenciaConductor.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Aeropuerto\IncidenciaConductor.cs:línea 27
+   en SICASv20.forms.aeropuerto.nomina.AgregaIncidenciaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\AgregaIncidenciaConductor.cs:línea 139
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 373
+2018-02-28 10:45:28,448 [8] ERROR - Es necesario indicar el motivo de la incidencia
+2018-02-28 10:49:25,574 [8] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 23-02-2018?

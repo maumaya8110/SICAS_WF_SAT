@@ -1,0 +1,69 @@
+2018-01-29 22:17:59,913 [9] INFO  - Inicio de aplicación en modo Debug
+2018-01-29 22:19:19,116 [9] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+2018-01-29 22:20:05,197 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 22:20:34,801 [10] ERROR - El usuario javier.reyes ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario javier.reyes la termine realizando el corte correspondiente.
+2018-01-29 22:20:34,848 [10] ERROR - El usuario javier.reyes ya ha iniciado sesión en la caja seleccionada o predeterminada
+No puedes iniciar sesión hasta que el usuario javier.reyes la termine realizando el corte correspondiente.
+2018-01-29 22:22:38,331 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 22:26:53,789 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:26:53,844 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:27:08,640 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 22:31:16,984 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:31:16,999 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:32:17,849 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:32:17,849 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:32:29,712 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 22:32:59,475 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-29 22:33:50,340 [10] ERROR - Usuario o contraseña erroneas!
+2018-01-29 22:38:01,678 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:38:01,694 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:39:58,454 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:39:58,457 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:54:29,934 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:54:29,936 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:55:29,617 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:55:29,617 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:55:44,293 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 22:55:44,295 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 22:56:11,423 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 22:57:42,497 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-29 23:02:28,832 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 23:02:28,848 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 23:04:28,786 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 23:04:28,786 [10] ERROR - La unidad 1821 no tiene contrato activo
+2018-01-29 23:06:14,238 [10] ERROR - La unidad 1821 no tiene contrato activo
+System.Exception: La unidad 1821 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-01-29 23:06:14,238 [10] ERROR - La unidad 1821 no tiene contrato activo

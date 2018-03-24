@@ -1,0 +1,48 @@
+2018-03-12 09:50:25,763 [10] INFO  - Inicio de aplicación en modo Release
+2018-03-12 09:50:32,719 [10] ERROR - FTP Server 192.168.0.251
+2018-03-12 10:38:44,749 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-12 10:40:32,752 [9] ERROR - FTP Server 192.168.0.251
+2018-03-12 10:46:44,693 [9] INFO  - Usuario actualizado!
+2018-03-12 10:46:58,932 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-12 10:47:00,985 [9] ERROR - FTP Server 192.168.0.251
+2018-03-12 10:47:59,575 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:47:59,722 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 10:49:27,705 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:49:27,707 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 10:49:50,291 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:49:50,292 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 10:49:55,680 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:49:55,682 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 10:53:14,678 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:53:14,682 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 10:54:45,705 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+System.Exception: Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+   en SICASv20.Entities.Unidades.Update() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 22579
+   en SICASv20.forms.ActualizacionUnidad.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\unidades\archivo\ActualizacionUnidad.cs:línea 82
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-12 10:54:47,172 [9] ERROR - Esa unidad se encuentra en contrato y no puede ser movida a la locación especificada. Primero se debe liquidar el contrato
+2018-03-12 11:03:41,680 [9] INFO  - Unidad actualizada
+2018-03-12 13:07:13,926 [8] INFO  - Inicio de aplicación en modo Release
+2018-03-12 13:07:16,495 [8] ERROR - FTP Server 192.168.0.251
+2018-03-12 17:47:13,371 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-12 17:47:21,138 [9] ERROR - FTP Server 192.168.0.251

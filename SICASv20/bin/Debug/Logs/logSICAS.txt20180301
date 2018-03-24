@@ -1,0 +1,79 @@
+2018-03-01 16:30:48,952 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-01 16:43:04,605 [9] ERROR - El servicio no existe. Favor de Verificar. 
+System.Data.SqlClient.SqlException: El servicio no existe. Favor de Verificar. 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.Entities.Vista_NominaCAT.AgregaServicioAConductorFechaPago(String Servicio_ID, Int32 Conductor_ID, DateTime Periodo, DateTime FechaPago, String usuario) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 26070
+   en SICASv20.forms.aeropuerto.nomina.CapturaBoletosporPeriodo.AgregaServicioAConductor() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\CapturaBoletosporPeriodo.cs:línea 120
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-03-01 16:43:04,631 [9] ERROR - El servicio no existe. Favor de Verificar. 
+2018-03-01 16:44:34,872 [9] ERROR - El servicio no existe. Favor de Verificar. 
+System.Data.SqlClient.SqlException: El servicio no existe. Favor de Verificar. 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.Entities.Vista_NominaCAT.AgregaServicioAConductorFechaPago(String Servicio_ID, Int32 Conductor_ID, DateTime Periodo, DateTime FechaPago, String usuario) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 26070
+   en SICASv20.forms.aeropuerto.nomina.CapturaBoletosporPeriodo.AgregaServicioAConductor() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\CapturaBoletosporPeriodo.cs:línea 120
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-03-01 16:44:34,875 [9] ERROR - El servicio no existe. Favor de Verificar. 
+2018-03-01 16:46:20,595 [9] ERROR - El servicio no existe. Favor de Verificar. 
+System.Data.SqlClient.SqlException: El servicio no existe. Favor de Verificar. 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.Entities.Vista_NominaCAT.AgregaServicioAConductorFechaPago(String Servicio_ID, Int32 Conductor_ID, DateTime Periodo, DateTime FechaPago, String usuario) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 26070
+   en SICASv20.forms.aeropuerto.nomina.CapturaBoletosporPeriodo.AgregaServicioAConductor() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\CapturaBoletosporPeriodo.cs:línea 120
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-03-01 16:46:20,599 [9] ERROR - El servicio no existe. Favor de Verificar. 
+2018-03-01 16:46:27,819 [9] ERROR - El servicio no existe. Favor de Verificar. 
+System.Data.SqlClient.SqlException: El servicio no existe. Favor de Verificar. 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.ExecuteCommandSP(String execQuery, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 848
+   en SICASv20.Entities.Vista_NominaCAT.AgregaServicioAConductorFechaPago(String Servicio_ID, Int32 Conductor_ID, DateTime Periodo, DateTime FechaPago, String usuario) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 26070
+   en SICASv20.forms.aeropuerto.nomina.CapturaBoletosporPeriodo.AgregaServicioAConductor() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\nomina\CapturaBoletosporPeriodo.cs:línea 120
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-03-01 16:46:27,822 [9] ERROR - El servicio no existe. Favor de Verificar. 
+2018-03-01 17:24:55,305 [9] ERROR - El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+   en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   en SICASv20.forms.aeropuerto.herramientas.Programacion.DoSetInfo() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\Programacion.cs:línea 33
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 414
+2018-03-01 17:24:55,344 [9] ERROR - El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index

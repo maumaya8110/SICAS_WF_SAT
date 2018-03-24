@@ -1,0 +1,23 @@
+2018-03-09 11:43:23,930 [10] INFO  - Inicio de aplicación en modo Release
+2018-03-09 11:43:28,836 [10] ERROR - FTP Server 192.168.0.251
+2018-03-09 13:10:25,691 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-09 13:10:39,195 [9] ERROR - FTP Server 192.168.0.251
+2018-03-09 15:25:31,879 [8] INFO  - Inicio de aplicación en modo Release
+2018-03-09 15:25:38,866 [8] ERROR - FTP Server 192.168.0.251
+2018-03-09 15:27:41,775 [8] INFO  - Usuario actualizado!
+2018-03-09 15:29:16,586 [8] INFO  - Usuario actualizado!
+2018-03-09 16:56:29,984 [8] ERROR - El ticket 1373601 no pertenece a esta sesión 0
+2018-03-09 16:56:30,047 [8] ERROR - El ticket 1373601 no pertenece a esta sesión 0
+System.Exception: El ticket 1373601 no pertenece a esta sesión 0
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 498
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 88
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 216
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-03-09 16:56:30,208 [8] ERROR - El ticket 1373601 no pertenece a esta sesión 0
+2018-03-09 16:57:30,044 [8] INFO  - Usuario actualizado!
+2018-03-09 17:02:20,357 [8] INFO  - Usuario actualizado!
+2018-03-09 17:06:26,696 [10] INFO  - Inicio de aplicación en modo Release
+2018-03-09 17:06:39,116 [10] ERROR - FTP Server 192.168.0.251
+2018-03-09 19:46:26,617 [9] INFO  - Inicio de aplicación en modo Release
+2018-03-09 20:32:03,844 [10] INFO  - Inicio de aplicación en modo Release

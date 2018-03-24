@@ -641,7 +641,7 @@ namespace SICASv20
 				if (command.Connection.State == ConnectionState.Closed) command.Connection.Open();
 				command.CommandType = CommandType.StoredProcedure;
 				command.CommandText = query;
-				command.CommandTimeout = 180;
+				command.CommandTimeout = 3000;
 
 				foreach (string key in m_params.Keys)
 				{

@@ -92,7 +92,7 @@
             empresa_IDLabel.AutoSize = true;
             empresa_IDLabel.Location = new System.Drawing.Point(8, 31);
             empresa_IDLabel.Name = "empresa_IDLabel";
-            empresa_IDLabel.Size = new System.Drawing.Size(75, 15);
+            empresa_IDLabel.Size = new System.Drawing.Size(90, 18);
             empresa_IDLabel.TabIndex = 8;
             empresa_IDLabel.Text = "Empresa ID:";
             // 
@@ -101,7 +101,7 @@
             estacion_IDLabel.AutoSize = true;
             estacion_IDLabel.Location = new System.Drawing.Point(8, 60);
             estacion_IDLabel.Name = "estacion_IDLabel";
-            estacion_IDLabel.Size = new System.Drawing.Size(72, 15);
+            estacion_IDLabel.Size = new System.Drawing.Size(88, 18);
             estacion_IDLabel.TabIndex = 10;
             estacion_IDLabel.Text = "Estacion ID:";
             // 
@@ -110,7 +110,7 @@
             cuenta_IDLabel.AutoSize = true;
             cuenta_IDLabel.Location = new System.Drawing.Point(8, 145);
             cuenta_IDLabel.Name = "cuenta_IDLabel";
-            cuenta_IDLabel.Size = new System.Drawing.Size(64, 15);
+            cuenta_IDLabel.Size = new System.Drawing.Size(77, 18);
             cuenta_IDLabel.TabIndex = 29;
             cuenta_IDLabel.Text = "Cuenta ID:";
             // 
@@ -119,7 +119,7 @@
             concepto_IDLabel.AutoSize = true;
             concepto_IDLabel.Location = new System.Drawing.Point(8, 174);
             concepto_IDLabel.Name = "concepto_IDLabel";
-            concepto_IDLabel.Size = new System.Drawing.Size(77, 15);
+            concepto_IDLabel.Size = new System.Drawing.Size(95, 18);
             concepto_IDLabel.TabIndex = 31;
             concepto_IDLabel.Text = "Concepto ID:";
             // 
@@ -161,7 +161,7 @@
             0,
             0});
             this.CargoNumericUpDown.Name = "CargoNumericUpDown";
-            this.CargoNumericUpDown.Size = new System.Drawing.Size(86, 21);
+            this.CargoNumericUpDown.Size = new System.Drawing.Size(86, 24);
             this.CargoNumericUpDown.TabIndex = 37;
             this.CargoNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -179,7 +179,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(8, 231);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 15);
+            this.label5.Size = new System.Drawing.Size(98, 18);
             this.label5.TabIndex = 35;
             this.label5.Text = "Comentarios:";
             // 
@@ -211,7 +211,7 @@
             this.cuenta_IDComboBox.FormattingEnabled = true;
             this.cuenta_IDComboBox.Location = new System.Drawing.Point(102, 142);
             this.cuenta_IDComboBox.Name = "cuenta_IDComboBox";
-            this.cuenta_IDComboBox.Size = new System.Drawing.Size(225, 23);
+            this.cuenta_IDComboBox.Size = new System.Drawing.Size(225, 26);
             this.cuenta_IDComboBox.TabIndex = 30;
             this.cuenta_IDComboBox.ValueMember = "Cuenta_ID";
             this.cuenta_IDComboBox.SelectionChangeCommitted += new System.EventHandler(this.cuenta_IDComboBox_SelectionChangeCommitted);
@@ -234,7 +234,7 @@
             this.concepto_IDComboBox.FormattingEnabled = true;
             this.concepto_IDComboBox.Location = new System.Drawing.Point(102, 171);
             this.concepto_IDComboBox.Name = "concepto_IDComboBox";
-            this.concepto_IDComboBox.Size = new System.Drawing.Size(225, 23);
+            this.concepto_IDComboBox.Size = new System.Drawing.Size(225, 26);
             this.concepto_IDComboBox.TabIndex = 32;
             this.concepto_IDComboBox.ValueMember = "Concepto_ID";
             // 
@@ -248,7 +248,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 12;
             this.label4.Text = "Cargo:";
             // 
@@ -260,7 +260,7 @@
             this.empresa_IDComboBox.FormattingEnabled = true;
             this.empresa_IDComboBox.Location = new System.Drawing.Point(102, 28);
             this.empresa_IDComboBox.Name = "empresa_IDComboBox";
-            this.empresa_IDComboBox.Size = new System.Drawing.Size(182, 23);
+            this.empresa_IDComboBox.Size = new System.Drawing.Size(182, 26);
             this.empresa_IDComboBox.TabIndex = 9;
             this.empresa_IDComboBox.ValueMember = "Empresa_ID";
             this.empresa_IDComboBox.SelectionChangeCommitted += new System.EventHandler(this.empresa_IDComboBox_SelectionChangeCommitted);
@@ -278,7 +278,7 @@
             this.estacion_IDComboBox.FormattingEnabled = true;
             this.estacion_IDComboBox.Location = new System.Drawing.Point(102, 57);
             this.estacion_IDComboBox.Name = "estacion_IDComboBox";
-            this.estacion_IDComboBox.Size = new System.Drawing.Size(182, 23);
+            this.estacion_IDComboBox.Size = new System.Drawing.Size(182, 26);
             this.estacion_IDComboBox.TabIndex = 11;
             this.estacion_IDComboBox.ValueMember = "Estacion_ID";
             // 
@@ -299,7 +299,7 @@
             this.ConductorTextBox.Location = new System.Drawing.Point(102, 111);
             this.ConductorTextBox.Name = "ConductorTextBox";
             this.ConductorTextBox.ReadOnly = true;
-            this.ConductorTextBox.Size = new System.Drawing.Size(225, 21);
+            this.ConductorTextBox.Size = new System.Drawing.Size(225, 24);
             this.ConductorTextBox.TabIndex = 7;
             // 
             // get_DatosConductorDeUnidadBindingSource
@@ -312,7 +312,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 15);
+            this.label2.Size = new System.Drawing.Size(82, 18);
             this.label2.TabIndex = 6;
             this.label2.Text = "Conductor:";
             // 
@@ -320,7 +320,7 @@
             // 
             this.NumeroEconomicoTextBox.Location = new System.Drawing.Point(102, 84);
             this.NumeroEconomicoTextBox.Name = "NumeroEconomicoTextBox";
-            this.NumeroEconomicoTextBox.Size = new System.Drawing.Size(101, 21);
+            this.NumeroEconomicoTextBox.Size = new System.Drawing.Size(101, 24);
             this.NumeroEconomicoTextBox.TabIndex = 5;
             this.NumeroEconomicoTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.NumeroEconomicoTextBox_KeyUp);
             // 
@@ -329,7 +329,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.Size = new System.Drawing.Size(58, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Unidad:";
             // 
@@ -426,13 +426,13 @@
             // 
             // CargoCuentaConductores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 680);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "CargoCuentaConductores";
-            this.Text = "AltaCuentaConductores";            
+            this.Text = "AltaCuentaConductores";
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.groupBox1.ResumeLayout(false);

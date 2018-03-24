@@ -24,7 +24,7 @@ namespace SICASv20.forms
         public override void BindData()
         {
             ModelosUnidadesBindingSource.DataSource = Entities.ModelosUnidades.Read();
-            UsuariosBindingSource.DataSource = Entities.Usuarios.Read();
+         //   UsuariosBindingSource.DataSource = Entities.Usuarios.Read();
             DiasDeCobrosBindingSource.DataSource = Entities.DiasDeCobros.Read();
             estacionesBindingSource.DataSource = Sesion.Estaciones;
             PlanesDeRentaBindingSource.AddNew();

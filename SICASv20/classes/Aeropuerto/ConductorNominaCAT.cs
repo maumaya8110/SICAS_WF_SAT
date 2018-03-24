@@ -22,7 +22,10 @@ namespace SICASv20.classes.Aeropuerto
 		public double PagoExtra { get; set; }
 		public double Descuento { get; set; }
 		public double CargaSocial { get; set; }
-		public double SueldoVariable { get; set; }
+        public double Bono { get; set; }
+        public double SueldoVariable { get; set; }
 		public double Sueldo { get; set; }
+
+        
 	}
 }

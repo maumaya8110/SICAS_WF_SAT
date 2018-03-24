@@ -1,0 +1,16 @@
+2018-01-10 09:33:28,241 [8] INFO  - Inicio de aplicación en modo Release
+2018-01-10 09:33:29,924 [8] ERROR - FTP Server 192.168.0.251
+2018-01-10 12:03:38,543 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-10 12:10:40,472 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-10 12:10:40,616 [10] ERROR - FTP Server 192.168.0.251
+2018-01-10 12:25:30,165 [10] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Se ha intentado una operación de socket en un host no accesible.)
+2018-01-10 12:26:11,141 [10] INFO  - Inicio de aplicación en modo Debug
+2018-01-10 12:26:51,327 [10] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+2018-01-10 12:31:04,324 [9] INFO  - Inicio de aplicación en modo Release
+2018-01-10 12:31:04,471 [9] ERROR - FTP Server 192.168.0.251
+2018-01-10 15:03:40,710 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-10 15:03:41,095 [10] ERROR - FTP Server 192.168.0.251
+2018-01-10 15:20:34,063 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-10 15:20:34,205 [10] ERROR - FTP Server 192.168.0.251
+2018-01-10 15:20:42,131 [10] INFO  - Inicio de aplicación en modo Release
+2018-01-10 15:20:42,268 [10] ERROR - FTP Server 192.168.0.251

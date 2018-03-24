@@ -3497,6 +3497,7 @@
     <Content Include="sicas.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\test\" />
     <Folder Include="forms\callcenter\atencionclientes\" />
     <Folder Include="forms\empresas\archivo\EquiposGas\" />
     <Folder Include="forms\taller\reportes\boletin\" />

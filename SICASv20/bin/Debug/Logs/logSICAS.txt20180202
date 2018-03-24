@@ -1,0 +1,18 @@
+2018-02-02 16:17:00,411 [9] INFO  - Inicio de aplicación en modo Debug
+2018-02-02 16:22:58,808 [10] INFO  - Inicio de aplicación en modo Debug
+2018-02-02 16:24:13,352 [10] INFO  - Usuario actualizado!
+2018-02-02 16:24:25,172 [10] INFO  - Inicio de aplicación en modo Debug
+2018-02-02 16:24:48,986 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 28
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-02-02 16:24:49,008 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-02-02 16:25:36,040 [10] INFO  - Inicio de aplicación en modo Debug
+2018-02-02 16:25:40,215 [10] ERROR - Usuario o contraseña erroneas!
+2018-02-02 16:27:14,808 [10] INFO  - Inicio de aplicación en modo Debug
+2018-02-02 16:27:39,087 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 32
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 429
+2018-02-02 16:27:39,338 [10] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-02-02 16:28:24,447 [10] INFO  - Inicio de aplicación en modo Debug
