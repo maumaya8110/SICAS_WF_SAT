@@ -226,16 +226,16 @@ namespace SICASv20
 		    //  Hay que ponerle un server tres, con la nueva dirección 38.124.197.5
 		    ConfigDS config = new ConfigDS();
             config.DB.AddDBRow("Produccion", "38.124.197.5", "SICASSync", "SICASusr", "oiuddvbh", 2);
-		    config.DB.AddDBRow("Produccion", "192.168.0.251", "SICASSync", "SICASusr", "oiuddvbh", 1);		    
+		  //  config.DB.AddDBRow("Produccion", "192.168.0.251", "SICASSync", "SICASusr", "oiuddvbh", 1);		    
 		    config.DB.AddDBRow("Produccion", "201.159.98.194", "SICASSync", "SICASusr", "oiuddvbh", 3);
-		    config.DB.AddDBRow("Pruebas", "192.168.0.251", "SICASTest", "SICASusr", "oiuddvbh", 1);
+		 //   config.DB.AddDBRow("Pruebas", "192.168.0.251", "SICASTest", "SICASusr", "oiuddvbh", 1);
 		    config.DB.AddDBRow("Pruebas", "38.124.197.5", "SICASTest", "SICASusr", "oiuddvbh", 2);
 		    config.DB.AddDBRow("Pruebas", "201.159.98.194", "SICASTest", "SICASusr", "oiuddvbh", 3);
 
-		    config.FTP.AddFTPRow("Produccion", "192.168.0.251", "sicasftp", "ibdibnnesems", "", 1);
+		   // config.FTP.AddFTPRow("Produccion", "192.168.0.251", "sicasftp", "ibdibnnesems", "", 1);
 		    config.FTP.AddFTPRow("Produccion", "38.124.197.5", "sicasftp", "ibdibnnesems", "", 2);
 		    config.FTP.AddFTPRow("Produccion", "201.159.98.194", "sicasftp", "ibdibnnesems", "", 3);
-		    config.FTP.AddFTPRow("Pruebas", "192.168.0.251", "sicasftp", "ibdibnnesems", "/Pruebas", 1);
+		    //config.FTP.AddFTPRow("Pruebas", "192.168.0.251", "sicasftp", "ibdibnnesems", "/Pruebas", 1);
 		    config.FTP.AddFTPRow("Pruebas", "38.124.197.5", "sicasftp", "ibdibnnesems", "/Pruebas", 2);
 		    config.FTP.AddFTPRow("Pruebas", "201.159.98.194", "sicasftp", "ibdibnnesems", "/Pruebas", 3);
 
