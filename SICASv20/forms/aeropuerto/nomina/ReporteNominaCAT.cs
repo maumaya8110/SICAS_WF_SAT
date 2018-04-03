@@ -81,7 +81,7 @@ namespace SICASv20.forms.aeropuerto.nomina
             dgvConductores.AutoGenerateColumns = false;
             dgvDetalleIncidencias.AutoGenerateColumns = false;
             dgvConductores.ScrollBars = ScrollBars.Both;
-            
+
 
         }
 
@@ -119,12 +119,12 @@ namespace SICASv20.forms.aeropuerto.nomina
             bsConductores.DataSource = Entities.Vista_NominaCAT.GetReporteNomina(Periodo);
             dgvConductores.DataSource = bsConductores;
             dgvConductores.Refresh();
-         dgvConductores.ScrollBars = ScrollBars.Both;
+            dgvConductores.ScrollBars = ScrollBars.Both;
 
             dgvDetalleIncidencias.DataSource = Entities.Vista_NominaCAT.GetDetalleIncidenciasNomina(Periodo);
-           
+
             dgvDetalleIncidencias.Refresh();
-         
+
 
             classes.Aeropuerto.EstatusNomina en = Entities.Vista_NominaCAT.GetEstatusNominaPorPeriodo(Periodo);
             lblStatus.Text = en.Nombre;
