@@ -26171,6 +26171,10 @@ ORDER BY	Conductor DESC";
                 c.TiempoExtra = Convert.ToDouble(dr["Incidencias_TiempoExtra"]);
                 c.PagoExtra = Convert.ToDouble(dr["Incidencias_PagoExtra"]);
                 c.Descuento = Convert.ToDouble(dr["Incidencias_Descuento"]);
+
+                c.ServTE = Convert.ToDouble(dr["ServiciosRealizadosTE"]);
+                c.IngServTE = Convert.ToDouble(dr["IngresoXBoletosTE"]);
+                 
                 c.Bono = Convert.ToDouble(dr["Bono"]);
                 c.SueldoVariable = Convert.ToDouble(dr["SueldoVariable"]);
                 c.Sueldo = Convert.ToDouble(dr["Sueldo"]);

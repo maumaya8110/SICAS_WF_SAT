@@ -1,9 +1,10 @@
-2018-04-03 10:55:12,469 [10] INFO  - Inicio de aplicación en modo Release
-2018-04-03 11:04:20,077 [10] INFO  - Inicio de aplicación en modo Release
-2018-04-03 11:06:24,372 [9] INFO  - Inicio de aplicación en modo Release
-2018-04-03 11:12:22,808 [9] INFO  - Inicio de aplicación en modo Release
-2018-04-03 11:16:23,764 [10] INFO  - Inicio de aplicación en modo Release
-2018-04-03 11:17:10,420 [10] ERROR - FTP Server 192.168.0.251
-2018-04-03 17:51:11,388 [11] INFO  - Inicio de aplicación en modo Release
-2018-04-03 17:51:58,466 [11] ERROR - FTP Server 192.168.0.251
-2018-04-03 17:52:16,348 [11] ERROR - Usuario o contraseña erroneas!
+2018-04-06 13:06:06,540 [10] INFO  - Inicio de aplicación en modo Release
+2018-04-06 13:15:37,765 [10] ERROR - FTP Server 192.168.0.251
+2018-04-06 18:27:52,783 [10] INFO  - Inicio de aplicación en modo Release
+2018-04-06 18:28:06,038 [10] ERROR - FTP Server 192.168.0.251
+2018-04-06 19:01:32,012 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-06 19:01:44,312 [9] ERROR - FTP Server 192.168.0.251
+2018-04-06 19:03:59,979 [10] INFO  - Inicio de aplicación en modo Release
+2018-04-06 19:04:31,670 [10] ERROR - FTP Server 192.168.0.251
+2018-04-06 19:06:15,343 [10] INFO  - Inicio de aplicación en modo Release
+2018-04-06 19:06:23,154 [10] ERROR - FTP Server 192.168.0.251

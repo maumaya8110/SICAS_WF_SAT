@@ -24,8 +24,9 @@ namespace SICASv20.forms.caja.herramientas
 
 		private void ImprimirTckets()
         {
-            //Sesion.Sesion_ID = 37492;
-            //Sesion.Caja_ID = 13;
+            Sesion.Usuario_ID = "isolis2104";
+            Sesion.Sesion_ID = 38535;
+            Sesion.Caja_ID = 51;
 
 			SICASv20.Entities.Sesiones UltimaSesionCerrada = Entities.Sesiones.GetUltimaSesionPorUsuarioCaja(Sesion.Usuario_ID, Sesion.Caja_ID);
 

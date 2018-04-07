@@ -1,0 +1,29 @@
+2018-04-05 15:43:32,755 [8] INFO  - Inicio de aplicación en modo Release
+2018-04-05 15:43:44,930 [8] ERROR - FTP Server 192.168.0.251
+2018-04-05 15:46:52,733 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-05 15:47:02,474 [9] ERROR - FTP Server 192.168.0.251
+2018-04-05 15:48:27,798 [9] ERROR - Incorrect syntax near 'WHERE'.
+System.Data.SqlClient.SqlException: Incorrect syntax near 'WHERE'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASv20.DB.Select(String tablename, Hashtable w_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 1147
+   en SICASv20.Entities.Estaciones.GetEsFranquicia(Nullable`1 estacion_id) en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 7755
+   en SICASv20.classes.Interfaces.DeclaracionValores.Imprimir(DeclaracionValores dv, Int32 idx) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 426
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 42
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-05 15:48:27,815 [9] ERROR - Incorrect syntax near 'WHERE'.
+2018-04-05 18:06:57,849 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-05 18:07:17,674 [9] ERROR - FTP Server 192.168.0.251
