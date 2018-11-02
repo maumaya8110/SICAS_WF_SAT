@@ -1,0 +1,27 @@
+2018-05-08 10:16:30,241 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-08 10:16:33,506 [1] ERROR - FTP Server 192.168.0.251
+2018-05-08 15:14:25,793 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-08 15:14:54,392 [1] ERROR - FTP Server 192.168.0.251
+2018-05-08 15:16:04,743 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 11-05-2018?
+2018-05-08 15:25:33,400 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 18-05-2018?
+2018-05-08 15:55:38,507 [1] ERROR - RFC Inválido, el formato debe ser XXXX999999 sin homoclave o XXXX999999ZZZ con homoclave.
+System.Exception: RFC Inválido, el formato debe ser XXXX999999 sin homoclave o XXXX999999ZZZ con homoclave.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4011
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 64
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-08 15:55:38,545 [1] ERROR - RFC Inválido, el formato debe ser XXXX999999 sin homoclave o XXXX999999ZZZ con homoclave.
+2018-05-08 15:56:03,354 [1] INFO  - Conductor registrado!
+2018-05-08 16:12:41,388 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:12:47,746 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:12:52,650 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:12:56,345 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:12:59,193 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:13:01,840 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:13:04,746 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:13:11,211 [1] INFO  - ¿Realmente desea eliminar al conductor de la plantilla para el periodo 04-05-2018?
+2018-05-08 16:22:46,324 [1] INFO  - Conductor registrado!
+2018-05-08 17:12:38,080 [9] INFO  - Inicio de aplicación en modo Release
+2018-05-08 17:12:42,934 [9] ERROR - FTP Server 192.168.0.251
+2018-05-08 17:14:26,530 [9] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+2018-05-08 17:14:28,649 [9] ERROR - Se produjo una excepción en el destino de la invocación.
+2018-05-08 17:14:39,543 [10] INFO  - Inicio de aplicación en modo Release

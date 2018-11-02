@@ -1,0 +1,9 @@
+2018-08-21 12:24:55,957 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-21 12:24:59,744 [10] ERROR - FTP Server 192.168.0.251
+2018-08-21 12:25:44,205 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:26:12,831 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:26:22,339 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:26:50,620 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:26:59,754 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:27:46,162 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.
+2018-08-21 12:29:28,781 [10] ERROR - Conversion failed when converting the varchar value '*' to data type int.

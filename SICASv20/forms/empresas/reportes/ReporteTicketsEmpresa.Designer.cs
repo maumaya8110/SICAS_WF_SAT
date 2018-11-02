@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.vista_TicketsDeSesionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ConsultarButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.selectEstacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.FechaFinalDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaInicialDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.selectEstacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vista_TicketsDeSesionBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -56,7 +56,7 @@
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(988, 656);
+            this.groupBox1.Size = new System.Drawing.Size(1167, 656);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reporte de Tickets de Empresa";
@@ -90,20 +90,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(218, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 15);
+            this.label3.Size = new System.Drawing.Size(16, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "a";
-            // 
-            // selectEstacionesBindingSource
-            // 
-            this.selectEstacionesBindingSource.DataSource = typeof(SICASv20.Entities.SelectEstaciones);
             // 
             // FechaFinalDateTimePicker
             // 
             this.FechaFinalDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaFinalDateTimePicker.Location = new System.Drawing.Point(240, 27);
             this.FechaFinalDateTimePicker.Name = "FechaFinalDateTimePicker";
-            this.FechaFinalDateTimePicker.Size = new System.Drawing.Size(108, 21);
+            this.FechaFinalDateTimePicker.Size = new System.Drawing.Size(108, 24);
             this.FechaFinalDateTimePicker.TabIndex = 2;
             // 
             // FechaInicialDateTimePicker
@@ -111,7 +107,7 @@
             this.FechaInicialDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaInicialDateTimePicker.Location = new System.Drawing.Point(103, 27);
             this.FechaInicialDateTimePicker.Name = "FechaInicialDateTimePicker";
-            this.FechaInicialDateTimePicker.Size = new System.Drawing.Size(108, 21);
+            this.FechaInicialDateTimePicker.Size = new System.Drawing.Size(108, 24);
             this.FechaInicialDateTimePicker.TabIndex = 1;
             // 
             // label1
@@ -119,26 +115,30 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fechas:";
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "ReporteTickets_DataSet";
-            reportDataSource2.Value = this.vista_TicketsDeSesionBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "ReporteTickets_DataSet";
+            reportDataSource1.Value = this.vista_TicketsDeSesionBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "SICASv20.reports.Reporte_Tickets.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(15, 85);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(947, 546);
+            this.reportViewer1.Size = new System.Drawing.Size(1133, 546);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // selectEstacionesBindingSource
+            // 
+            this.selectEstacionesBindingSource.DataSource = typeof(SICASv20.Entities.SelectEstaciones);
             // 
             // ReporteTicketsEmpresa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 680);
+            this.ClientSize = new System.Drawing.Size(1233, 743);
             this.Controls.Add(this.groupBox1);
             this.Name = "ReporteTicketsEmpresa";
             this.Text = "ReporteTicketsEstacion";

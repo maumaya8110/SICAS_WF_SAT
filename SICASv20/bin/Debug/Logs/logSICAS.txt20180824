@@ -1,0 +1,24 @@
+2018-08-24 10:05:59,878 [8] INFO  - Inicio de aplicación en modo Release
+2018-08-24 10:06:25,366 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 10:06:27,659 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 11:01:56,847 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 11:03:06,251 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 11:04:41,585 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 11:04:44,235 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 11:18:44,448 [10] INFO  - Ticket Reimpreso!
+2018-08-24 11:19:33,814 [10] INFO  - Ticket Reimpreso!
+2018-08-24 16:00:41,904 [9] INFO  - Inicio de aplicación en modo Release
+2018-08-24 16:00:45,809 [9] ERROR - FTP Server 192.168.0.251
+2018-08-24 16:09:24,676 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 16:09:27,590 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 16:10:32,786 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 16:10:36,462 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 17:45:12,904 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-24 17:45:16,729 [10] ERROR - FTP Server 192.168.0.251
+2018-08-24 17:46:05,507 [10] INFO  - DEBE PAGAR RENTA + 100 DIARIOS, TODO EL GAS Y SINIESTROS
+2018-08-24 17:46:46,337 [10] INFO  - Busca ticket #1434373 en Base de Datos.
+2018-08-24 17:46:46,347 [10] INFO  - Imprimiendo ticket #1434373 - copia 1
+2018-08-24 17:47:04,601 [10] INFO  - Se imprimió ticket #1434373 - copia 1
+2018-08-24 17:47:04,615 [10] INFO  - Busca ticket #1434373 en Base de Datos.
+2018-08-24 17:47:04,623 [10] INFO  - Imprimiendo ticket #1434373 - copia 2
+2018-08-24 17:47:10,981 [10] INFO  - Se imprimió ticket #1434373 - copia 2

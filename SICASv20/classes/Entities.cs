@@ -4106,11 +4106,12 @@ SELECT	@Empresa_ID,
         public int Create()
         {
             DataTable dt = DB.Read("Conductores", DB.Param("CURP", this.CURP.ToUpper().Trim()));
-            if (dt.Rows.Count > 0)
-            {
-                DataRow dr = dt.Rows[0];
-                throw new Exception("Favor de verificar el CURP porque el conductor No. " + dr["Conductor_ID"] + " tiene el mismo CURP en la Base de Datos.");
-            }
+            //if (dt.Rows.Count > 0)
+            //{
+            //    DataRow dr = dt.Rows[0];
+            //    throw new Exception("Favor de verificar el CURP porque el conductor No. " + dr["Conductor_ID"] + " tiene el mismo CURP en la Base de Datos.");
+
+            //}
 
             Hashtable m_params = new Hashtable();
             if (!DB.IsNullOrEmpty(this.Nombre)) m_params.Add("Nombre", this.Nombre.ToUpper().Trim());
@@ -4188,11 +4189,11 @@ SELECT	@Empresa_ID,
             if (!IsIdentityInsert) return Create();
 
             DataTable dt = DB.Read("Conductores", DB.Param("CURP", this.CURP.ToUpper().Trim()));
-            if (dt.Rows.Count > 0)
-            {
-                DataRow dr = dt.Rows[0];
-                throw new Exception("Favor de verificar el CURP porque el conductor No. " + dr["Conductor_ID"] + " tiene el mismo CURP en la Base de Datos.");
-            }
+            //if (dt.Rows.Count > 0)
+            //{
+            //    DataRow dr = dt.Rows[0];
+            //    throw new Exception("Favor de verificar el CURP porque el conductor No. " + dr["Conductor_ID"] + " tiene el mismo CURP en la Base de Datos.");
+            //}
 
             Hashtable m_params = new Hashtable();
             m_params.Add("Conductor_ID", this.Conductor_ID);
@@ -5037,6 +5038,16 @@ SELECT	@Empresa_ID,
             set { _Referencia_ID = value; }
         }
 
+
+        //private string _Usuariox;
+        //public string Usuariox
+        //{
+        //    get { return _Usuariox; }
+        //    set { _Usuariox = value; }
+        //}
+
+
+
         public int? DiasRentasDevengar { get; set; }
 
         public int Create()
@@ -5224,6 +5235,11 @@ SELECT	@Empresa_ID,
 
         public int Update()
         {
+
+
+
+               Hashtable in_m_params = new Hashtable();
+
             Hashtable m_params = new Hashtable();
             Hashtable w_params = new Hashtable();
             w_params.Add("Contrato_ID", this.Contrato_ID);
@@ -5248,7 +5264,23 @@ SELECT	@Empresa_ID,
             m_params.Add("CobroPermanente", this.CobroPermanente);
             if (!AppHelper.IsNullOrEmpty(this.Referencia_ID)) m_params.Add("Referencia_ID", this.Referencia_ID);
 
+    //  in_m_params   
+             in_m_params.Add("Contrato_ID", this.Contrato_ID);
+            in_m_params.Add("Estacion_ID", this.Estacion_ID);
+            in_m_params.Add("Conductor_ID", this.Conductor_ID);
+            in_m_params.Add("Usuario_id", Sesion.Usuario_ID);
+            DB.InsertRow("tblContratosMovimientos", in_m_params);
+
+           
+            
+            
             return DB.UpdateRow("Contratos", m_params, w_params);
+
+
+
+
+
+
         } // End Update
 
         public int Delete()

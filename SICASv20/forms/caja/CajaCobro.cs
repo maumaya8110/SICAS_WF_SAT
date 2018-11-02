@@ -31,6 +31,8 @@ namespace SICASv20.forms
 		public CajaCobro()
 		{
 			InitializeComponent();
+
+           // InitializeTimer();
 		}
 
 		#region Properties
@@ -259,7 +261,7 @@ namespace SICASv20.forms
 		/// </summary>
 		private void ObtenerAdeudosDeConductor()
 		{
-			this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID);
+			this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID,Sesion.Usuario_ID);
 			adeudosDeConductorBindingSource.DataSource = this.Adeudos;
 			CalcularTotales();
 		}
@@ -1220,7 +1222,7 @@ namespace SICASv20.forms
 			this.TotalServicios = totalservicios;
 
 			//  Obtenemos los adeudos
-			this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID);
+			this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID,Sesion.Usuario_ID);
 
 			//  Calculamos la productividad
 			int productividad = 0;
@@ -1341,6 +1343,9 @@ AND		dbo.udf_DateValue(Fecha) = dbo.udf_DateValue(@FechaPago)";
 		/// <param name="e"></param>
 		private void UnidadTextBox_KeyUp(object sender, KeyEventArgs e)
 		{
+
+
+
 			try
 			{
 				//  Si el cobro es de tipo "ServiciosConductor"
@@ -1750,6 +1755,26 @@ AND		dbo.udf_DateValue(Fecha) = dbo.udf_DateValue(@FechaPago)";
         private void UnidadTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void InitializeTimer()
+        {
+            // Call this procedure when the application starts.  
+            // Set to 1 second.  
+            //timer1.Interval = 1000;
+            //timer1.Tick += new EventHandler(timer1_Tick);
+
+            // Enable timer.  
+           // timer1.Enabled = true;
+
+            //Button1.Text = "Stop";
+            //Button1.Click += new EventHandler(Button1_Click);
+        }  
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //lblHora.Text = DateTime.Now.ToShortTimeString();
         }  // End void
 
 		#endregion

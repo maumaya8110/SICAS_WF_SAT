@@ -1,0 +1,7 @@
+2018-04-27 12:07:34,255 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-27 12:07:41,507 [9] ERROR - FTP Server 192.168.0.251
+2018-04-27 12:08:16,584 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-27 12:09:23,166 [9] ERROR - FTP Server 192.168.0.251
+2018-04-27 12:09:57,132 [9] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Host desconocido.)
+2018-04-27 12:10:36,125 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-27 12:10:40,563 [9] ERROR - FTP Server 192.168.0.251

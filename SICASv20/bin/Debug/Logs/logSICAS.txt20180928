@@ -1,0 +1,27 @@
+2018-09-28 16:34:40,775 [10] INFO  - Inicio de aplicación en modo Release
+2018-09-28 16:34:41,834 [10] ERROR - FTP Server 192.168.0.251
+2018-09-28 17:01:40,644 [9] INFO  - Inicio de aplicación en modo Release
+2018-09-28 17:01:40,838 [9] ERROR - FTP Server 192.168.0.251
+2018-09-28 17:03:02,082 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
+2018-09-28 17:14:35,959 [9] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+System.Data.SqlClient.SqlException: Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   en System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   en System.Data.SqlClient.TdsParser.TdsExecuteSQLBatch(String text, Int32 timeout, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.QueryScalar(String sqlQry) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 460
+   en SICASv20.DB.GetDate() en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 307
+   en SICASv20.forms.SICASForm.RegistrarSalida() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1602
+   en SICASv20.forms.SICASForm.<SICASForm_FormClosed>b__0() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1620
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol, HelperDelegate finallymethod) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 424
+2018-09-28 17:14:35,980 [9] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+2018-09-28 18:41:05,733 [10] INFO  - Inicio de aplicación en modo Release
+2018-09-28 18:41:07,321 [10] ERROR - FTP Server 192.168.0.251
+2018-09-28 18:46:12,700 [10] INFO  - Inicio de aplicación en modo Release
+2018-09-28 18:46:13,164 [10] ERROR - FTP Server 192.168.0.251
+2018-09-28 18:58:30,544 [10] INFO  - Usuario actualizado!

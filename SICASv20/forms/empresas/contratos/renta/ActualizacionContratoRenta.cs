@@ -278,6 +278,7 @@ namespace SICASv20.forms
                     this.Model.Contrato.FondoResidual = Convert.ToDecimal(this.fondoResidualTextBox.Text);
                     this.Model.Contrato.ConductorCopia_ID = this.ConductorCopia_ID;                    
 
+
                     //  Guardamos la información
                     this.Model.Guardar();
 

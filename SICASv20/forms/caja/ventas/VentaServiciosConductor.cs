@@ -117,13 +117,55 @@ namespace SICASv20.forms
 			//  Obtenemos el número económico del control
 			int numeroeconomico = DB.GetNullableInt32(NumeroEconomicoTextBox.Text).Value;
 
-			//  Obtenemos el contrato
-			this.Contrato =
-			    Entities.Contratos.Read(
-				   DB.Param("EstatusContrato_ID", 1),
-					  DB.Param("NumeroEconomico", numeroeconomico),
-						 DB.Param("Empresa_ID", Sesion.Empresa_ID),
-							DB.Param("Estacion_ID", Sesion.Estacion_ID));
+            ////  Obtenemos el contrato
+            //this.Contrato =
+            //    Entities.Contratos.Read(
+            //       DB.Param("EstatusContrato_ID", 1),
+            //          DB.Param("NumeroEconomico", numeroeconomico),
+            //             DB.Param("Empresa_ID", Sesion.Empresa_ID),
+            //                DB.Param("Estacion_ID", Sesion.Estacion_ID));
+
+
+
+            if (Sesion.Empresa_ID == null)
+            {
+
+                if (Sesion.Estacion_ID == null)
+                {
+
+                    this.Contrato =
+                    Entities.Contratos.Read(
+                       DB.Param("EstatusContrato_ID", 1),
+                          DB.Param("NumeroEconomico", numeroeconomico));
+                }
+
+                else
+                {
+                    this.Contrato =
+                   Entities.Contratos.Read(
+                      DB.Param("EstatusContrato_ID", 1),
+                         DB.Param("NumeroEconomico", numeroeconomico),
+                         DB.Param("Estacion_ID", Sesion.Estacion_ID));
+                }
+
+
+            }
+            else
+            {
+                //  Obtenemos el contrato
+                this.Contrato =
+                    Entities.Contratos.Read(
+                       DB.Param("EstatusContrato_ID", 1),
+                          DB.Param("NumeroEconomico", numeroeconomico),
+                    //DB.Param("Empresa_ID", Sesion.Empresa_ID),
+                                DB.Param("Estacion_ID", Sesion.Estacion_ID));
+
+            }
+
+
+
+
+
 
 			//  Si no hay contrato, mandamos excepcion
 			if (Contrato == null) throw new Exception(string.Format("La unidad {0} no tiene contrato activo", numeroeconomico));

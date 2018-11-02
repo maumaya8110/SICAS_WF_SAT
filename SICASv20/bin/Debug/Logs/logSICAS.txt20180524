@@ -1,0 +1,8 @@
+2018-05-24 17:56:52,060 [10] INFO  - Inicio de aplicación en modo Release
+2018-05-24 17:57:50,716 [10] ERROR - El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+2018-05-24 17:59:30,898 [10] INFO  - Registro Actualizado
+2018-05-24 17:59:40,082 [10] INFO  - Registro Actualizado
+2018-05-24 18:00:00,608 [10] INFO  - Registro Actualizado
+2018-05-24 18:00:58,268 [10] INFO  - Registro Actualizado
+2018-05-24 18:01:41,358 [10] INFO  - Registro Actualizado

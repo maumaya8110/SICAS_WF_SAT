@@ -83,10 +83,10 @@ namespace SICASv20.forms
                 //  Verificamos que pertenezca a la sesión
                 //  de esta manera, solo los tickets emitidos por la caja
                 //  pueden ser reimpresos
-                if (Ticket.Sesion_ID != this.Sesion_ID)
-                {
-                    AppHelper.ThrowException("El ticket {0} no pertenece a esta sesión {1}", this.Ticket_ID, this.Sesion_ID);
-                }
+                //if (Ticket.Sesion_ID != this.Sesion_ID)
+                //{
+                //    AppHelper.ThrowException("El ticket {0} no pertenece a esta sesión {1}", this.Ticket_ID, this.Sesion_ID);
+                //}
             }
 
             /// <summary>
@@ -158,8 +158,20 @@ namespace SICASv20.forms
                 printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
                 printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
                 printer.PrintCLRF();
-                printer.PrintText(string.Format("U{0}", data.NumeroEconomico));
-                printer.PrintText(data.Conductor);
+
+                if (chkUnidad.Checked == true)
+                {
+                    printer.PrintText(string.Format("U{0}", data.NumeroEconomico));
+                }
+                
+
+                if (chkNombre.Checked==true) 
+                {
+                    printer.PrintText(data.Conductor.Replace(data.NumeroEconomico.ToString(), "").Replace("(", "").Replace(")", ""));
+                }
+                
+                
+                
                 printer.PrintCLRF();
 
                 //  Imprimirmos la tabla
@@ -229,6 +241,11 @@ namespace SICASv20.forms
 
                 }, this);
             } // end if
+
+        }
+
+        private void TicketIDTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         } // end KeyUp
 

@@ -1,0 +1,26 @@
+2018-10-05 09:40:09,261 [9] INFO  - Inicio de aplicación en modo Release
+2018-10-05 09:40:26,545 [9] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:40:28,539 [9] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:40:29,392 [9] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:40:29,998 [9] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:40:30,733 [9] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:42:50,013 [10] INFO  - Inicio de aplicación en modo Release
+2018-10-05 09:43:01,757 [10] ERROR - Usuario o contraseña erroneas!
+2018-10-05 09:43:03,379 [10] ERROR - Usuario o contraseña erroneas!
+2018-10-05 17:20:45,559 [10] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+System.Data.SqlClient.SqlException: Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   en System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   en System.Data.SqlClient.TdsParser.TdsExecuteSQLBatch(String text, Int32 timeout, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.QueryScalar(String sqlQry) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 460
+   en SICASv20.DB.GetDate() en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 307
+   en SICASv20.forms.SICASForm.RegistrarSalida() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1602
+   en SICASv20.forms.SICASForm.<SICASForm_FormClosed>b__0() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1620
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol, HelperDelegate finallymethod) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 424
+2018-10-05 17:20:45,599 [10] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)

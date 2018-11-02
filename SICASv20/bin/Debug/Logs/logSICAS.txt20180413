@@ -1,0 +1,56 @@
+2018-04-13 10:05:13,772 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-13 10:05:26,604 [9] ERROR - FTP Server 192.168.0.251
+2018-04-13 11:02:32,688 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-13 11:02:45,227 [9] ERROR - FTP Server 192.168.0.251
+2018-04-13 11:04:37,639 [9] ERROR - Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASv20.SICASCentralQuerysIIDataSetTableAdapters.Functions.InsertUsuario(String Usuario_ID, String Nombre, String Apellidos, String Email, Boolean Activo, String pwd, Nullable`1 Empresa_ID, Nullable`1 Estacion_ID) en C:\Work\SICAS_WF\SICASv20\SICASCentralQuerysIIDataSet.Designer.cs:línea 4834
+   en SICASv20.forms.AltaUsuario.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 148
+   en SICASv20.forms.AltaUsuario.<GuardarButton_Click>b__0() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 196
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 481
+2018-04-13 11:04:37,779 [9] ERROR - Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+2018-04-13 11:05:25,641 [9] ERROR - La cadena especificada no tiene la forma obligatoria para una dirección de correo electrónico.
+System.FormatException: La cadena especificada no tiene la forma obligatoria para una dirección de correo electrónico.
+   en System.Net.Mime.MailBnfHelper.ReadMailAddress(String data, Int32& offset, String& displayName)
+   en System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   en SICASv20.AppHelper.SendEmail(String from, String to, String title, String body, Boolean isHTML) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 1288
+   en SICASv20.AppHelper.SendNewAccountMail(String to, String name, String username, String pwd) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 1271
+   en SICASv20.forms.AltaUsuario.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 180
+   en SICASv20.forms.AltaUsuario.<GuardarButton_Click>b__0() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 196
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 481
+2018-04-13 11:05:25,644 [9] ERROR - La cadena especificada no tiene la forma obligatoria para una dirección de correo electrónico.
+2018-04-13 11:05:42,701 [9] ERROR - Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en SICASv20.SICASCentralQuerysIIDataSetTableAdapters.Functions.InsertUsuario(String Usuario_ID, String Nombre, String Apellidos, String Email, Boolean Activo, String pwd, Nullable`1 Empresa_ID, Nullable`1 Estacion_ID) en C:\Work\SICAS_WF\SICASv20\SICASCentralQuerysIIDataSet.Designer.cs:línea 4834
+   en SICASv20.forms.AltaUsuario.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 148
+   en SICASv20.forms.AltaUsuario.<GuardarButton_Click>b__0() en C:\Work\SICAS_WF\SICASv20\forms\sistema\usuarios\AltaUsuario.cs:línea 196
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 481
+2018-04-13 11:05:42,703 [9] ERROR - Violation of PRIMARY KEY constraint 'PK_Usuarios'. Cannot insert duplicate key in object 'dbo.Usuarios'.
+The statement has been terminated.
+2018-04-13 11:44:52,339 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-13 11:45:02,400 [9] ERROR - FTP Server 192.168.0.251
+2018-04-13 11:50:30,809 [9] INFO  - Usuario creado!
+2018-04-13 11:52:36,532 [9] INFO  - Usuario actualizado!
+2018-04-13 11:54:56,021 [9] INFO  - Usuario creado!
+2018-04-13 11:57:59,164 [9] INFO  - Usuario actualizado!

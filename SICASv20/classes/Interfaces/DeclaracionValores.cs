@@ -294,9 +294,9 @@ namespace SICASv20.classes.Interfaces
             printer.PrintText(string.Format("EID:    {0} - {1}", dv.Empresa_Id, dv.Empresa));
             printer.PrintText(string.Format("ESTID:    {0}", Sesion.Estacion_ID));
             printer.PrintText(string.Format("SID:   {0}", Sesion.Sesion_ID));
-           // printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", DateTime.Now));
+            printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", DateTime.Now));
             //printer.PrintText(string.Format("SID:   {0}", "35852"));
-            printer.PrintText("F:   2018-04-04    H:    21:10:20.917 ");
+           // printer.PrintText("F:   2018-04-04    H:    21:10:20.917 ");
             printer.PrintCLRF();
 
             //Billetes

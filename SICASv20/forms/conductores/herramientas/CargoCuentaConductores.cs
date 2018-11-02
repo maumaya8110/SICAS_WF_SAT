@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -142,9 +143,31 @@ namespace SICASv20.forms
             getEmpresasInternasBindingSource.DataSource = Sesion.Empresas;
             SelectCuentas();
             SelectConceptos();
-            this.Busqueda = new forms.BusquedaConductor();           
+            this.Busqueda = new forms.BusquedaConductor();
 
             base.BindData();
+        }
+
+
+
+
+        private DataTable consulta(string query)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = new SqlConnection("Data Source=sicas.casco.com.mx,54903;Initial Catalog=SICASSync;Persist Security Info=True;User ID=SICASusr;Password=oiuddvbh"))
+            {
+                //  string query = "select id, desc from <tabla>";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+            //combobox1.DisplayMember = "desc";
+            //combobox1.ValueMember = "id";
+            //combobox1.Datasource = dt;
+
         }
 
         /// <summary>
@@ -153,14 +176,65 @@ namespace SICASv20.forms
         /// </summary>
         private void SelectCuentas()
         {
-            if (empresa_IDComboBox.SelectedValue != null)
+            string usuariox = Sesion.Usuario_ID.ToLower();
+
+            //DataTable dt = new DataTable();
+            //dt.Columns.Add("Cuenta_ID");
+            //dt.Columns.Add("Nombre");
+            //dt.AcceptChanges();
+
+            //dt.Rows.Add("14","SINIESTRALIDAD");
+            //dt.AcceptChanges();
+
+            if ((usuariox == "revista.mg") || (usuariox == "revista.cf") || (usuariox == "revista.sc") || (usuariox == "revista.tll"))
             {
-                //  Llenar la cuentas
-                get_CuentasDeEmpresaTableAdapter.Fill(
-                    sICASCentralQuerysDataSet.Get_CuentasDeEmpresa,
-                        (int)empresa_IDComboBox.SelectedValue);
+                if (empresa_IDComboBox.SelectedValue != null)
+                {
+                    cuenta_IDComboBox.DisplayMember = "Nombre";
+                    cuenta_IDComboBox.ValueMember = "Cuenta_ID";
+                    cuenta_IDComboBox.DataSource = consulta("exec spCuentaEmpresaRevista " + (int)empresa_IDComboBox.SelectedValue);
+
+                }
+
+
+
             }
+            else
+            {
+                if (empresa_IDComboBox.SelectedValue != null)
+                {
+                    //  Llenar la cuentas
+                    get_CuentasDeEmpresaTableAdapter.Fill(
+                        sICASCentralQuerysDataSet.Get_CuentasDeEmpresa,
+                            (int)empresa_IDComboBox.SelectedValue);
+
+
+                    SelectConceptos();
+                }
+
+                //empresa_IDComboBox.DisplayMember = "Nombre";
+                //empresa_IDComboBox.ValueMember = "Cuenta_ID";
+                //empresa_IDComboBox.DataSource = consulta("exec spCuentaEmpresa " + (int)empresa_IDComboBox.SelectedValue);
+
+            }
+
+          
+
+
+            //if ((usuariox == "revista.mg") || (usuariox == "revista.cf") || (usuariox == "revista.sc") || (usuariox == "revista.tll"))
+            //{
+            //  //  cuenta_IDComboBox.DataSource = dt;
+
+
+            //    //cuenta_IDComboBox.remo
+                  
+            //}
+           
+
         }
+
+
+
 
         /// <summary>
         /// Consulta los conceptos de la base de datos
@@ -168,27 +242,52 @@ namespace SICASv20.forms
         /// </summary>
         private void SelectConceptos()
         {
-            if (cuenta_IDComboBox.SelectedValue != null)
-            {
 
-                //  Llenar los conceptos
-                int cuenta_id = (int)cuenta_IDComboBox.SelectedValue;
 
-                List<Entities.SelectConceptos> conceptos = Entities.SelectConceptos.Get(cuenta_id, null);
-                List<Entities.SelectConceptos> cargos = new List<Entities.SelectConceptos>();
+            //int cuenta=cuenta_
+             //string usuariox = Sesion.Usuario_ID.ToLower();
 
-                foreach (Entities.SelectConceptos concepto in conceptos)
-                {
-                    if (concepto.Nombre.StartsWith("CARGO") || concepto.Nombre.StartsWith("COBRO"))
-                    {
-                        cargos.Add(concepto);
-                    }
-                }
+             //if ((usuariox == "revista.mg") || (usuariox == "revista.cf") || (usuariox == "revista.sc") || (usuariox == "revista.tll"))
+             //{
+             //    if (empresa_IDComboBox.SelectedValue != null)
+             //    {
+             //        cuenta_IDComboBox.DisplayMember = "Nombre";
+             //        cuenta_IDComboBox.ValueMember = "Cuenta_ID";
+             //        cuenta_IDComboBox.DataSource = consulta("exec spCuentaEmpresaRevista " + (int)empresa_IDComboBox.SelectedValue);
 
-                this.getConceptosDeCuentaBindingSource.DataSource = cargos;
-            }
+             //    }
+
+
+
+             //}
+             //else
+             //{
+
+                 if (cuenta_IDComboBox.SelectedValue != null)
+                 {
+
+                     //  Llenar los conceptos
+                     int cuenta_id = (int)cuenta_IDComboBox.SelectedValue;
+
+                     List<Entities.SelectConceptos> conceptos = Entities.SelectConceptos.Get(cuenta_id, null);
+                     List<Entities.SelectConceptos> cargos = new List<Entities.SelectConceptos>();
+
+                     foreach (Entities.SelectConceptos concepto in conceptos)
+                     {
+                         if (concepto.Nombre.StartsWith("CARGO") || concepto.Nombre.StartsWith("COBRO"))
+                         {
+                             cargos.Add(concepto);
+                         }
+                     }
+
+                     this.getConceptosDeCuentaBindingSource.DataSource = cargos;
+                 }
+            // }
+
+
+          
         }
-        
+
         /// <summary>
         /// Maneja el evento KeyUp en la caja de texto NumeroEconomico
         /// </summary>
@@ -221,8 +320,8 @@ namespace SICASv20.forms
 
                     //  Buscamos la unidad
                     Entities.Unidades.Read(
-                        out unidad, 
-                        1, 
+                        out unidad,
+                        1,
                         "NumeroEconomico = @NumeroEconomico AND Estacion_ID = @Estacion_ID AND EstatusUnidad_ID <> 5",
                         null,
                         DB.Param("@NumeroEconomico", numeroeconomico),
@@ -233,7 +332,7 @@ namespace SICASv20.forms
                     if (unidad == null) throw new Exception("Unidad no existe o no tiene contrato activo");
 
                     //  Obtenemos al contrato
-                    Entities.Contratos contrato = 
+                    Entities.Contratos contrato =
                         Entities.Contratos.Read(DB.Param("Unidad_ID", unidad.Unidad_ID), DB.Param("EstatusContrato_ID", 1));
 
                     //  Verificamos los verificamos que exita
@@ -274,7 +373,7 @@ namespace SICASv20.forms
 
                     //  Colorear los saldos
                     ColorGrid();
-                } 
+                }
             }
             catch (Exception ex)
             {
@@ -393,7 +492,7 @@ namespace SICASv20.forms
 
                 //  Volver a consultar los saldos
                 get_SaldosConductorTableAdapter.Fill(
-                    sICASCentralQuerysDataSet.Get_SaldosConductor, 
+                    sICASCentralQuerysDataSet.Get_SaldosConductor,
                         Conductor_ID);
 
                 //  Volver a Colorear los saldos
@@ -405,7 +504,7 @@ namespace SICASv20.forms
                 AppHelper.Info("Movimiento registrado");
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 AppHelper.Error(ex.Message);
             }
@@ -418,10 +517,10 @@ namespace SICASv20.forms
         {
             this.CargoNumericUpDown.Value = 0;
             this.ComentariosTextBox.Text = "";
-            
+
             if (this.cuenta_IDComboBox.Items.Count > 0) this.cuenta_IDComboBox.SelectedIndex = 0;
             if (this.concepto_IDComboBox.Items.Count > 0) this.concepto_IDComboBox.SelectedIndex = 0;
-            
+
             this.Conductor_ID = 0;
             this.Unidad_ID = 0;
             this.NumeroEconomicoTextBox.Text = "";
@@ -485,7 +584,7 @@ namespace SICASv20.forms
                     //  Buscar los datos a partir de conductor
                     //  La unidad, si la tiene
                     Entities.Contratos contrato = Entities.Contratos.Read(DB.Param("Conductor_ID", Conductor_ID),
-                        DB.Param("EstatusContrato_ID", 1), DB.Param("Cuenta_ID",1));
+                        DB.Param("EstatusContrato_ID", 1), DB.Param("Cuenta_ID", 1));
                     if (contrato != null)
                     {
                         //  Obtener la unidad
@@ -510,7 +609,7 @@ namespace SICASv20.forms
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 AppHelper.Error(ex.Message);
             }

@@ -1675,7 +1675,7 @@ namespace SICASv20
 		/// </summary>
 		/// <param name="expression">La expresión a evaluar</param>
 		/// <returns>int?</returns>
-		public static int? GetNullableInt32(object expression)
+		public static Int32? GetNullableInt32(object expression)
 		{
 			if (expression == null || Convert.IsDBNull(expression))
 			{
@@ -1695,7 +1695,7 @@ namespace SICASv20
 				{
 					throw new Exception(String.Format("{0} no es numérica", expression));
 				}
-				return Convert.ToInt32(expression);
+                return Convert.ToInt32(expression);
 			}
 		}
 

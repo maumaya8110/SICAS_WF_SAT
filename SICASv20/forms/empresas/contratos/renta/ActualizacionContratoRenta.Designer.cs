@@ -589,7 +589,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1058, 780);
+            this.ClientSize = new System.Drawing.Size(1079, 780);
             this.Controls.Add(this.groupBox1);
             this.Name = "ActualizacionContratoRenta";
             this.Text = "AltaContrato";

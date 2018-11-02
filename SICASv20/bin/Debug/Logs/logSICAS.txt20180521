@@ -1,0 +1,102 @@
+2018-05-21 10:03:57,819 [8] INFO  - Inicio de aplicación en modo Release
+2018-05-21 10:04:01,266 [8] ERROR - FTP Server 192.168.0.251
+2018-05-21 10:05:54,222 [9] INFO  - Inicio de aplicación en modo Release
+2018-05-21 10:05:56,709 [9] ERROR - FTP Server 192.168.0.251
+2018-05-21 11:40:04,451 [9] INFO  - Inicio de aplicación en modo Release
+2018-05-21 11:40:06,583 [9] ERROR - FTP Server 192.168.0.251
+2018-05-21 11:43:14,066 [9] INFO  - Usuario actualizado!
+2018-05-21 11:43:29,427 [9] INFO  - Usuario actualizado!
+2018-05-21 11:43:47,287 [9] INFO  - Usuario actualizado!
+2018-05-21 13:02:39,102 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 13:09:30,248 [1] ERROR - Estacion_ID no puede estar vacío.
+System.Exception: Estacion_ID no puede estar vacío.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4013
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 69
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:09:30,522 [1] ERROR - Estacion_ID no puede estar vacío.
+2018-05-21 13:09:58,267 [1] ERROR - CURP Aval Inválido, favor de revisar el formato y asegurarse que no incluya guiones ni espacios.
+System.Exception: CURP Aval Inválido, favor de revisar el formato y asegurarse que no incluya guiones ni espacios.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4051
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 69
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:10:04,189 [1] ERROR - CURP Aval Inválido, favor de revisar el formato y asegurarse que no incluya guiones ni espacios.
+2018-05-21 13:11:03,151 [1] ERROR - CredencialElector debe tener 13 dígitos.
+System.Exception: CredencialElector debe tener 13 dígitos.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4078
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 69
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:11:06,324 [1] ERROR - CredencialElector debe tener 13 dígitos.
+2018-05-21 13:11:46,749 [1] ERROR - CredencialElector debe tener 13 dígitos.
+System.Exception: CredencialElector debe tener 13 dígitos.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4078
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 69
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:11:46,749 [1] ERROR - CredencialElector debe tener 13 dígitos.
+2018-05-21 13:12:12,042 [1] ERROR - Favor de verificar el CURP porque el conductor No. 44636 tiene el mismo CURP en la Base de Datos.
+System.Exception: Favor de verificar el CURP porque el conductor No. 44636 tiene el mismo CURP en la Base de Datos.
+   en SICASv20.Entities.Conductores.Create() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 4115
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 79
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:12:12,043 [1] ERROR - Favor de verificar el CURP porque el conductor No. 44636 tiene el mismo CURP en la Base de Datos.
+2018-05-21 13:14:35,210 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 13:16:24,977 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 13:20:24,843 [1] ERROR - Debe teclear un teléfono válido de 8 o 10 dígitos.
+System.Exception: Debe teclear un teléfono válido de 8 o 10 dígitos.
+   en SICASv20.Entities.Conductores.Validate() en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 3999
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 69
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 13:20:25,360 [1] ERROR - Debe teclear un teléfono válido de 8 o 10 dígitos.
+2018-05-21 13:21:06,181 [1] INFO  - Conductor registrado!
+2018-05-21 13:45:50,859 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 13:47:02,821 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 13:47:13,921 [1] ERROR - Usuario o contraseña erroneas!
+2018-05-21 14:27:38,446 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 14:27:41,130 [1] ERROR - FTP Server 192.168.0.251
+2018-05-21 15:29:58,427 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 15:30:00,780 [1] ERROR - FTP Server 192.168.0.251
+2018-05-21 15:31:26,862 [1] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+System.Data.SqlClient.SqlException: Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   en System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   en System.Data.SqlClient.TdsParser.TdsExecuteSQLBatch(String text, Int32 timeout, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.QueryScalar(String sqlQry) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 460
+   en SICASv20.DB.GetDate() en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 307
+   en SICASv20.forms.SICASForm.RegistrarSalida() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1602
+   en SICASv20.forms.SICASForm.<SICASForm_FormClosed>b__0() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1620
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol, HelperDelegate finallymethod) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 423
+2018-05-21 15:31:26,891 [1] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+2018-05-21 15:34:46,849 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 15:39:51,101 [1] ERROR - Debe capturar un valor para el control TipoLicencia_IDComboBox
+System.Exception: Debe capturar un valor para el control TipoLicencia_IDComboBox
+   en SICASv20.AppHelper.ValidateControl(Control ctrl, ValidateRule[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 684
+   en SICASv20.forms.AltaConductor.DoValidate() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 46
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 59
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 15:39:51,116 [1] ERROR - Debe capturar un valor para el control TipoLicencia_IDComboBox
+2018-05-21 15:40:27,484 [1] INFO  - Conductor registrado!
+2018-05-21 15:43:49,323 [1] INFO  - Conductor registrado!
+2018-05-21 15:54:07,646 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 15:54:17,472 [1] ERROR - FTP Server 192.168.0.251
+2018-05-21 16:01:03,711 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 16:02:59,046 [1] INFO  - Favor de Capturar un Numero Valido
+2018-05-21 16:03:07,601 [1] INFO  - Favor de Capturar un Numero Valido
+2018-05-21 16:05:26,150 [1] INFO  - Favor de Capturar un Numero Valido
+2018-05-21 16:05:31,366 [1] ERROR - Debe capturar un valor para el control folioLicenciaTextBox
+System.Exception: Debe capturar un valor para el control folioLicenciaTextBox
+   en SICASv20.AppHelper.ValidateControl(Control ctrl, ValidateRule[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 666
+   en SICASv20.forms.AltaConductor.DoValidate() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 47
+   en SICASv20.forms.AltaConductor.DoSave() en C:\Work\SICAS_WF\SICASv20\forms\conductores\archivo\AltaConductor.cs:línea 59
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-21 16:05:31,390 [1] ERROR - Debe capturar un valor para el control folioLicenciaTextBox
+2018-05-21 16:05:43,380 [1] INFO  - Favor de Capturar un Numero Valido
+2018-05-21 16:05:51,328 [1] INFO  - Conductor registrado!
+2018-05-21 16:06:49,309 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 16:07:24,458 [1] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - Host desconocido.)
+2018-05-21 17:21:50,443 [1] INFO  - Inicio de aplicación en modo Release
+2018-05-21 17:21:52,508 [1] ERROR - FTP Server 192.168.0.251

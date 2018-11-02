@@ -1,0 +1,23 @@
+2018-10-25 11:30:27,857 [9] INFO  - Inicio de aplicación en modo Release
+2018-10-25 11:30:29,892 [9] ERROR - FTP Server 192.168.0.251
+2018-10-25 12:38:44,630 [9] INFO  - Inicio de aplicación en modo Release
+2018-10-25 12:38:45,036 [9] ERROR - FTP Server 192.168.0.251
+2018-10-25 12:40:40,644 [10] INFO  - Inicio de aplicación en modo Release
+2018-10-25 12:40:41,146 [10] ERROR - FTP Server 192.168.0.251
+2018-10-25 12:45:03,616 [10] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+System.Data.SqlClient.SqlException: Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   en System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   en System.Data.SqlClient.TdsParser.TdsExecuteSQLBatch(String text, Int32 timeout, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.QueryScalar(String sqlQry) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 460
+   en SICASv20.DB.GetDate() en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 307
+   en SICASv20.forms.SICASForm.RegistrarSalida() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1602
+   en SICASv20.forms.SICASForm.<SICASForm_FormClosed>b__0() en C:\Work\SICAS_WF\SICASv20\forms\windows\SICASForm.cs:línea 1620
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, Control ucontrol, HelperDelegate finallymethod) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 424
+2018-10-25 12:45:03,634 [10] ERROR - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)

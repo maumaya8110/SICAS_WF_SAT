@@ -287,6 +287,7 @@ namespace SICASv20
                 string dbServer = "";// drDB["Server"].ToString();
 
 
+
                 int prueba =0;
 
                 if (prueba == 0)

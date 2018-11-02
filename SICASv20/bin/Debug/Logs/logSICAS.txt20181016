@@ -1,0 +1,11 @@
+2018-10-16 10:18:33,261 [10] INFO  - Inicio de aplicación en modo Release
+2018-10-16 10:19:03,297 [10] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+2018-10-16 10:19:16,859 [10] INFO  - Inicio de aplicación en modo Release
+2018-10-16 10:19:46,716 [10] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+2018-10-16 10:30:33,839 [9] INFO  - Inicio de aplicación en modo Release
+2018-10-16 10:31:03,735 [9] ERROR - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de TCP, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+2018-10-16 15:57:44,596 [10] INFO  - Inicio de aplicación en modo Release
+2018-10-16 15:57:44,974 [10] ERROR - FTP Server 192.168.0.251
+2018-10-16 15:58:12,375 [10] ERROR - Unidad 10200 no esta asignada
+2018-10-16 16:10:36,037 [10] ERROR - No data.
+2018-10-16 16:11:23,147 [10] ERROR - No data.

@@ -1,0 +1,30 @@
+2018-05-14 15:52:45,483 [10] INFO  - Inicio de aplicación en modo Release
+2018-05-14 15:52:56,648 [10] ERROR - FTP Server 192.168.0.251
+2018-05-14 16:12:40,455 [10] ERROR - Error en el nivel del transporte al recibir los resultados del servidor. (provider: Proveedor de TCP, error: 0 - El nombre de red especificado ya no está disponible.)
+System.Data.SqlClient.SqlException: Error en el nivel del transporte al recibir los resultados del servidor. (provider: Proveedor de TCP, error: 0 - El nombre de red especificado ya no está disponible.)
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   en System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   en System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   en System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en SICASv20.DB.QueryDS(String query, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 676
+   en SICASv20.Entities.Vista_HistorialConductoresUnidades.GetDataTable(String usuario_id, Nullable`1 empresa_id, Nullable`1 estacion_id, Nullable`1 numeroeconomico) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 739
+   en SICASv20.forms.ReporteHistorialUnidadesConductores.ReporteHistorialUnidadesConductores_Model.Buscar() en C:\Work\SICAS_WF\SICASv20\forms\unidades\reportes\ReporteHistorialConductoresUnidades.cs:línea 77
+   en SICASv20.forms.ReporteHistorialUnidadesConductores.<BuscarButton_Click>b__2() en C:\Work\SICAS_WF\SICASv20\forms\unidades\reportes\ReporteHistorialConductoresUnidades.cs:línea 180
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-05-14 16:12:40,487 [10] ERROR - Error en el nivel del transporte al recibir los resultados del servidor. (provider: Proveedor de TCP, error: 0 - El nombre de red especificado ya no está disponible.)

@@ -1,0 +1,23 @@
+2018-04-18 10:06:46,051 [10] INFO  - Inicio de aplicación en modo Release
+2018-04-18 10:44:52,304 [10] ERROR - FTP Server 192.168.0.251
+2018-04-18 10:45:17,232 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.BitacoraUnidades.BindData() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 64
+   en SICASv20.forms.BitacoraUnidades.<BitacoraUnidades_Load>b__5() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 187
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 443
+2018-04-18 10:45:17,379 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+2018-04-18 10:45:45,358 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.BitacoraUnidades.BindData() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 64
+   en SICASv20.forms.BitacoraUnidades.<BitacoraUnidades_Load>b__5() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 187
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 443
+2018-04-18 10:45:45,358 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+2018-04-18 10:53:13,432 [10] ERROR - El objeto que acepta valores Null debe tener un valor.
+System.InvalidOperationException: El objeto que acepta valores Null debe tener un valor.
+   en System.Nullable`1.get_Value()
+   en SICASv20.forms.BitacoraUnidades.BindData() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 64
+   en SICASv20.forms.BitacoraUnidades.<BitacoraUnidades_Load>b__5() en C:\Work\SICAS_WF\SICASv20\forms\aeropuerto\herramientas\BitacoraUnidades.cs:línea 187
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 443
+2018-04-18 10:53:15,629 [10] ERROR - El objeto que acepta valores Null debe tener un valor.

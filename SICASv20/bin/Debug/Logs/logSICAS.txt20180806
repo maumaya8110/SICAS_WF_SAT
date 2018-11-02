@@ -1,0 +1,61 @@
+2018-08-06 11:15:53,316 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 11:16:04,413 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 11:19:40,954 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 11:19:45,675 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 12:25:18,785 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 12:25:40,835 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 12:25:42,144 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 12:26:08,921 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 12:26:11,408 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 13:50:25,109 [1] INFO  - Inicio de aplicación en modo Release
+2018-08-06 13:50:25,350 [1] ERROR - FTP Server 192.168.0.251
+2018-08-06 13:54:23,917 [8] INFO  - Inicio de aplicación en modo Release
+2018-08-06 15:06:36,737 [8] ERROR - FTP Server 192.168.0.251
+2018-08-06 16:49:11,793 [8] INFO  - Usuario actualizado!
+2018-08-06 16:51:11,219 [8] INFO  - Usuario actualizado!
+2018-08-06 16:54:55,310 [9] INFO  - Inicio de aplicación en modo Release
+2018-08-06 16:55:03,968 [9] ERROR - FTP Server 192.168.0.251
+2018-08-06 16:57:56,365 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 16:58:00,388 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:00:19,495 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:00:22,733 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:01:15,969 [10] ERROR - La unidad 3205 no tiene contrato activo
+System.Exception: La unidad 3205 no tiene contrato activo
+   en SICASv20.forms.VentaServiciosPersonalizada.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServiciosPersonalizada.cs:línea 173
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:01:15,984 [10] ERROR - La unidad 3205 no tiene contrato activo
+2018-08-06 17:01:21,972 [10] ERROR - La unidad 3001 no tiene contrato activo
+System.Exception: La unidad 3001 no tiene contrato activo
+   en SICASv20.forms.VentaServiciosPersonalizada.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServiciosPersonalizada.cs:línea 173
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:01:21,973 [10] ERROR - La unidad 3001 no tiene contrato activo
+2018-08-06 17:03:32,785 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:03:35,783 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:06:56,357 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:06:59,563 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:07:48,542 [10] ERROR - La unidad 3205 no tiene contrato activo
+System.Exception: La unidad 3205 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 169
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:07:48,580 [10] ERROR - La unidad 3205 no tiene contrato activo
+2018-08-06 17:09:55,033 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:09:58,762 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:10:36,205 [10] ERROR - La unidad 3205 no tiene contrato activo
+System.Exception: La unidad 3205 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 169
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:10:36,237 [10] ERROR - La unidad 3205 no tiene contrato activo
+2018-08-06 17:12:17,067 [10] ERROR - La unidad 3105 no tiene contrato activo
+System.Exception: La unidad 3105 no tiene contrato activo
+   en SICASv20.forms.VentaServiciosPersonalizada.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServiciosPersonalizada.cs:línea 190
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:12:17,068 [10] ERROR - La unidad 3105 no tiene contrato activo
+2018-08-06 17:41:28,873 [9] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:41:31,733 [9] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:42:33,712 [10] INFO  - Inicio de aplicación en modo Release
+2018-08-06 17:42:36,527 [10] ERROR - FTP Server 192.168.0.251
+2018-08-06 17:45:20,075 [10] ERROR - La unidad 3018 no tiene contrato activo
+System.Exception: La unidad 3018 no tiene contrato activo
+   en SICASv20.forms.VentaServiciosPersonalizada.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServiciosPersonalizada.cs:línea 190
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-08-06 17:45:20,118 [10] ERROR - La unidad 3018 no tiene contrato activo

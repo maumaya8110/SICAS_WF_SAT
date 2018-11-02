@@ -7235,27 +7235,38 @@ AND Opcion_ID = @Opcion_ID";
         public static List<Vista_PermisosUsuarios> Get(
             System.String usuario_id)
         {
-            string sqlstr = @"SELECT	MO.Modulo_ID,
-		MO.Nombre Modulo, 
-		M.Menu_ID,
-		M.Nombre Menu,
-		O.Opcion_ID,
-		O.Nombre Opcion,
-		PU.Usuario_ID,
-		ISNULL(PU.EsPermitido, 0) EsPermitido,
-		O.Texto OpcionTexto,
-		O.Imagen OpcionImagen,
-		O.EsHerramienta,
-		O.EsActivo			
-FROM	Opciones O
-	LEFT JOIN	PermisosUsuarios PU
-		ON		 ( PU.Opcion_ID = O.Opcion_ID
-					AND PU.Usuario_ID = @Usuario_ID )
-	INNER JOIN	Menues M
-		ON		O.Menu_ID = M.Menu_ID
-	INNER JOIN	Modulos MO
-		ON		M.Modulo_ID = MO.Modulo_ID
-ORDER BY	Modulo, Menu, Opcion";
+
+
+
+
+            string sqlstr;
+
+
+            sqlstr = @"exec spMenuSicas @Usuario_ID";
+
+//                sqlstr = @"SELECT	MO.Modulo_ID,
+//		MO.Nombre Modulo, 
+//		M.Menu_ID,
+//		M.Nombre Menu,
+//		O.Opcion_ID,
+//		O.Nombre Opcion,
+//		PU.Usuario_ID,
+//		ISNULL(PU.EsPermitido, 0) EsPermitido,
+//		O.Texto OpcionTexto,
+//		O.Imagen OpcionImagen,
+//		O.EsHerramienta,
+//		O.EsActivo			
+//FROM	Opciones O
+//	LEFT JOIN	PermisosUsuarios PU
+//		ON		 ( PU.Opcion_ID = O.Opcion_ID
+//					AND PU.Usuario_ID = @Usuario_ID )
+//	INNER JOIN	Menues M
+//		ON		O.Menu_ID = M.Menu_ID
+//	INNER JOIN	Modulos MO
+//		ON		M.Modulo_ID = MO.Modulo_ID
+//ORDER BY	Modulo, Menu, Opcion";
+
+          
 
             Hashtable m_params = new Hashtable();
             m_params.Add("@Usuario_ID", usuario_id);
@@ -7342,28 +7353,31 @@ ORDER BY	Modulo, Menu, Opcion";
         public static DataTable GetDataTable(
             System.String usuario_id)
         {
-            string sqlstr = @"SELECT	MO.Modulo_ID,
-		MO.Nombre Modulo, 
-		M.Menu_ID,
-		M.Nombre Menu,
-		O.Opcion_ID,
-		O.Nombre Opcion,
-		PU.Usuario_ID,
-		ISNULL(PU.EsPermitido, 0) EsPermitido,
-		O.Texto OpcionTexto,
-		O.Imagen OpcionImagen,
-		O.EsHerramienta,
-		O.EsActivo			
-FROM	Opciones O
-	LEFT JOIN	PermisosUsuarios PU
-		ON		 ( PU.Opcion_ID = O.Opcion_ID
-					AND PU.Usuario_ID = @Usuario_ID )
-	INNER JOIN	Menues M
-		ON		O.Menu_ID = M.Menu_ID
-	INNER JOIN	Modulos MO
-		ON		M.Modulo_ID = MO.Modulo_ID
-ORDER BY	Modulo, Menu, Opcion";
+            string sqlstr = "";
+//            string sqlstr = @"SELECT	MO.Modulo_ID,
+//		MO.Nombre Modulo, 
+//		M.Menu_ID,
+//		M.Nombre Menu,
+//		O.Opcion_ID,
+//		O.Nombre Opcion,
+//		PU.Usuario_ID,
+//		ISNULL(PU.EsPermitido, 0) EsPermitido,
+//		O.Texto OpcionTexto,
+//		O.Imagen OpcionImagen,
+//		O.EsHerramienta,
+//		O.EsActivo			
+//FROM	Opciones O
+//	LEFT JOIN	PermisosUsuarios PU
+//		ON		 ( PU.Opcion_ID = O.Opcion_ID
+//					AND PU.Usuario_ID = @Usuario_ID )
+//	INNER JOIN	Menues M
+//		ON		O.Menu_ID = M.Menu_ID
+//	INNER JOIN	Modulos MO
+//		ON		M.Modulo_ID = MO.Modulo_ID
+//ORDER BY	Modulo, Menu, Opcion";
 
+
+            sqlstr = @"exec spMenuSicas @Usuario_ID";
             Hashtable m_params = new Hashtable();
             m_params.Add("@Usuario_ID", usuario_id);
 
@@ -19535,12 +19549,12 @@ WHERE   TipoEmpresa_ID IN (1,2)";
 
         public static List<SelectEmpresas> GetEmpresasX(string usuario_id)
         {
-//            string sqlstr = @"SELECT	E.Empresa_ID, E.Nombre
-//FROM	Empresas E
-//INNER JOIN	Usuarios_Empresas UE
-//ON		E.Empresa_ID = UE.Empresa_ID
-//and e.Empresa_ID not in (4,1081)
-//AND		Usuario_ID = @Usuario_ID";
+            //            string sqlstr = @"SELECT	E.Empresa_ID, E.Nombre
+            //FROM	Empresas E
+            //INNER JOIN	Usuarios_Empresas UE
+            //ON		E.Empresa_ID = UE.Empresa_ID
+            //and e.Empresa_ID not in (4,1081)
+            //AND		Usuario_ID = @Usuario_ID";
 
             string sqlstr = @"SELECT	E.Empresa_ID, E.Nombre
 FROM	Empresas E
@@ -23048,169 +23062,174 @@ WHERE   Empresa_ID = @Empresa_ID";
         }
 
 
-        public static BindingList<AdeudosDeConductor> Get(System.Object conductor_id)
+        public static BindingList<AdeudosDeConductor> Get(System.Object conductor_id, System.Object usuario_id)
         {
-            string sqlstr = @"SELECT	CC.Empresa_ID, E.Nombre Empresa, CC.Cuenta_ID, CC.Concepto_ID, C.Nombre Cuenta, CC.Saldo, 0.00 Pagar     
-FROM	(     
-SELECT	Conductor_ID, Empresa_ID, Cuenta_ID,      
-        (SELECT MIN(Concepto_ID) FROM Conceptos WHERE (Cuenta_ID = CuentaConductores.Cuenta_ID)     
-        AND (Nombre LIKE '%ABONO%' OR Nombre LIKE '%Pago%')) Concepto_ID,     
-        (SUM(Abono)-SUM(Cargo)) Saldo     
-FROM	CuentaConductores
-WHERE   Conductor_ID = @Conductor_ID
-GROUP BY Conductor_ID, Empresa_ID, Cuenta_ID   
-        ) CC     
-INNER JOIN	Empresas E     
-ON		E.Empresa_ID = CC.Empresa_ID     
-INNER JOIN	Cuentas C     
-ON		C.Cuenta_ID = CC.Cuenta_ID
-WHERE   C.Cuenta_ID NOT IN ( 9, 35, 17 )
-		AND CC.Saldo <> 0
+            //            string sqlstr = @"SELECT	CC.Empresa_ID, E.Nombre Empresa, CC.Cuenta_ID, CC.Concepto_ID, C.Nombre Cuenta, CC.Saldo, 0.00 Pagar     
+            //FROM	(     
+            //SELECT	Conductor_ID, Empresa_ID, Cuenta_ID,      
+            //        (SELECT MIN(Concepto_ID) FROM Conceptos WHERE (Cuenta_ID = CuentaConductores.Cuenta_ID)     
+            //        AND (Nombre LIKE '%ABONO%' OR Nombre LIKE '%Pago%')) Concepto_ID,     
+            //        (SUM(Abono)-SUM(Cargo)) Saldo     
+            //FROM	CuentaConductores
+            //WHERE   Conductor_ID = @Conductor_ID
+            //GROUP BY Conductor_ID, Empresa_ID, Cuenta_ID   
+            //        ) CC     
+            //INNER JOIN	Empresas E     
+            //ON		E.Empresa_ID = CC.Empresa_ID     
+            //INNER JOIN	Cuentas C     
+            //ON		C.Cuenta_ID = CC.Cuenta_ID
+            //WHERE   C.Cuenta_ID NOT IN (42, 9, 35, 17 )
+            //		AND CC.Saldo <> 0
+            //
+            //UNION
+            //
+            //--SELECT	EC.Empresa_ID, E.Nombre Empresa, EC.Cuenta_ID, 
+            //--        (SELECT MIN(Concepto_ID) FROM Conceptos WHERE (Cuenta_ID = 3)     
+            //--        AND (Nombre LIKE '%ABONO%' OR Nombre LIKE '%Pago%')) Concepto_ID,
+            //--        C.Nombre Cuenta, 
+            //--        (SELECT ISNULL(SUM(Abono-Cargo),0) FROM CuentaConductores
+            //--        WHERE Cuenta_ID = 3
+            //--        AND Conductor_ID = @Conductor_ID) Saldo, 
+            //--        0.00 Pagar
+            //--FROM	Empresas_Cuentas EC
+            //--INNER JOIN	Empresas E
+            //--ON		EC.Empresa_ID = E.Empresa_ID
+            //--INNER JOIN	Cuentas C
+            //--ON		EC.Cuenta_ID = C.Cuenta_ID
+            //--WHERE	EC.Cuenta_ID = 3 
+            //--		AND	EC.Empresa_ID <> 3
+            //--		AND	EC.Empresa_ID IN
+            //--						(
+            //--							SELECT	Empresa_ID
+            //--							FROM	Contratos
+            //--							WHERE	EstatusContrato_ID = 1
+            //--							AND		Conductor_ID = @Conductor_ID	
+            //--						)
+            //
+            //
+            //
+            //--SELECT	EC.Empresa_ID,
+            //	--	E.Nombre Empresa,
+            //	--	C.Cuenta_ID,
+            //	--	( 
+            //	--		SELECT MIN(Concepto_ID) 
+            //	--		FROM Conceptos			
+            //    --		WHERE	Cuenta_ID = C.Cuenta_ID
+            //	--		AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
+            //	--	) Concepto_ID,
+            //	--	C.Nombre Cuenta,
+            //	--	ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
+            //		--FROM	Tickets,
+            //			--	VariablesNegocio
+            //		--WHERE	Tickets.Conductor_ID = @Conductor_ID
+            //		--AND		VariableNegocio_ID = 'TarifaDescanso'
+            //		--GROUP BY	Valor ),0) Saldo,
+            //	--	0.00 Pagar
+            //--FROM	Empresas_Cuentas EC
+            //--INNER JOIN	Cuentas C
+            //--ON		EC.Cuenta_ID = C.Cuenta_ID
+            //--INNER JOIN	Empresas E
+            //--ON		EC.Empresa_ID = E.Empresa_ID
+            //--WHERE	C.Cuenta_ID = 42
+            //--AND		EC.Empresa_ID IN
+            //--(
+            //	--SELECT	CONT.Empresa_ID
+            //	--FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
+            //	--WHERE	CONT.EstatusContrato_ID = 1
+            //	--AND		UNID.ConductorOperativo_ID = @Conductor_ID
+            //--)
+            //
+            //
+            //--UNION
+            //
+            //
+            //
+            //
+            //SELECT	EC.Empresa_ID,
+            //		E.Nombre Empresa,
+            //		C.Cuenta_ID,
+            //		( 
+            //			SELECT MIN(Concepto_ID) 
+            //			FROM Conceptos			
+            //			WHERE	Cuenta_ID = C.Cuenta_ID
+            //			AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
+            //		) Concepto_ID,
+            //		C.Nombre Cuenta,
+            //		ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
+            //		FROM	Tickets,
+            //				VariablesNegocio
+            //		WHERE	Tickets.Conductor_ID = @Conductor_ID
+            //		AND		VariableNegocio_ID = 'TarifaDescanso'
+            //		GROUP BY	Valor ),0) Saldo,
+            //		0.00 Pagar
+            //FROM	Empresas_Cuentas EC
+            //INNER JOIN	Cuentas C
+            //ON		EC.Cuenta_ID = C.Cuenta_ID
+            //INNER JOIN	Empresas E
+            //ON		EC.Empresa_ID = E.Empresa_ID
+            //WHERE	C.Cuenta_ID = 17
+            //AND		EC.Empresa_ID IN
+            //(
+            //	SELECT	CONT.Empresa_ID
+            //	FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
+            //	WHERE	CONT.EstatusContrato_ID = 1
+            //	AND		UNID.ConductorOperativo_ID = @Conductor_ID
+            //)
+            //
+            //UNION
+            //
+            //SELECT	EC.Empresa_ID,
+            //		E.Nombre Empresa,
+            //		C.Cuenta_ID,
+            //		( 
+            //			SELECT MIN(Concepto_ID) 
+            //			FROM Conceptos			
+            //			WHERE	Cuenta_ID = C.Cuenta_ID
+            //			AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
+            //		) Concepto_ID,
+            //		C.Nombre Cuenta,
+            //		CASE EC.Empresa_ID
+            //			WHEN 3 THEN
+            //					ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
+            //					FROM	Tickets,
+            //							VariablesNegocio
+            //					WHERE	Tickets.Conductor_ID = @Conductor_ID
+            //					AND		VariableNegocio_ID = 'TarifaCooperativa'
+            //					GROUP BY	Valor ),0)
+            //			ELSE
+            //					ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
+            //					FROM	Tickets,
+            //							VariablesNegocio
+            //					WHERE	Tickets.Conductor_ID = @Conductor_ID
+            //					AND		VariableNegocio_ID = 'TarifaCooperativaMetro'
+            //					GROUP BY	Valor ),0)
+            //		END Saldo,
+            //		0.00 Pagar
+            //FROM	Empresas_Cuentas EC
+            //INNER JOIN	Cuentas C
+            //ON		EC.Cuenta_ID = C.Cuenta_ID
+            //INNER JOIN	Empresas E
+            //ON		EC.Empresa_ID = E.Empresa_ID
+            //WHERE	C.Cuenta_ID = 35
+            //AND		EC.Empresa_ID IN
+            //(
+            //	SELECT	CONT.Empresa_ID
+            //	FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
+            //	WHERE	CONT.EstatusContrato_ID = 1
+            //	AND		UNID.ConductorOperativo_ID = @Conductor_ID	
+            //)
+            //
+            //ORDER BY Empresa_ID, Cuenta_ID";
 
-UNION
 
---SELECT	EC.Empresa_ID, E.Nombre Empresa, EC.Cuenta_ID, 
---        (SELECT MIN(Concepto_ID) FROM Conceptos WHERE (Cuenta_ID = 3)     
---        AND (Nombre LIKE '%ABONO%' OR Nombre LIKE '%Pago%')) Concepto_ID,
---        C.Nombre Cuenta, 
---        (SELECT ISNULL(SUM(Abono-Cargo),0) FROM CuentaConductores
---        WHERE Cuenta_ID = 3
---        AND Conductor_ID = @Conductor_ID) Saldo, 
---        0.00 Pagar
---FROM	Empresas_Cuentas EC
---INNER JOIN	Empresas E
---ON		EC.Empresa_ID = E.Empresa_ID
---INNER JOIN	Cuentas C
---ON		EC.Cuenta_ID = C.Cuenta_ID
---WHERE	EC.Cuenta_ID = 3 
---		AND	EC.Empresa_ID <> 3
---		AND	EC.Empresa_ID IN
---						(
---							SELECT	Empresa_ID
---							FROM	Contratos
---							WHERE	EstatusContrato_ID = 1
---							AND		Conductor_ID = @Conductor_ID	
---						)
-
-
-
---SELECT	EC.Empresa_ID,
-	--	E.Nombre Empresa,
-	--	C.Cuenta_ID,
-	--	( 
-	--		SELECT MIN(Concepto_ID) 
-	--		FROM Conceptos			
-    --		WHERE	Cuenta_ID = C.Cuenta_ID
-	--		AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
-	--	) Concepto_ID,
-	--	C.Nombre Cuenta,
-	--	ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
-		--FROM	Tickets,
-			--	VariablesNegocio
-		--WHERE	Tickets.Conductor_ID = @Conductor_ID
-		--AND		VariableNegocio_ID = 'TarifaDescanso'
-		--GROUP BY	Valor ),0) Saldo,
-	--	0.00 Pagar
---FROM	Empresas_Cuentas EC
---INNER JOIN	Cuentas C
---ON		EC.Cuenta_ID = C.Cuenta_ID
---INNER JOIN	Empresas E
---ON		EC.Empresa_ID = E.Empresa_ID
---WHERE	C.Cuenta_ID = 42
---AND		EC.Empresa_ID IN
---(
-	--SELECT	CONT.Empresa_ID
-	--FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
-	--WHERE	CONT.EstatusContrato_ID = 1
-	--AND		UNID.ConductorOperativo_ID = @Conductor_ID
---)
-
-
---UNION
-
-
-
-
-SELECT	EC.Empresa_ID,
-		E.Nombre Empresa,
-		C.Cuenta_ID,
-		( 
-			SELECT MIN(Concepto_ID) 
-			FROM Conceptos			
-			WHERE	Cuenta_ID = C.Cuenta_ID
-			AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
-		) Concepto_ID,
-		C.Nombre Cuenta,
-		ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
-		FROM	Tickets,
-				VariablesNegocio
-		WHERE	Tickets.Conductor_ID = @Conductor_ID
-		AND		VariableNegocio_ID = 'TarifaDescanso'
-		GROUP BY	Valor ),0) Saldo,
-		0.00 Pagar
-FROM	Empresas_Cuentas EC
-INNER JOIN	Cuentas C
-ON		EC.Cuenta_ID = C.Cuenta_ID
-INNER JOIN	Empresas E
-ON		EC.Empresa_ID = E.Empresa_ID
-WHERE	C.Cuenta_ID = 17
-AND		EC.Empresa_ID IN
-(
-	SELECT	CONT.Empresa_ID
-	FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
-	WHERE	CONT.EstatusContrato_ID = 1
-	AND		UNID.ConductorOperativo_ID = @Conductor_ID
-)
-
-UNION
-
-SELECT	EC.Empresa_ID,
-		E.Nombre Empresa,
-		C.Cuenta_ID,
-		( 
-			SELECT MIN(Concepto_ID) 
-			FROM Conceptos			
-			WHERE	Cuenta_ID = C.Cuenta_ID
-			AND	(Nombre LIKE '%PAGO%' OR Nombre LIKE '%ABONO%')
-		) Concepto_ID,
-		C.Nombre Cuenta,
-		CASE EC.Empresa_ID
-			WHEN 3 THEN
-					ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
-					FROM	Tickets,
-							VariablesNegocio
-					WHERE	Tickets.Conductor_ID = @Conductor_ID
-					AND		VariableNegocio_ID = 'TarifaCooperativa'
-					GROUP BY	Valor ),0)
-			ELSE
-					ISNULL(( SELECT DATEDIFF(DAY,ISNULL(MAX(Fecha),GETDATE()),GETDATE()) * CONVERT(money,Valor) * -1
-					FROM	Tickets,
-							VariablesNegocio
-					WHERE	Tickets.Conductor_ID = @Conductor_ID
-					AND		VariableNegocio_ID = 'TarifaCooperativaMetro'
-					GROUP BY	Valor ),0)
-		END Saldo,
-		0.00 Pagar
-FROM	Empresas_Cuentas EC
-INNER JOIN	Cuentas C
-ON		EC.Cuenta_ID = C.Cuenta_ID
-INNER JOIN	Empresas E
-ON		EC.Empresa_ID = E.Empresa_ID
-WHERE	C.Cuenta_ID = 35
-AND		EC.Empresa_ID IN
-(
-	SELECT	CONT.Empresa_ID
-	FROM	Contratos CONT JOIN Unidades UNID ON CONT.Unidad_ID = UNID.Unidad_ID
-	WHERE	CONT.EstatusContrato_ID = 1
-	AND		UNID.ConductorOperativo_ID = @Conductor_ID	
-)
-
-ORDER BY Empresa_ID, Cuenta_ID";
+            // string sqlstr = @"exec spCuentaporPagar_CajaCobro @Conductor_ID";
+            string sqlstr = @"exec  spCuentaporPagar_CajaCobro_usuario @Conductor_ID,@Usuario_ID";
 
             /* Por corregir: Debe ser por empresa el saldo de depósitos varios */
 
             Hashtable m_params = new Hashtable();
             m_params.Add("@Conductor_ID", conductor_id);
+            m_params.Add("Usuario_ID", usuario_id);
 
             BindingList<AdeudosDeConductor> list = new BindingList<AdeudosDeConductor>();
             DataTable dt = DB.QueryCommand(sqlstr, m_params);
@@ -26174,11 +26193,11 @@ ORDER BY	Conductor DESC";
 
                 c.ServTE = Convert.ToDouble(dr["ServiciosRealizadosTE"]);
                 c.IngServTE = Convert.ToDouble(dr["IngresoXBoletosTE"]);
-                 
+
                 c.Bono = Convert.ToDouble(dr["Bono"]);
                 c.SueldoVariable = Convert.ToDouble(dr["SueldoVariable"]);
                 c.Sueldo = Convert.ToDouble(dr["Sueldo"]);
-                
+
                 lRegresos.Add(c);
             }
             return lRegresos;

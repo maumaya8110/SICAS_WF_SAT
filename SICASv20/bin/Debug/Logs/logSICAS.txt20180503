@@ -1,0 +1,13 @@
+2018-05-03 16:04:38,277 [9] INFO  - Inicio de aplicación en modo Release
+2018-05-03 16:04:51,790 [9] ERROR - FTP Server 192.168.0.251
+2018-05-03 16:11:37,696 [9] INFO  - ¡Planes de Renta ingresado!
+2018-05-03 16:22:58,478 [9] ERROR - Debe seleccionar un plan de renta
+2018-05-03 16:22:58,512 [9] ERROR - Debe seleccionar un plan de renta
+System.Exception: Debe seleccionar un plan de renta
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 527
+   en SICASv20.forms.Contratos_DatosUnidad_UC.Select_PlanDeRenta() en C:\Work\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 259
+   en SICASv20.forms.Contratos_DatosUnidad_UC.<PlanesDeRentaComboBox_SelectedIndexChanged>b__0() en C:\Work\SICAS_WF\SICASv20\forms\empresas\contratos\generico\usercontrols\Contratos_DatosUnidad_UC.cs:línea 286
+   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 443
+2018-05-03 16:22:58,544 [9] ERROR - Debe seleccionar un plan de renta
+2018-05-03 17:46:04,536 [9] INFO  - Inicio de aplicación en modo Release
+2018-05-03 17:46:54,722 [9] ERROR - FTP Server 192.168.0.251

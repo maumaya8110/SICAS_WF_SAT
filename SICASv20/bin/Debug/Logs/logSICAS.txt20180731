@@ -1,0 +1,12 @@
+2018-07-31 10:02:46,231 [8] INFO  - Inicio de aplicación en modo Release
+2018-07-31 10:03:22,666 [8] ERROR - FTP Server 192.168.0.251
+2018-07-31 10:14:29,817 [8] ERROR - La unidad 10070 no tiene contrato activo
+System.Exception: La unidad 10070 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-31 10:14:29,849 [8] ERROR - La unidad 10070 no tiene contrato activo
+2018-07-31 10:14:52,669 [8] ERROR - La unidad 3004 no tiene contrato activo
+System.Exception: La unidad 3004 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-31 10:14:52,669 [8] ERROR - La unidad 3004 no tiene contrato activo

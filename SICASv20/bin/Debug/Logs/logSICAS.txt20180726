@@ -1,0 +1,47 @@
+2018-07-26 08:07:27,327 [9] INFO  - Inicio de aplicación en modo Release
+2018-07-26 09:19:50,522 [9] INFO  - Inicio de aplicación en modo Release
+2018-07-26 09:19:51,203 [9] ERROR - FTP Server 192.168.0.251
+2018-07-26 09:19:59,137 [9] ERROR - Usuario o contraseña erroneas!
+2018-07-26 09:20:00,752 [9] ERROR - Usuario o contraseña erroneas!
+2018-07-26 09:20:08,351 [9] ERROR - La unidad 1801 no tiene contrato activo
+System.Exception: La unidad 1801 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:20:08,355 [9] ERROR - La unidad 1801 no tiene contrato activo
+2018-07-26 09:20:09,618 [9] ERROR - La unidad 1804 no tiene contrato activo
+System.Exception: La unidad 1804 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:20:09,618 [9] ERROR - La unidad 1804 no tiene contrato activo
+2018-07-26 09:20:21,529 [9] ERROR - La unidad 1804 no tiene contrato activo
+System.Exception: La unidad 1804 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:20:21,529 [9] ERROR - La unidad 1804 no tiene contrato activo
+2018-07-26 09:20:49,767 [9] ERROR - La unidad 1804 no tiene contrato activo
+System.Exception: La unidad 1804 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:20:49,767 [9] ERROR - La unidad 1804 no tiene contrato activo
+2018-07-26 09:20:53,456 [9] ERROR - La unidad 1804 no tiene contrato activo
+System.Exception: La unidad 1804 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:20:53,456 [9] ERROR - La unidad 1804 no tiene contrato activo
+2018-07-26 09:27:15,936 [9] ERROR - La unidad 1804 no tiene contrato activo
+System.Exception: La unidad 1804 no tiene contrato activo
+   en SICASv20.forms.VentaServicios.GetDatosConductorUnidad() en C:\Work\SICAS_WF\SICASv20\forms\caja\ventas\VentaServicios.cs:línea 135
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 459
+2018-07-26 09:27:15,936 [9] ERROR - La unidad 1804 no tiene contrato activo
+2018-07-26 09:27:28,481 [10] INFO  - Inicio de aplicación en modo Release
+2018-07-26 09:27:37,459 [10] ERROR - FTP Server 192.168.0.251
+2018-07-26 09:33:46,216 [10] ERROR - No hay ninguna fila en la posición 0.
+2018-07-26 10:17:51,404 [10] INFO  - Usuario actualizado!
+2018-07-26 10:18:08,378 [10] INFO  - Usuario actualizado!
+2018-07-26 10:18:23,169 [10] INFO  - Usuario actualizado!
+2018-07-26 10:18:38,846 [10] INFO  - Usuario actualizado!
+2018-07-26 10:18:53,825 [10] INFO  - Usuario actualizado!
+2018-07-26 10:19:07,130 [10] INFO  - Usuario actualizado!
+2018-07-26 12:54:09,972 [8] INFO  - Inicio de aplicación en modo Release
+2018-07-26 12:54:35,656 [8] ERROR - FTP Server 192.168.0.251
+2018-07-26 12:56:36,100 [8] INFO  - Ticket Reimpreso!

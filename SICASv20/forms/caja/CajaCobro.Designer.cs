@@ -145,6 +145,8 @@
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblHora = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datosConductorBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1173,10 +1175,23 @@
             this.dataGridViewTextBoxColumn25.HeaderText = "Pagar";
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Location = new System.Drawing.Point(31, 633);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(0, 20);
+            this.lblHora.TabIndex = 6;
+            // 
             // CajaCobro
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1024, 652);
+            this.ClientSize = new System.Drawing.Size(1024, 670);
+            this.Controls.Add(this.lblHora);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
@@ -1190,6 +1205,7 @@
             this.Controls.SetChildIndex(this.groupBox4, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.groupBox5, 0);
+            this.Controls.SetChildIndex(this.lblHora, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datosConductorBindingSource)).EndInit();
@@ -1208,6 +1224,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1320,6 +1337,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox TotalServiciosTextBox;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblHora;
 
     }
 }

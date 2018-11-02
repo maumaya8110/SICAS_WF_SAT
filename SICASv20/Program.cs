@@ -7,9 +7,13 @@ namespace SICASv20
 {
 	static class Program
 	{
+
+
 		[STAThread]
 		static void Main()
 		{
+             
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
@@ -82,5 +86,11 @@ namespace SICASv20
 			//global::SICASv20.Properties.Settings.Default.SICASCentralConnectionString = connectionString;
 			DB.connStr = connectionString;
 		}
+
+
+
+
+
+
 	} // end class
 } // end namespace 

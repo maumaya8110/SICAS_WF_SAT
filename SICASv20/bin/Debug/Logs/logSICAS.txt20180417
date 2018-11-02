@@ -1,0 +1,46 @@
+2018-04-17 13:33:52,027 [9] INFO  - Inicio de aplicación en modo Release
+2018-04-17 13:34:16,219 [9] ERROR - FTP Server 192.168.0.251
+2018-04-17 13:43:20,705 [9] ERROR - Usuario o contraseña erroneas!
+2018-04-17 13:43:51,897 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 33
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-17 13:43:53,749 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-04-17 13:44:24,096 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 33
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-17 13:44:25,680 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-04-17 13:44:44,878 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 33
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-17 13:44:45,249 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-04-17 13:45:29,930 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 34
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-17 13:45:35,794 [9] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-04-17 13:48:03,176 [9] ERROR - Incorrect syntax near 'WHERE'.
+System.Data.SqlClient.SqlException: Incorrect syntax near 'WHERE'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   en SICASv20.DB.Select(String tablename, Hashtable w_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 1147
+   en SICASv20.Entities.Estaciones.GetEsFranquicia(Nullable`1 estacion_id) en C:\Work\SICAS_WF\SICASv20\classes\Entities.cs:línea 7755
+   en SICASv20.classes.Interfaces.DeclaracionValores.Imprimir(DeclaracionValores dv, Int32 idx) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces\DeclaracionValores.cs:línea 426
+   en SICASv20.forms.caja.herramientas.ReimpresionDeclaracionCorteCaja.ImprimirTckets() en C:\Work\SICAS_WF\SICASv20\forms\caja\herramientas\ReimpresionDeclaracionCorteCaja.cs:línea 42
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 458
+2018-04-17 13:48:03,196 [9] ERROR - Incorrect syntax near 'WHERE'.
