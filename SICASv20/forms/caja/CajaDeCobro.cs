@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Threading;
 using System.Windows.Forms;
-using Microsoft.Reporting.WinForms;
-using System.Globalization;
 
 namespace SICASv20.forms
 {
@@ -233,7 +231,7 @@ namespace SICASv20.forms
         /// </summary>
         private void ObtenerAdeudosDeConductor()
         {
-            this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID,Sesion.Usuario_ID);
+            this.Adeudos = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID, Sesion.Usuario_ID);
             adeudosDeConductorBindingSource.DataSource = this.Adeudos;
             MensajeCuentasConAdeudoACubrir(this.Adeudos);
             CalcularTotales();
@@ -468,7 +466,7 @@ namespace SICASv20.forms
             //  Buscamos las planitllas en la lista
             List<Entities.PlanillasFiscales> list =
                 Planillas.FindAll(
-                   delegate(Entities.PlanillasFiscales p)
+                   delegate (Entities.PlanillasFiscales p)
                    { return p.Folio >= folioinicial && p.Folio <= foliofinal; });
 
             //  Eliminar cada planilla
@@ -1001,12 +999,12 @@ namespace SICASv20.forms
             }
             dtable.Columns.Add("M", typeof(System.Decimal));
             dtable.Columns.Add("S", typeof(System.Decimal));
-
+            Entities.Get_DatosTicket data = ticketdata[0];
             //  Si hay registros en el ticket
             if (ticketdata.Count > 0)
             {
 
-                Entities.Get_DatosTicket data = ticketdata[0];
+
 
                 //  Recorrer los registros del ticket
                 foreach (Entities.Get_DatosTicket mov in ticketdata)
@@ -1027,7 +1025,8 @@ namespace SICASv20.forms
                 // Imprimir los datos de empresa, estacion, unidad, conductor
                 printer.PrintText(string.Format("#COPIA:   {0}", ncopia));
                 printer.PrintCLRF();
-                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.Ticket_ID, data.Empresa_ID));
+                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.FolioT, data.Empresa_ID));
+                //printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.Ticket_ID, data.Empresa_ID));
                 printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
                 printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
                 printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
@@ -1037,8 +1036,15 @@ namespace SICASv20.forms
                 if (!EnClave)
                 {
                     //  Imprimir numero economico y nombre del conductor
-                    printer.PrintText(string.Format("U{0}", data.NumeroEconomico));
-                    printer.PrintText(data.Conductor.ToUpper());
+                    printer.PrintText(string.Format("U: {0}", data.NumeroEconomico));
+                    printer.PrintText(string.Format("RS: {0}", data.RazonSocial));
+                    printer.PrintText(string.Format("RFC: {0}", data.RFC));
+                    printer.PrintText(string.Format("CI: {0}", data.Ticket_ID));
+
+                    //printer.PrintText(data.FolioT.ToString());
+                    //printer.PrintText(data.RazonSocial.ToString());
+                    //printer.PrintText(data.RFC.ToString());
+                    ///printer.PrintText(data.Conductor.ToUpper());
                 }
 
                 printer.PrintCLRF();
@@ -1138,6 +1144,10 @@ namespace SICASv20.forms
                     printer.PrintLine();
                     printer.PrintLine();
                     printer.PrintText("================================");
+
+
+
+
                 }
 
                 //Impresion de los saldos a la fecha                
@@ -1154,6 +1164,82 @@ namespace SICASv20.forms
                 printer.PrintLine();
                 printer.PrintLine();
                 printer.PrintText("================================");
+
+                //NUEVO APARTADO////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+                printer.PrintText("=======SECCION PARA CONDUCTOR=========");
+
+                printer.PrintCLRF();
+                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.FolioT, data.Empresa_ID));
+
+                //printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
+                printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
+                printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
+
+                printer.PrintCLRF();
+
+
+                printer.PrintText(string.Format("U: {0}", data.NumeroEconomico));
+
+                printer.PrintText(string.Format("C: {0}", data.Conductor));
+                printer.PrintText(string.Format("CI: {0}", data.Ticket_ID));
+
+
+                printer.PrintTable(dtable);
+
+
+
+                //if (ticketdata.Count > 0)
+                //{
+
+                //    Entities.Get_DatosTicket data = ticketdata[0];
+
+                //    //  Recorrer los registros del ticket
+                //    foreach (Entities.Get_DatosTicket mov in ticketdata)
+                //    {
+                //        // Si es clave
+                //        if (EnClave)
+                //        {
+                //            //   Ingresar el numero de la cuenta
+                //            dtable.Rows.Add(mov.Cuenta_ID, mov.Abono, mov.Saldo);
+                //        }
+                //        else
+                //        {
+                //            //  Ingresar la descripcion de la cuenta
+                //            dtable.Rows.Add(mov.Cuenta, mov.Abono, mov.Saldo);
+                //        }
+                //    }
+
+                //    // Imprimir los datos de empresa, estacion, unidad, conductor
+                //    printer.PrintText(string.Format("#COPIA:   {0}", ncopia));
+                //    printer.PrintCLRF();
+                //    printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.FolioT, data.Empresa_ID));
+
+                //    //printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
+                //    printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
+                //    printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
+                //    printer.PrintCLRF();
+
+                //    //  Si no es en clave
+
+
+                //    printer.PrintCLRF();
+
+                //    // Imprimir la tabla
+                //    printer.PrintTable(dtable);
+                printer.PrintCLRF();
+                printer.PrintText("================================");
+                printer.PrintText("================================");
+
+                //    HayImpresion = true;
+                //}
+
+
+                //
+
+
                 printer.PrintLine();
 
                 //Imprimir, si es que existe el Ticket_ID en DB
@@ -1184,7 +1270,7 @@ namespace SICASv20.forms
             dtCargosHistorico.Columns.Add(dc);
 
 
-            BindingList<Entities.AdeudosDeConductor> adeudosList = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID,Sesion.Usuario_ID);
+            BindingList<Entities.AdeudosDeConductor> adeudosList = Entities.AdeudosDeConductor.Get(DatosConductor.Conductor_ID, Sesion.Usuario_ID);
 
             foreach (Entities.AdeudosDeConductor datos in adeudosList)
             {
@@ -1898,7 +1984,7 @@ namespace SICASv20.forms
 
                         MessageBox.Show("POR DISPOSICION DE COPASA ESTA CAJA YA NO COBRARA HASTA EL PROXIMO LUNES, FAVOR DE HACER EL CORTE DE CAJA");
                         this.Close();
-                      
+
 
                     }
                 }

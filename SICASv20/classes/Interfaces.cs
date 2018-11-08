@@ -16992,7 +16992,10 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
             System.DateTime? fecha,
             System.Int32? cuenta_id,
             System.Decimal? abono,
-            System.Decimal? saldo
+            System.Decimal? saldo,
+            System.String razonsocial,
+            System.String rfc,
+            System.Int32? foliot
             )
         {
             this.Ticket_ID = ticket_id;
@@ -17010,6 +17013,9 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
             this.Cuenta_ID = cuenta_id;
             this.Abono = abono;
             this.Saldo = saldo;
+            this.RazonSocial = razonsocial;
+            this.RFC = rfc;
+            this.FolioT = foliot;
         }
 
         #endregion
@@ -17021,6 +17027,8 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
             get { return _Ticket_ID; }
             set { _Ticket_ID = value; }
         }
+
+      
 
         private System.Int32? _Sesion_ID;
         public System.Int32? Sesion_ID
@@ -17063,6 +17071,8 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
             get { return _Conductor; }
             set { _Conductor = value; }
         }
+
+         
 
         private System.String _Cuenta;
         public System.String Cuenta
@@ -17120,6 +17130,31 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
             set { _Saldo = value; }
         }
 
+
+
+        private System.String _RazonSocial;
+        public System.String RazonSocial
+        {
+            get { return _RazonSocial; }
+            set { _RazonSocial = value; }
+        }
+
+        private System.String _RFC;
+        public System.String RFC
+        {
+            get { return _RFC; }
+            set { _RFC = value; }
+        }
+
+
+        private System.Int32? _FolioT;
+        public System.Int32? FolioT
+        {
+            get { return _FolioT; }
+            set { _FolioT = value; }
+        }
+
+
         #endregion
 
         #region Methods
@@ -17131,7 +17166,7 @@ AND     ( C.EstatusContrato_ID = 1 ) --AND C.TipoContrato_ID IN (1,2)";
 		C.Apellidos + ' ' + C.Nombre Conductor,
 		CU.Nombre Cuenta,
 		T.Usuario_ID, T.Empresa_ID, T.Estacion_ID, T.Fecha,
-		CC.Cuenta_ID, CC.Abono, CC.Saldo
+		CC.Cuenta_ID, CC.Abono, CC.Saldo,RazonSocial=case when x.RazonSocial IS NULL then 'SIN DATOS' WHEN x.RazonSocial='' then 'SIN DATOS' else x.RazonSocial  end ,RFC=case when x.RFC IS NULL then 'SIN DATOS' WHEN x.RFC='' then 'SIN DATOS' else x.RFC  end,y.folio_id
 FROM	Tickets T
 INNER JOIN	CuentaConductores CC
 ON		T.Ticket_ID = CC.Ticket_ID
@@ -17141,6 +17176,8 @@ INNER JOIN	Conductores C
 ON		C.Conductor_ID = CC.Conductor_ID
 LEFT JOIN	Unidades U
 ON		CC.Unidad_ID = U.Unidad_ID
+LEFT JOIN CatConcesion x ON x.numeroeconomico=u.NumeroEconomico
+LEFT JOIN tblrelfolioticket Y ON y.ticket_id=t.Ticket_ID
 WHERE	T.Ticket_ID = @Ticket_ID";
 
             Hashtable m_params = new Hashtable();
@@ -17166,7 +17203,10 @@ WHERE	T.Ticket_ID = @Ticket_ID";
                        DB.GetNullableDateTime(dr["Fecha"]),
                        DB.GetNullableInt32(dr["Cuenta_ID"]),
                        DB.GetNullableDecimal(dr["Abono"]),
-                       DB.GetNullableDecimal(dr["Saldo"])
+                       DB.GetNullableDecimal(dr["Saldo"]),
+                       Convert.ToString(dr["RazonSocial"]),
+                       Convert.ToString(dr["RFC"]),
+                       DB.GetNullableInt32(dr["folio_id"])
                        )
                     );
             }

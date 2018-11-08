@@ -1,0 +1,126 @@
+2018-11-07 10:39:16,627 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 10:39:17,314 [1] ERROR - FTP Server 192.168.0.251
+2018-11-07 10:39:41,659 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 10:39:42,283 [1] ERROR - FTP Server 192.168.0.251
+2018-11-07 15:02:34,549 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:04:36,153 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:12:48,362 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:13:07,809 [1] ERROR - No se puede abrir la base de datos "SICASSync2018" solicitada por el inicio de sesión. Error de inicio de sesión.
+Error de inicio de sesión del usuario 'sa'.
+2018-11-07 15:13:38,619 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:13:52,349 [1] ERROR - Usuario o contraseña erroneas!
+2018-11-07 15:13:53,508 [1] ERROR - Usuario o contraseña erroneas!
+2018-11-07 15:13:54,287 [1] ERROR - Usuario o contraseña erroneas!
+2018-11-07 15:14:13,183 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 15:14:55,738 [1] ERROR - Debe declarar la variable escalar "@usuario_id".
+System.Data.SqlClient.SqlException: Debe declarar la variable escalar "@usuario_id".
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en SICASv20.DB.QueryScalar(String sqlQry, Hashtable params) en C:\Work\SICAS_WF_SAT\SICASv20\classes\DB.cs:línea 424
+   en SICASv20.Entities.Tickets.Create() en C:\Work\SICAS_WF_SAT\SICASv20\classes\Entities.cs:línea 19681
+   en SICASv20.forms.CajaDeCobro.RegistrarOperaciones() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 637
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass40_0.<PagaconTextBox_KeyUp>b__0() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 1561
+   en SICASv20.AppHelper.DoTransactions(HelperDelegate method, Form bForm) en C:\Work\SICAS_WF_SAT\SICASv20\classes\AppHelper.cs:línea 482
+2018-11-07 15:14:55,761 [1] ERROR - Debe declarar la variable escalar "@usuario_id".
+2018-11-07 15:15:57,801 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:16:40,007 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 15:17:18,809 [1] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.CajaDeCobro.Imprimir(Boolean EnClave, Boolean ImprimirFirmas, Int32 ncopia) en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 1044
+   en SICASv20.forms.CajaDeCobro.ImprimirTicketPago() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 948
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass40_0.<PagaconTextBox_KeyUp>b__1() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 1579
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF_SAT\SICASv20\classes\AppHelper.cs:línea 459
+2018-11-07 15:17:18,835 [1] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-07 15:20:37,269 [1] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en SICASv20.forms.CajaDeCobro.Imprimir(Boolean EnClave, Boolean ImprimirFirmas, Int32 ncopia) en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 1044
+   en SICASv20.forms.CajaDeCobro.ImprimirTicketPago() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 948
+   en SICASv20.forms.CajaDeCobro.<>c__DisplayClass40_0.<PagaconTextBox_KeyUp>b__1() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\CajaDeCobro.cs:línea 1579
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF_SAT\SICASv20\classes\AppHelper.cs:línea 459
+2018-11-07 15:20:38,504 [1] ERROR - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-07 15:27:23,764 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:27:46,224 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 15:30:22,278 [1] INFO  - Busca ticket #1461530 en Base de Datos.
+2018-11-07 15:30:22,296 [1] INFO  - Imprimiendo ticket #1461530 - copia 1
+2018-11-07 15:30:29,459 [1] INFO  - Se imprimió ticket #1461530 - copia 1
+2018-11-07 15:34:57,878 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:41:27,925 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:45:58,900 [1] INFO  - URGE DICTAMINAR 24-1-18 
+2018-11-07 15:48:18,218 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:50:16,810 [1] ERROR - Unidad 7297 no esta asignada
+2018-11-07 15:53:37,243 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 15:54:25,348 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 15:54:51,146 [1] INFO  - Busca ticket #1461534 en Base de Datos.
+2018-11-07 15:54:51,161 [1] INFO  - Imprimiendo ticket #1461534 - copia 1
+2018-11-07 15:54:59,670 [1] INFO  - Se imprimió ticket #1461534 - copia 1
+2018-11-07 15:55:05,298 [1] INFO  - Busca ticket #1461534 en Base de Datos.
+2018-11-07 15:55:05,304 [1] INFO  - Imprimiendo ticket #1461534 - copia 2
+2018-11-07 15:55:09,732 [1] INFO  - Se imprimió ticket #1461534 - copia 2
+2018-11-07 16:25:30,453 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:25:59,878 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 16:26:33,897 [1] INFO  - Busca ticket #1461535 en Base de Datos.
+2018-11-07 16:26:33,911 [1] INFO  - Imprimiendo ticket #1461535 - copia 1
+2018-11-07 16:26:40,154 [1] INFO  - Se imprimió ticket #1461535 - copia 1
+2018-11-07 16:26:45,722 [1] INFO  - Busca ticket #1461535 en Base de Datos.
+2018-11-07 16:26:45,729 [1] INFO  - Imprimiendo ticket #1461535 - copia 2
+2018-11-07 16:26:50,979 [1] INFO  - Se imprimió ticket #1461535 - copia 2
+2018-11-07 16:30:11,690 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:31:13,269 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 16:31:32,699 [1] INFO  - Busca ticket #1461536 en Base de Datos.
+2018-11-07 16:31:32,712 [1] INFO  - Imprimiendo ticket #1461536 - copia 1
+2018-11-07 16:31:37,434 [1] INFO  - Se imprimió ticket #1461536 - copia 1
+2018-11-07 16:31:39,885 [1] INFO  - Busca ticket #1461536 en Base de Datos.
+2018-11-07 16:31:39,891 [1] INFO  - Imprimiendo ticket #1461536 - copia 2
+2018-11-07 16:31:45,878 [1] INFO  - Se imprimió ticket #1461536 - copia 2
+2018-11-07 16:36:05,261 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:36:42,904 [1] INFO  - URGE DICTAMINAR 24-1-18 
+2018-11-07 16:36:53,000 [1] INFO  - Busca ticket #1461537 en Base de Datos.
+2018-11-07 16:36:53,015 [1] INFO  - Imprimiendo ticket #1461537 - copia 1
+2018-11-07 16:36:57,632 [1] INFO  - Se imprimió ticket #1461537 - copia 1
+2018-11-07 16:36:57,670 [1] INFO  - Busca ticket #1461537 en Base de Datos.
+2018-11-07 16:36:57,678 [1] INFO  - Imprimiendo ticket #1461537 - copia 2
+2018-11-07 16:37:05,579 [1] INFO  - Se imprimió ticket #1461537 - copia 2
+2018-11-07 16:39:17,094 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:39:44,909 [1] INFO  - URGE DICTAMINAR 24-1-18 
+2018-11-07 16:39:56,446 [1] INFO  - Busca ticket #1461538 en Base de Datos.
+2018-11-07 16:39:56,468 [1] INFO  - Imprimiendo ticket #1461538 - copia 1
+2018-11-07 16:40:03,603 [1] INFO  - Se imprimió ticket #1461538 - copia 1
+2018-11-07 16:40:03,714 [1] INFO  - Busca ticket #1461538 en Base de Datos.
+2018-11-07 16:40:03,736 [1] INFO  - Imprimiendo ticket #1461538 - copia 2
+2018-11-07 16:40:08,330 [1] INFO  - Se imprimió ticket #1461538 - copia 2
+2018-11-07 16:41:53,194 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:42:17,093 [1] INFO  - URGE DICTAMINAR 24-1-18 
+2018-11-07 16:42:32,088 [1] INFO  - Busca ticket #1461539 en Base de Datos.
+2018-11-07 16:42:32,104 [1] INFO  - Imprimiendo ticket #1461539 - copia 1
+2018-11-07 16:42:39,640 [1] INFO  - Se imprimió ticket #1461539 - copia 1
+2018-11-07 16:42:39,683 [1] INFO  - Busca ticket #1461539 en Base de Datos.
+2018-11-07 16:42:39,689 [1] INFO  - Imprimiendo ticket #1461539 - copia 2
+2018-11-07 16:42:46,129 [1] INFO  - Se imprimió ticket #1461539 - copia 2
+2018-11-07 16:46:36,236 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:47:00,206 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 16:47:12,066 [1] INFO  - Busca ticket #1461540 en Base de Datos.
+2018-11-07 16:47:12,080 [1] INFO  - Imprimiendo ticket #1461540 - copia 1
+2018-11-07 16:47:18,973 [1] INFO  - Se imprimió ticket #1461540 - copia 1
+2018-11-07 16:47:19,005 [1] INFO  - Busca ticket #1461540 en Base de Datos.
+2018-11-07 16:47:19,011 [1] INFO  - Imprimiendo ticket #1461540 - copia 2
+2018-11-07 16:47:24,471 [1] INFO  - Se imprimió ticket #1461540 - copia 2
+2018-11-07 16:51:01,139 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 16:51:28,940 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-07 16:51:45,401 [1] INFO  - Busca ticket #1461541 en Base de Datos.
+2018-11-07 16:51:45,416 [1] INFO  - Imprimiendo ticket #1461541 - copia 1
+2018-11-07 16:53:06,789 [1] INFO  - Se imprimió ticket #1461541 - copia 1
+2018-11-07 16:53:06,820 [1] INFO  - Busca ticket #1461541 en Base de Datos.
+2018-11-07 16:53:06,827 [1] INFO  - Imprimiendo ticket #1461541 - copia 2
+2018-11-07 16:53:11,859 [1] INFO  - Se imprimió ticket #1461541 - copia 2
+2018-11-07 17:32:44,536 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 17:32:44,999 [1] ERROR - FTP Server 192.168.0.251
+2018-11-07 17:33:05,737 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-07 17:33:06,212 [1] ERROR - FTP Server 192.168.0.251

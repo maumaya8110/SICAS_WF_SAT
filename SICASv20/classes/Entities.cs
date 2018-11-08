@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using Microsoft.VisualBasic;
 using System.Text.RegularExpressions;
 
 namespace SICASv20.Entities
@@ -5238,7 +5238,7 @@ SELECT	@Empresa_ID,
 
 
 
-               Hashtable in_m_params = new Hashtable();
+            Hashtable in_m_params = new Hashtable();
 
             Hashtable m_params = new Hashtable();
             Hashtable w_params = new Hashtable();
@@ -5264,16 +5264,16 @@ SELECT	@Empresa_ID,
             m_params.Add("CobroPermanente", this.CobroPermanente);
             if (!AppHelper.IsNullOrEmpty(this.Referencia_ID)) m_params.Add("Referencia_ID", this.Referencia_ID);
 
-    //  in_m_params   
-             in_m_params.Add("Contrato_ID", this.Contrato_ID);
+            //  in_m_params   
+            in_m_params.Add("Contrato_ID", this.Contrato_ID);
             in_m_params.Add("Estacion_ID", this.Estacion_ID);
             in_m_params.Add("Conductor_ID", this.Conductor_ID);
             in_m_params.Add("Usuario_id", Sesion.Usuario_ID);
             DB.InsertRow("tblContratosMovimientos", in_m_params);
 
-           
-            
-            
+
+
+
             return DB.UpdateRow("Contratos", m_params, w_params);
 
 
@@ -19572,6 +19572,13 @@ ORDER BY	Productividad DESC";
             set { _Ticket_ID = value; }
         }
 
+        private int _FolioConcesion;
+        public int FolioConcesion
+        {
+            get { return _FolioConcesion; }
+            set { _FolioConcesion = value; }
+        }
+
         private int _Sesion_ID;
         public int Sesion_ID
         {
@@ -19642,6 +19649,30 @@ ORDER BY	Productividad DESC";
             set { _folioSesion = value; }
         }
 
+
+        private System.String _RazonSocial;
+        public System.String RazonSocial
+        {
+            get { return _RazonSocial; }
+            set { _RazonSocial = value; }
+        }
+
+        private System.String _RFC;
+        public System.String RFC
+        {
+            get { return _RFC; }
+            set { _RFC = value; }
+        }
+
+
+        private System.Int32? _FolioT;
+        public System.Int32? FolioT
+        {
+            get { return _FolioT; }
+            set { _FolioT = value; }
+        }
+
+
         public int Create()
         {
             Hashtable m_params = new Hashtable();
@@ -19669,6 +19700,27 @@ ORDER BY	Productividad DESC";
                    )
                 )
             );
+
+            string sql2 = @"exec spCreaFolioRelTicket @empresa_id,@estacion_id,@caja_id,@sesion_id,@usuario_id,@ticket_id";
+            this.FolioConcesion = Convert.ToInt32(
+                DB.QueryScalar(
+                   sql2,
+                   DB.GetParams(
+                      DB.Param("@empresa_id", this.Empresa_ID),
+                      DB.Param("@estacion_id", this.Estacion_ID),
+                      DB.Param("@caja_id", this.Caja_ID),
+                      DB.Param("@sesion_id", this.Sesion_ID),
+                      DB.Param("@usuario_id", this.Usuario_ID),
+                      DB.Param("@ticket_id", this.Ticket_ID)
+                      
+                   )
+                )
+            );
+
+
+
+
+
 
             return ret;
         } // End Create
@@ -19698,6 +19750,8 @@ ORDER BY	Productividad DESC";
 
         public static Tickets Read(int ticket_id)
         {
+             
+
             Hashtable w_params = new Hashtable();
             w_params.Add("Ticket_ID", ticket_id);
             DataTable dt = DB.Select("Tickets", w_params);

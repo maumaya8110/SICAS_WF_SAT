@@ -132,18 +132,23 @@ namespace SICASv20.forms
             //  Obtenemos los datos dle ticket
             List<Entities.Get_DatosTicket> ticketdata = Entities.Get_DatosTicket.Get(this.Model.Ticket_ID);
 
+
+            ////////////////////////////////
+
             //  Preparamos una tabla de datos para contener los movimientos
             DataTable dtable = new DataTable();
             dtable.Columns.Add("CIUD", typeof(System.String));
             dtable.Columns.Add("M", typeof(System.Decimal));
             dtable.Columns.Add("S", typeof(System.Decimal));
 
+            Entities.Get_DatosTicket data = ticketdata[0];
+
             //  Si el ticket tiene información
             if (ticketdata.Count > 0)
             {
                 //  Obtenemos el primer registro
                 //  para los datos de encabezado
-                Entities.Get_DatosTicket data = ticketdata[0];
+                //Entities.Get_DatosTicket data = ticketdata[0];
 
                 //  Recorremos los registros
                 foreach (Entities.Get_DatosTicket mov in ticketdata)
@@ -153,21 +158,33 @@ namespace SICASv20.forms
                 }
 
                 //  Imprimimos los datos de encabezado
-                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.Ticket_ID, data.Empresa_ID));
+                //printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.Ticket_ID, data.Empresa_ID));
+                //printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
+                //printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
+                //printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
+
+                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.FolioT, data.Empresa_ID));
                 printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
                 printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
                 printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
+
                 printer.PrintCLRF();
 
                 if (chkUnidad.Checked == true)
                 {
-                    printer.PrintText(string.Format("U{0}", data.NumeroEconomico));
+                    printer.PrintText(string.Format("U: {0}", data.NumeroEconomico));
                 }
                 
 
                 if (chkNombre.Checked==true) 
                 {
-                    printer.PrintText(data.Conductor.Replace(data.NumeroEconomico.ToString(), "").Replace("(", "").Replace(")", ""));
+                  //  printer.PrintText(data.Conductor.Replace(data.NumeroEconomico.ToString(), "").Replace("(", "").Replace(")", ""));
+
+                  //  printer.PrintText(string.Format("U: {0}", data.NumeroEconomico));
+                    printer.PrintText(string.Format("RS: {0}", data.RazonSocial));
+                    printer.PrintText(string.Format("RFC: {0}", data.RFC));
+                    printer.PrintText(string.Format("CI: {0}", data.Ticket_ID));
+
                 }
                 
                 
@@ -204,9 +221,35 @@ namespace SICASv20.forms
                 printer.PrintLine();
                 printer.PrintLine();
                 printer.PrintText("================================");
+
+
+                printer.PrintText("=======SECCION PARA CONDUCTOR=========");
+
+                printer.PrintCLRF();
+                printer.PrintText(string.Format("TID:   {0}     EID:    {1}", data.FolioT, data.Empresa_ID));
+
+                //printer.PrintText(string.Format("CID:   {0}     ESTID:    {1}", data.Conductor_ID, data.Estacion_ID));
+                printer.PrintText(string.Format("UID:   {0}     CAID:    {1}", data.Unidad_ID, data.Caja_ID));
+                printer.PrintText(string.Format("F:   {0:yyyy-MM-dd}     H:    {0:HH:mm:ss}", data.Fecha));
+
+                printer.PrintCLRF();
+
+
+                printer.PrintText(string.Format("U: {0}", data.NumeroEconomico));
+
+                printer.PrintText(string.Format("C: {0}", data.Conductor));
+                printer.PrintText(string.Format("CI: {0}", data.Ticket_ID));
+
+
+                printer.PrintTable(dtable);
+
+                printer.PrintCLRF();
+                printer.PrintText("================================");
+                printer.PrintText("================================");
+                //printer.PrintLine();
                 printer.Print();
             }
-
+            ////////////////////////////////
         }   // end ReimprimirTicket  
 
         /// <summary>

@@ -1,122 +1,26 @@
-2018-11-01 10:02:32,441 [9] INFO  - Inicio de aplicación en modo Release
-2018-11-01 10:02:33,839 [9] ERROR - FTP Server 192.168.0.251
-2018-11-01 10:05:02,054 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
-   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
-   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
-   en System.Data.SqlClient.SqlDataReader.get_MetaData()
-   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
-   en SICASv20.DB.QueryCommand(String m_command, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 728
-   en SICASv20.Entities.Vista_Servicios.GetVentaBySesion(Int32 sesion_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 9628
-   en SICASv20.forms.ServiciosDeSesion.ServiciosDeSesion_Model.Consultar() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 65
-   en SICASv20.forms.ServiciosDeSesion.BindData() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 100
-   en SICASv20.forms.ServiciosDeSesion.<ServiciosDeSesion_Load>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 117
-   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 444
-2018-11-01 10:05:02,076 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-2018-11-01 10:05:39,396 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
-   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
-   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
-   en System.Data.SqlClient.SqlDataReader.get_MetaData()
-   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
-   en SICASv20.DB.QueryCommand(String m_command, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 728
-   en SICASv20.Entities.Vista_Servicios.GetVentaBySesion(Int32 sesion_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 9628
-   en SICASv20.forms.ServiciosDeSesion.ServiciosDeSesion_Model.Consultar() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 65
-   en SICASv20.forms.ServiciosDeSesion.BindData() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 100
-   en SICASv20.forms.ServiciosDeSesion.<ServiciosDeSesion_Load>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 117
-   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 444
-2018-11-01 10:05:39,406 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-2018-11-01 10:06:25,650 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
-   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
-   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
-   en System.Data.SqlClient.SqlDataReader.get_MetaData()
-   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
-   en SICASv20.DB.QueryCommand(String m_command, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 728
-   en SICASv20.Entities.Vista_Servicios.GetVentaBySesion(Int32 sesion_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 9628
-   en SICASv20.forms.ServiciosDeSesion.ServiciosDeSesion_Model.Consultar() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 65
-   en SICASv20.forms.ServiciosDeSesion.BindData() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 100
-   en SICASv20.forms.ServiciosDeSesion.<ServiciosDeSesion_Load>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 117
-   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 444
-2018-11-01 10:06:25,653 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-2018-11-01 10:09:13,926 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
-   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
-   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
-   en System.Data.SqlClient.SqlDataReader.get_MetaData()
-   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
-   en SICASv20.DB.QueryCommand(String m_command, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 728
-   en SICASv20.Entities.Vista_Servicios.GetVentaBySesion(Int32 sesion_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 9628
-   en SICASv20.forms.ServiciosDeSesion.ServiciosDeSesion_Model.Consultar() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 65
-   en SICASv20.forms.ServiciosDeSesion.BindData() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 100
-   en SICASv20.forms.ServiciosDeSesion.<ServiciosDeSesion_Load>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 117
-   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 444
-2018-11-01 10:09:13,930 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-2018-11-01 10:12:59,005 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
-   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
-   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
-   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
-   en System.Data.SqlClient.SqlDataReader.get_MetaData()
-   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
-   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
-   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
-   en SICASv20.DB.QueryCommand(String m_command, Hashtable m_params) en C:\Work\SICAS_WF\SICASv20\classes\DB.cs:línea 728
-   en SICASv20.Entities.Vista_Servicios.GetVentaBySesion(Int32 sesion_id) en C:\Work\SICAS_WF\SICASv20\classes\Interfaces.cs:línea 9628
-   en SICASv20.forms.ServiciosDeSesion.ServiciosDeSesion_Model.Consultar() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 65
-   en SICASv20.forms.ServiciosDeSesion.BindData() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 100
-   en SICASv20.forms.ServiciosDeSesion.<ServiciosDeSesion_Load>b__0() en C:\Work\SICAS_WF\SICASv20\forms\caja\reportes\ventas\ServiciosDeSesion.cs:línea 117
-   en SICASv20.AppHelper.Try(HelperDelegate todo) en C:\Work\SICAS_WF\SICASv20\classes\AppHelper.cs:línea 444
-2018-11-01 10:12:59,012 [9] ERROR - Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
+2018-11-08 11:38:59,276 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-08 11:39:29,953 [1] INFO  - REVISAR SALDO FUERA DE POLITICA  31 DE AGO 18 RDO
+2018-11-08 11:39:44,497 [1] INFO  - Busca ticket #1461542 en Base de Datos.
+2018-11-08 11:39:44,511 [1] INFO  - Imprimiendo ticket #1461542 - copia 1
+2018-11-08 11:39:54,850 [1] INFO  - Se imprimió ticket #1461542 - copia 1
+2018-11-08 11:39:54,878 [1] INFO  - Busca ticket #1461542 en Base de Datos.
+2018-11-08 11:39:54,885 [1] INFO  - Imprimiendo ticket #1461542 - copia 2
+2018-11-08 11:40:03,251 [1] INFO  - Se imprimió ticket #1461542 - copia 2
+2018-11-08 11:41:00,592 [1] INFO  - Ticket Reimpreso!
+2018-11-08 12:14:01,958 [1] INFO  - Inicio de aplicación en modo Release
+2018-11-08 12:14:39,670 [1] ERROR - El ticket 7299 no existe
+2018-11-08 12:14:39,715 [1] ERROR - El ticket 7299 no existe
+System.Exception: El ticket 7299 no existe
+   en SICASv20.AppHelper.ThrowException(String message, Object[] args) en C:\Work\SICAS_WF_SAT\SICASv20\classes\AppHelper.cs:línea 528
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ValidarTicket() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 80
+   en SICASv20.forms.ReimprimirTickets.ReimprimirTickets_Model.ConsultarTicket() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 101
+   en SICASv20.forms.ReimprimirTickets.<TicketIDTextBox_KeyUp>b__5_0() en C:\Work\SICAS_WF_SAT\SICASv20\forms\caja\herramientas\ReimprimirTickets.cs:línea 271
+   en SICASv20.AppHelper.DoMethod(HelperDelegate method, baseForm bForm) en C:\Work\SICAS_WF_SAT\SICASv20\classes\AppHelper.cs:línea 459
+2018-11-08 12:14:39,765 [1] ERROR - El ticket 7299 no existe
+2018-11-08 12:15:07,453 [1] INFO  - Ticket Reimpreso!
+2018-11-08 12:16:05,919 [1] INFO  - Busca ticket #1461543 en Base de Datos.
+2018-11-08 12:16:05,927 [1] INFO  - Imprimiendo ticket #1461543 - copia 1
+2018-11-08 12:16:12,582 [1] INFO  - Se imprimió ticket #1461543 - copia 1
+2018-11-08 12:16:12,608 [1] INFO  - Busca ticket #1461543 en Base de Datos.
+2018-11-08 12:16:12,614 [1] INFO  - Imprimiendo ticket #1461543 - copia 2
+2018-11-08 12:16:15,836 [1] INFO  - Se imprimió ticket #1461543 - copia 2

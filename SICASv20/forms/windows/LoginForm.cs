@@ -39,8 +39,11 @@ namespace SICASv20.forms
 			//  Centra el GroupBox que contiene los controles del formualario
 			CenterGroupBox();
 
-			//AppHelper.SendEmail("sicas@casco.com.mx", "lespino@prosyss.com", "Prueba", "Prueba", false);
-		}
+
+            this.Text= "version: "+AppHelper.Version;
+
+            //AppHelper.SendEmail("sicas@casco.com.mx", "lespino@prosyss.com", "Prueba", "Prueba", false);
+        }
 
 		/// <summary>
 		/// Formulario utilizado para seleccionar una caja,
